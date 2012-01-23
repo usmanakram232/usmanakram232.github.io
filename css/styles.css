@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Imports CSS Reset File */
+@import url("reset.css");
+
+aside, article, figure, footer, header, nav, section { display:block; }
+
+.cdiv { margin:0 auto; }
+
+/* Generic */
+
+header, nav, figure, footer  { width:960px; background: #ccc; }
+
+.cdiv { width:960px; height: auto; }
+
+aside, section, article { background: #ccc; }
+
+/* Header */
+
+header { height:290px;  }
+
+/* Nav */
+
+nav { height:40px; margin:15px 0;}
+
+/* Action */
+
+figure { height: 350px; margin: 15px 0;}
+
+/* Services */
+
+aside { width: 310px; height: 150px; float: left; margin: 15px 0; }
+
+.mid { margin: 15px; }
+
+/* Content */
+
+section { width: 635px; height: 551px; float: left; }
+
+/* News */
+
+article { width: 310px; height: 268px; margin: 0 0 15px 15px; float: left; }
+
+/* Footer */
+
+footer { height: 40px; clear: left; }
+
+#footercontent {position:relative; top:30%; /*height:40px; margin-top:-20px;  negative half of the height */}
+
+#navcontent {width:945px; position:relative; top:30%; margin: 0 15px 0 0;}
