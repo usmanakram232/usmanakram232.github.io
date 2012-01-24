@@ -14,6 +14,8 @@ header, nav, figure, footer  { width:960px; background: #ccc; }
 
 .cdiv { width:960px; height: auto; }
 
+.maindiv { width:960px; height: auto; margin:0 0 0 0;}
+
 .contentdiv {width:595px; height: auto;  margin:20px 0 0 20px; }
 
 aside, section, article { background: #ccc; }
