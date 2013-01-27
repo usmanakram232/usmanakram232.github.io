@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>The Beauty of Big Pictures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="web home of usman akram">
+	<meta name="author" content="usmanakram232">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="./assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+<div class="content">
+  <div id="post">
+    <h1>
+	  <a href="/2012/09/12/the-beauty-of-big-pictures.html">The Beauty of Big Pictures</a>
+    </h1>
+    <section class="byline">Sep 12, 2012</section>
+    <div class="body">
+      <h3 id='an_examplebased_introduction_to_specialized_crawling'>An example-based introduction to specialized crawling</h3>
+
+<p>There are big pictures out there, those ones that you don&#8217;t forget. The German channel <a href='http://www.prosieben.de'>&#8220;Pro Sieben&#8221;</a> even started having a whole show based on that idea called <a href='http://www.prosieben.de/tv/galileo/big-pictures/'>&#8220;Galileo Big Pictures&#8221;</a> every couple months.</p>
+
+<p>Since some time now the Boston Globe does something similar. It curates the <a href='http://www.boston.com/bigpicture'>&#8220;Boston Globe: Big Picture&#8221;</a>.</p>
+
+<p>About 15 times a month the Boston Globe posts an album of photography related to current events. Most of these images are in high quality and sometimes make great wallpapers.</p>
+<img alt='' src='http://cache.boston.com/universal/site_graphics/blogs/bigpicture/saturn_05_30/cassini1.jpg' />
+<p><em>The back side of Saturn with a solar eclipse.</em></p>
+
+<p>I am a big fan and I always wanted to have all these beautiful Pictures on my computer so that I could use them as wallpapers easily and also just cause I can.</p>
+
+<p>So I went ahead and looked at the site and started figuring out how I should go about achieving my goal. I thought it might be a good idea to share my experience with writing this simple web crawler and mass download script.</p>
+
+<h2 id='tools'>Tools</h2>
+
+<p>I decided to use the following tools:</p>
+
+<ul>
+<li><a href='http://www.python.org'>Python</a> - my programming language of choice</li>
+
+<li><a href='http://www.crummy.com/software/BeautifulSoup/'>BeautifulSoup</a> - a library that makes working with html easily</li>
+
+<li><a href='http://docs.python.org/library/multiprocessing.html'>multiprocessing</a> - as part of python standard library for having concurrent downloads</li>
+
+<li><a href='http://github.com/kennethreitz/clint'>clint</a> - for some pretty printing :-)</li>
+</ul>
+
+<h2 id='outline'>Outline</h2>
+
+<p>The first step was to figure out what steps are involved in getting to the actual images. This process is very much like an individual actually browsing the website. The website keeps an archive of all old pictures. This is how the archive looks:</p>
+
+<ul>
+<li>List of all months from previous years. - Example: September 2011</li>
+
+<li>For each month a list of all the albums.</li>
+
+<li>For each album all the pictures.</li>
+</ul>
+
+<p>Therefore we can deduce multiple steps in finding these pictures.</p>
+
+<ol>
+<li>Finding all the months that are available. Our master <strong>url</strong> list.</li>
+
+<li>Finding all the albums for each month.</li>
+
+<li>Finding all the pictures for each album. Our final <strong>download</strong> list.</li>
+</ol>
+
+<h2 id='the_archive'>The Archive</h2>
+
+<p>Next up: How are we going to solve the problems from our outline? The Boston Globe has a small little archive box, but unfortunately it only goes back to about a year ago.</p>
+<img alt='archive' src='/assets/images/posts/bigpicture1.jpeg' title='Big Picture 1' />
+<p>Luckily when looking at the source code I found out, that they actually have the complete archive there but in form of commented out HTML code. Therefore my browser wouldn&#8217;t pick it up at first.</p>
+<img alt='hidden archive' src='/assets/images/posts/bigpicture2.jpeg' title='Big Picture 2' />
+<p>I started with the <code>getArchive()</code> function.</p>
+
+<h3 id='step_1_getting_the_archive_list'>Step 1: Getting the archive list</h3>
+
+<p>The beginning is simple downloading the page and creating a corresponding <code>BeautifulSoup</code> object.</p>
+<div>
+  <pre><code class='python'>import urllib2
+from BeautifulSoup import BeautifulSoup
+
+
+def getArchive():
+    data = urllib2.urlopen('http://www.boston.com/bigpicture').read()
+    soup = BeautifulSoup(data)</code></pre>
+</div>
+<p>From here I need to analyze the page to get a list of all the archive pages.</p>
+
+<p>Turns out with the power of BeautifulSoup this is pretty simple. The archive dropdown menus inside of a <code>&lt;td&gt;</code> tag with class <code>drp</code>.</p>
+<div>
+  <pre><code class='python'>...
+def getArchive():
+    ...
+    results = soup.findAll('td', {&quot;class&quot;, &quot;drp&quot;})</code></pre>
+</div>
+<p>Next up, accessing the Comment which turns out to be a little tricky. Luckily I found this little <a href='http://www.crummy.com/software/BeautifulSoup/bs3/documentation.html#Removing%20elements'>part</a> of the <code>BeautifulSoup</code> documentation that explains how to extract comments.</p>
+<div>
+  <pre><code class='python'>...
+from BeautifulSoup import Comment
+def getArchive():
+    ...
+    results = results[0].findAll(text=lambda text: isinstance(text, Comment))</code></pre>
+</div>
+<p>From here we just extract all the option elements, remove the first one which was just a sample and return all the links (<code>value</code> fields).</p>
+<div>
+  <pre><code class='python'>...
+def getArchive():
+    urlList = []
+    ...
+    results = BeautifulSoup(results[0]).findAll('option')
+    del results[0]
+    for item in results:
+        urlList.append(item['value'])
+    puts(colored.green(&quot;Found %d links.&quot; % len(urlList)))
+    return urlList</code></pre>
+</div>
+<h3 id='step_2_locating_albums'>Step 2: Locating albums</h3>
+
+<p>Given an urlList I need to locate all the albums on each page.</p>
+
+<p>After looking at the source of the album page. I went the easy way and just use the styling information for the <code>&lt;td&gt;</code> tags, since there was no class associated this time. I used the same strategy to find the link inside of those elements.</p>
+<div>
+  <pre><code class='python'>def getAlbums(urlList):
+    albums = []
+    for url in urlList:
+        data = urllib2.urlopen(url).read()
+        soup = BeautifulSoup(data)
+        results = soup.findAll('td', style=&quot;padding-top:18px;&quot;)
+        for item in results:
+            albums.append(item.find('a', style=&quot;font-size:14px;font-weight:bold;&quot;)['href'])
+    return albums</code></pre>
+</div>
+<h3 id='step_3_locating_photos'>Step 3: Locating photos</h3>
+
+<p>Given a list of albums I want to return a list of lists of photos. I can <code>zip</code> them back together later.</p>
+
+<p>This one was really straightforward. Every picture had the class <code>bpImage</code> and could easily be identified</p>
+
+<p>The rest is the same as before.</p>
+<div>
+  <pre><code class='python'>def getPhotos(albums):
+    result = []
+    for album in albums:
+        photos = []
+        data = urllib2.urlopen(album).read()
+        soup = BeautifulSoup(data)
+        results = soup.findAll('img', {&quot;class&quot;: &quot;bpImage&quot;})
+        for item in results:
+            photos.append(item['src'])
+        result.append(photos)
+    return result</code></pre>
+</div>
+<p>For ease of use I am going to zip the albums and the lists of photos into one dictionary.</p>
+<div>
+  <pre><code class='python'>urls = dict(zip(albums, photos))</code></pre>
+</div>
+<h3 id='step_4_downloading_photos'>Step 4: Downloading photos</h3>
+
+<p>Finally, we are going to download all of the available big pictures right to our hard drives.</p>
+
+<p>First a simple downloader.</p>
+<div>
+  <pre><code class='python'>import os
+...
+def downloadPhoto(folder, photo):
+    u = urllib2.urlopen(photo)
+    localFile = open(os.path.join(folder, photo.split('/')[-1]), &quot;wb&quot;)
+    localFile.write(u.read())
+    localFile.close()
+    u.close()</code></pre>
+</div>
+<p>Now the actual code to initiate the downloads.</p>
+<div>
+  <pre><code class='python'>for key in urls.keys():
+    splitted = key.split('/')
+    folder = os.path.join(splitted[-3], splitted[-2], splitted[-1].split('.')[0])
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+    for item in urls[key]:
+        downloadPhoto(folder, item)</code></pre>
+</div>
+<h2 id='done'>Done</h2>
+
+<p>This is it. All the pictures are going to be on your computer now. Sorted by year, month and name.</p>
+<hr />
+<p>After reading this post about &#8221;<a href='http://doda.co/7-python-libraries-you-should-know-about'>Python Libraries that I should know</a>&#8221;&#8221; I learned about <a href='http://packages.python.org/pyquery/'>PyQuery</a> which might be interesting to look at in the future.</p>
+
+<h2 id='the_result'>The Result</h2>
+
+<p>I added some nice output that tells you about the current status thanks to <a href='http://github.com/kennethreitz/clint'>clint</a>.</p>
+<script src='https://gist.github.com/3695461.js'> </script>
+    </div>
+    <br />
+    <ul class="post_taglist">
+    
+      <li><a class="tag" href="/tag/util">util</a></li>
+    
+      <li><a class="tag" href="/tag/python">python</a></li>
+    
+      <li><a class="tag" href="/tag/download">download</a></li>
+    
+    </ul>
+    <div id="post_about">
+<h2><a href="/colophon">By Cecil Woebker</a></h2>
+<div itemscope itemtype="http://data-vocabulary.org/Person" class="left">
+My name is <span itemprop="name">Cecil Woebker</span>.
+I am a high school <span itemprop="title">Student</span>.
+I live in <span itemprop="address" itemscope
+      itemtype="http://data-vocabulary.org/Address">
+      <span itemprop="locality">Boston</span>,
+      <span itemprop="region">MA</span>.
+   </span>
+<p>I'm a developer and designer. Follow me on <a href="http://twitter.com/cwoebker">Twitter</a>.</p>
+<p>Feel free to ask me a question - <a href="mailto:me@cwoebker.com">me@cwoebker.com</a></p>
+<div id="footerbar">
+  <div class="social">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="cwoebker">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <a href="https://twitter.com/cwoebker" class="twitter-follow-button" data-show-count="false">Follow @cwoebker</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</div>
+</div>
+<div class="right">
+  <img src="http://www.gravatar.com/avatar/08f391968a5dcd91795e388f76f867f4?s=128" height="128" width="128" class="avatar">
+</div>
+</div>
+    <br />
+    Included file 'adsense_leaderboard.html' not found in _includes directory
+    <br />
+    <h1>Comments</h1>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  window.disqus_identifier = "/2012/09/12/the-beauty-of-big-pictures";
+</script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cwoebker'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscrip=cwoebker">comments powered by Disqus.</a>
+</noscript>
+
+  </div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

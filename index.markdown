@@ -1,0 +1,86 @@
+---
+layout: index
+title: "Muhammad Usman Akram"
+---
+
+<div class="content" id="page">
+		<div class="jumbotron masthead">
+		  <div class="container">
+			<br/><br/>
+			<h1>Muhammad Usman Akram</h1>
+			<p>A graduate student in Computer Sciences with specialization in Data Management & Information Processing, at Università degli Studi di Trento, Italy.</p>
+			<p>
+			  <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
+			</p>
+			<ul class="masthead-links">
+			  <li>
+				<a href="mailto:muhammadusman.akram[at]studenti.unitn.it">Email</a>
+			  </li>
+			  <li>
+				<a href="http://db.disi.unitn.eu/">dbTrento</a>
+			  </li>
+			  <li>
+				<a href="http://www.unitn.it">UniTN</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+
+    <div class="container">
+		<section id="about">
+		  <div class="page-header">
+			<h1>About Me</h1>
+		  </div>
+			<p>Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing.</p>
+			<p>I have worked as Research Assistant with <a href="">Dr. Atif Alvi</a> at LUMS from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
+			<p>I worked at <a href="http://www.elixir.com/">Elixir Technologies Pakistan</a>, as a software engineer from 2008 – 2010. I worked on development of the ETL (Extraction, Transformation & Loading) layer of "Tango" platform called "Data Manager/Server". Data Manager is a very agile ETL (Extraction-Transformation-Loading of data) solution using C++ and is not just limited to be part of Tango. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end using on-demand plugins, which would load only needed plugin to reduce memory foot print and is available of all major plateforms.</p>
+
+			<p><strong>Favourite Quote:</strong> Do not be afraid of the developers — we generally don’t eat people, at least usually we don’t. ~__~</p>
+			<p>My research areas include "Data Analytics", "Pattern Recognition", and "Operation Research".</p>
+
+
+		</section>
+
+		<section id="publications">
+		  <div class="page-header">
+			<h1>My Research Publications</h1>
+		  </div>
+			<a href="http://scholar.google.com.pk/citations?hl=en&user=iOsMzacAAAAJ">Google Scholar Profile</a>
+			<div> 
+			<h4>Book Chapter</h4>
+				<ul >
+				  <li>M. Arif, Fayyaz A. Afsar <strong>M.U. Akram</strong>, and A. Fida, <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-01307-2_45?LI=true">Arif Index for Predicting the Classification Accuracy of Features and its Application in Heart Beat Classification Problem</a>, Advances in Knowledge Discovery and Data Mining, Ed. Thanaruk Theeramunkong, Boonserm Kijsirkul, Tu-Bao Ho, PAKDD2009 Proceedings, LNAI 5476, pp. 491-498, Springer-Verlag Berlin Heidelberg, 2009. (online</a>)
+				</ul>
+			</div>
+
+			<div> 
+			<h4>Journal Publications</h4>
+				<ul >
+				  <li><a href="http://www.scirp.org/Journal/PaperDownload.aspx?paperID=1606&fileName=JBiSE20100400008_94593058.pdf">Pruned fuzzy K-nearest neighbor classifier for beat classification</a>, Muhammad Arif, <strong>Muhammad Usman Akram</strong>, Fayyaz-ul-Afsar Amir Minhas, pp.380-389, DOI: 10.4236/jbise.2010.34053, 2010.
+				</ul>
+			</div>
+
+			<div> 
+			<h4>Conference Papers</h4>
+				<ul>
+					<li><a title="ftp://ftp.computer.org/press/outgoing/proceedings/Patrick/socpar09/data/3879a037.pdf" href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?isnumber=5368599&amp;arnumber=5368654&amp;count=148&amp;index=15" target="_blank">Arrhythmia Beat Classification using Pruned Fuzzy K-Nearest Neighbor Classifier</a>, M. Arif, <strong><em>M.U. Akram</em></strong>, Fayyaz A. Afsar, Proceedings of International Conference on Soft Computing and Pattern Recognition, SoCPaR, 2009</li>
+					<li><a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?isnumber=4777689&amp;arnumber=4777725&amp;count=113&amp;index=29" target="_blank">A Pruned Fuzzy k-Nearest Neighbor Classifier with Application to Electrocardiogram Based Cardiac Arrhythmia Recognition</a>, F.A. Afsar, <strong><em>M.U. Akram</em></strong>, M. Arif and J. Khurshid, Multitopic Conference, 2008. INMIC 2008. IEEE International</li>
+				</ul>
+			</div>
+			<div>
+			<h4>Research Reports and Theses</h4>
+				<ul>
+					<li>Automatic Detection of Cardiac Arrhythmias using ECG Signal Processing (Biomedical Signal Processing, 2008)</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="contactMe">
+		  <div class="page-header">
+			<h1>Contact</h1>
+		  </div>
+			<p>Email: usman [dot] akram232[at]gmail[dot]com<br><a href="http://twitter.com/usmanakram232">@usmanakram232</a></p>
+		</section>
+		<br/><br/><hr><br/><br/>
+    </div> <!-- /container -->
+</div>
