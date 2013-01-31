@@ -7,8 +7,10 @@ title: "Muhammad Usman Akram"
     <div class="container">
 		<section id="courses">
 			<h1>Course List</h1>
-			<div> 
-			<h4>Graduate Courses (<a href="http://www.unitn.it/">UniTN</a>)</h4>
+      <hr class="featurette-divider">
+			<div class="featurette"> 
+		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
+			<h4 class="featurette-heading">Graduate Courses (<a href="http://www.unitn.it/">UniTN</a>)</h4>
 			<ul >
 			  <li><a href="http://disi.unitn.it/~themis/courses/MassiveDataAnalytics/">Massive Data Analytics</a></li>
 			  <li><a href="http://disi.unitn.it/moschitti/teaching.html">Natural Language Processing & Information Retrival </a></li>
@@ -25,8 +27,11 @@ title: "Muhammad Usman Akram"
 			</ul>
 			</div>
 
-			<div> 
-			<h4>Graduate Courses (<a href="http://www.lums.edu.pk/">LUMS</a>)</h4>
+      <hr class="featurette-divider">
+			<div class="featurette"> 
+	        <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
+			<div style="float: right;">
+			<h4 class="featurette-heading">Graduate Courses (<a href="http://www.lums.edu.pk/">LUMS</a>)</h4>
 			<ul >
 			  <li>Mathematical Cryptography</li>
 			  <li>Discreate Event Simulation</li>
@@ -37,9 +42,12 @@ title: "Muhammad Usman Akram"
 			  <li>Distributed Software System Development</li>
 			</ul>
 			</div>
+			</div>
 
-			<div> 
-			<h4>Undergraduate Courses (<a href="http://www.pieas.edu.pk/">PIEAS</a>)</h4>
+      <hr class="featurette-divider">
+			<div class="featurette">  
+		        <img class="featurette-image pull-right" src="assets/img/pieaslogo.png" width="60%" style="margin-right:100px;"/>
+			<h4 class="featurette-heading">Undergraduate Courses (<a href="http://www.pieas.edu.pk/">PIEAS</a>)</h4>
 			<ul >
 			  <li>Computational Intelligence</li>
 			  <li>Artificial Intelligence</li>
@@ -50,6 +58,6 @@ title: "Muhammad Usman Akram"
 			  <li>Detailed List [pdf]</li>
 			</ul>
 			</div>
-		<br/><br/><hr><br/><br/>
+      <hr class="featurette-divider">
     </div> <!-- /container -->
 </div>

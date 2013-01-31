@@ -1,15 +1,15 @@
-# cwoebker.com #
+# Usman Akram #
 
-[![Build Status](https://secure.travis-ci.org/cwoebker/.com.png)](http://travis-ci.org/cwoebker/.com)
 
 Hi.
 
-This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [Heroku](http://heroku.com/) for [cwoebker.com](http://cwoebker.com).
-Feel free to browse the source, fork, [ask me questions](http://twitter.com/cwoebker). 
+This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [githubpages](http://github.com/) for [usmanakram](http://usmanakram.me).
+This is a fork of [cwoebker's](http://twitter.com/cwoebker) jekyll-powered blog.
+Feel free to browse the source, fork, [ask me questions](http://twitter.com/usmanakram232). 
 
-Cheers!
+Regards!
 
-cwoebker
+Usman
 
 ## Behind the scenes. ##
 

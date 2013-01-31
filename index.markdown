@@ -29,22 +29,51 @@ title: "Muhammad Usman Akram"
     <div class="container">
 		<section id="about">
 		  <div class="page-header">
-			<h1>About Me</h1>
+			<h1  class="featurette-heading">About Me</h1>
 		  </div>
-			<p>Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing.</p>
-			<p>I have worked as Research Assistant with <a href="">Dr. Atif Alvi</a> at LUMS from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
-			<p>I worked at <a href="http://www.elixir.com/">Elixir Technologies Pakistan</a>, as a software engineer from 2008 – 2010. I worked on development of the ETL (Extraction, Transformation & Loading) layer of "Tango" platform called "Data Manager/Server". Data Manager is a very agile ETL (Extraction-Transformation-Loading of data) solution using C++ and is not just limited to be part of Tango. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end using on-demand plugins, which would load only needed plugin to reduce memory foot print and is available of all major plateforms.</p>
+      		<div class="featurette">
+		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
+				<p class="lead">Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing. <br>University of Trento, is an excellent higher education institute of Italy, with a large active research community. It is located in heart of <a href="https://encrypted.google.com/search?q=beautiful+lakes+of+trento&hl=en&safe=off&tbo=d&source=lnms&tbm=isch&sa=X&ei=pbwJUduTBuSF4gSmooDgCQ&ved=0CAcQ_AUoAA&biw=1356&bih=645">Trento's</a> scenic valley. Department of Information & Computer Sciences is located at uphill campus at Povo, Trento.</p>
+				<br>
+	      		<div class="featurette">
+					<a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
+			        <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style=" margin-right: 40px;"/></a>
+					<p class="lead"> I am currently doing my thesis on <strong>Time series analysis</strong>, on the way to become a data scientist.</p>
+	
+				</div>
 
-			<p><strong>Favourite Quote:</strong> Do not be afraid of the developers — we generally don’t eat people, at least usually we don’t. ~__~</p>
-			<p>My research areas include "Data Analytics", "Pattern Recognition", and "Operation Research".</p>
+			</div>
 
+      <hr class="featurette-divider">
+
+ 	     <div class="featurette">
+	        <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
+	        <p class="lead">I have worked as Research Assistant with <a href="http://sse.lums.edu.pk/AtifAlvi.htm">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
+	      </div>
+
+      <hr class="featurette-divider">
+      		<div class="featurette">
+				<!-- a href="http://www.elixir.com/">
+		        <img class="featurette-image pull-right" src="assets/img/elixirlogo.png"/></a -->
+        		<h2 class="featurette-heading">Professional Exp. <span class="muted"> Software Engineer</span></h2>
+				<p class="lead">I worked at <a href="http://www.elixir.com/">Elixir Technologies Corporation</a>, as a software engineer from 2008 – 2010. I worked on development of the ETL (Extraction, Transformation & Loading) layer of "Tango" platform called "Data Manager/Server". Data Manager is a very agile ETL (Extraction-Transformation-Loading of data) solution using C++ and is not just limited to be part of Tango. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end and innovative UI, using on-demand plugins to reduce memory foot print. It is available of all major plateforms.</p>
+
+			</div>
+
+      <hr class="featurette-divider">
+			<h4 class="featurette-heading"><span class="muted">Favourite Quotes:</span></h4>
+			<p class="lead"><strong></strong> Do not be afraid of the developers — we generally don’t eat people, at least usually we don’t. ~__~ (Inspired from <a href="http://www.gentoo.org/doc/en/handbook/handbook-ppc64.xml?part=1&chap=1">Gentoo</a>)</p>
+			<p class="lead">"Do not be satisfied with the stories that come before you. Unfold your own myth." — <a href="http://www.goodreads.com/author/show/875661.Rumi">Rumi</a></p>
 
 		</section>
+
+      <hr class="featurette-divider">
 
 		<section id="publications">
 		  <div class="page-header">
 			<h1>My Research Publications</h1>
 		  </div>
+			<p class="lead">My research interests include "<strong>Data Analytics</strong>", "<strong>Pattern Recognition</strong>", and "<strong>Operation Research</strong>".</p>
 			<a href="http://scholar.google.com.pk/citations?hl=en&user=iOsMzacAAAAJ">Google Scholar Profile</a>
 			<div> 
 			<h4>Book Chapter</h4>
@@ -75,12 +104,13 @@ title: "Muhammad Usman Akram"
 			</div>
 		</section>
 		
+      <hr class="featurette-divider">
 		<section id="contactMe">
-		  <div class="page-header">
-			<h1>Contact</h1>
+		  <div style="float:right;">
+			<h2 class="featurette-heading">Contact</h2>
 		  </div>
-			<p>Email: usman [dot] akram232[at]gmail[dot]com<br><a href="http://twitter.com/usmanakram232">@usmanakram232</a></p>
+			<p>Email: usman.akram232[at]gmail.com<br><a href="http://twitter.com/usmanakram232">@usmanakram232</a></p>
 		</section>
-		<br/><br/><hr><br/><br/>
+      <hr class="featurette-divider">
     </div> <!-- /container -->
 </div>
