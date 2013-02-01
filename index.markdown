@@ -37,7 +37,7 @@ title: "Muhammad Usman Akram"
 				<br>
 	      		<div class="featurette">
 					<a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
-			        <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style=" margin-right: 40px;"/></a>
+			        <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
 					<p class="lead"> I am currently doing my thesis on <strong>Time series analysis</strong>, on the way to become a data scientist.</p>
 	
 				</div>
