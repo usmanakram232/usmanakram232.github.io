@@ -104,7 +104,7 @@ title: "Muhammad Usman Akram"
 					<li>Mathematical Cryptography (Report: <a href="assets/reports/rng.pdf">Research Number Generators</a>)</li>
 					<li>Pervasive Computing (Report: <a href="assets/reports/resourcerecommendation.pdf">Resurce Recommendation using CBR</a>)</li>
 					<li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
-					<li>Automatic Detection of Cardiac Arrhythmias using ECG Signal Processing (Biomedical Signal Processing, 2008)</li>
+					<li>Thesis (Biomedical Signal Processing) - Automatic Detection of Cardiac Arrhythmias using ECG Signal Processing (<a href="/assets/reports/summary.pdf">Summary</a>)</li>
 				</ul>
 			</div>
 		</section>
