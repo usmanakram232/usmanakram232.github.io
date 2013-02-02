@@ -10,7 +10,7 @@ title: "Muhammad Usman Akram"
       <hr class="featurette-divider">
 			<div class="featurette"> 
 		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
-			<h4 class="featurette-heading">Graduate Courses (<a href="http://www.unitn.it/">UniTN</a>)</h4>
+			<h4 class="featurette-heading">Graduate Courses (<a href="http://www.unitn.it/">UniTN</a>) Eramsus Mundus</h4>
 			<ul >
 			  <li><a href="http://disi.unitn.it/~themis/courses/MassiveDataAnalytics/">Massive Data Analytics</a></li>
 			  <li><a href="http://disi.unitn.it/moschitti/teaching.html">Natural Language Processing & Information Retrival </a></li>

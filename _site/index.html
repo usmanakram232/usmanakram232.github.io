@@ -11,10 +11,11 @@
 	<meta name="author" content="usmanakram232">
 
     <!-- Le styles -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/css/docs.css" rel="stylesheet">
+    <link href="/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <style>
       body { padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */ }
 		
@@ -123,7 +124,7 @@
                 <br>
                 <div class="featurette">
                     <a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
-                    <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style=" margin-right: 40px;"/></a>
+                    <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
                     <p class="lead"> I am currently doing my thesis on <strong>Time series analysis</strong>, on the way to become a data scientist.</p>
     
                 </div>
@@ -185,6 +186,11 @@
             <div>
             <h4>Research Reports and Theses</h4>
                 <ul>
+                    <li>Data & Information Integration (Report: <a href="assets/reports/superpages.pdf">Improving Rearch Engine reults using Integration Techniques</a>)</li>
+                    <li>Machine Learning (Report: <a href="assets/reports/mllocalsvm.pdf">Arrhythmia Recognition using Local SVM</a>)</li>
+                    <li>Mathematical Cryptography (Report: <a href="assets/reports/rng.pdf">Research Number Generators</a>)</li>
+                    <li>Pervasive Computing (Report: <a href="assets/reports/resourcerecommendation.pdf">Resurce Recommendation using CBR</a>)</li>
+                    <li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
                     <li>Automatic Detection of Cardiac Arrhythmias using ECG Signal Processing (Biomedical Signal Processing, 2008)</li>
                 </ul>
             </div>
@@ -205,14 +211,33 @@
 	  
 </div>
 
+<div>
 	<footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
-      </footer>
+        <p class="pull-right" style="margin-right:20px;"><a href="#">Back to top</a></p>
+        <p style="margin-left:20px;">© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
+    </footer>
+</div>
 <br/>
 
     <!-- Le javascript
     ================================================== -->
+	<!-- MathJax Section -->
+
+	  <script type="text/javascript"
+	   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	  <script>
+		MathJax.Hub.Config({
+		  tex2jax: {
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		  }
+		});
+		MathJax.Hub.Queue(function() {
+			var all = MathJax.Hub.getAllJax(), i;
+			for(i=0; i < all.length; i += 1) {
+				all[i].SourceElement().parentNode.className += ' has-jax';
+			}
+		});
+	  </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap-transition.js"></script>

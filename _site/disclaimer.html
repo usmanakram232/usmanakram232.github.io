@@ -11,10 +11,11 @@
 	<meta name="author" content="usmanakram232">
 
     <!-- Le styles -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/css/docs.css" rel="stylesheet">
+    <link href="/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <style>
       body { padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */ }
 		
@@ -91,19 +92,17 @@
 	
       <div class="content" id="page">
     <div class="container">
-      <hr class="featurette-divider">
-            <div class="featurette">
-                <h2 class="featurette-heading"><span class="muted">Disclaimer</span></h2>
-                <p class="lead">All logos used to represent external entities, belong to owners.</p>
-                <p class="lead">Most of this is made using Twitter BootStrap and <a href="http://twitter.com/cwoebker">cwoebker's</a> jekyll-powered blog.</p>
-
-            </div>
+        <div class="featurette">
+            <h2 class="featurette-heading"><span class="muted">Disclaimer</span></h2>
+            <p class="lead">All logos used to represent external entities, belong to owners.</p>
+            <p class="lead">Most of this is made using Twitter BootStrap and <a href="http://twitter.com/cwoebker">cwoebker's</a> jekyll-powered blog.</p>
+        </div>
 
       <hr class="featurette-divider">
-    
+        
 <div id="aboutMe" class="featurette">
-    <img  class="avatar featurette-image pull-right" src="http://www.gravatar.com/avatar/e8618020c343b3f27948e8ddf0d993f1.png" height="128" width="128">
     <h2 class="featurette-heading">By <a href="/index.html">Muhammad Usman Akram</a></h2>
+    <img  class="avatar featurette-image pull-right" src="http://www.gravatar.com/avatar/e8618020c343b3f27948e8ddf0d993f1.png" height="128" width="128">
     <div itemscope itemtype="http://data-vocabulary.org/Person" class="left">
         <p class="lead">My name is <span itemprop="name">Muhammad Usman Akram</span>.<br>
         I am <span itemprop="role">graduate</span> <span itemprop="title">Student</span> at <span itemprop="affiliation"><a href="http://unitn.it/">University of Trento</a></span>.
@@ -124,14 +123,33 @@
 	  
 </div>
 
+<div>
 	<footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
-      </footer>
+        <p class="pull-right" style="margin-right:20px;"><a href="#">Back to top</a></p>
+        <p style="margin-left:20px;">© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
+    </footer>
+</div>
 <br/>
 
     <!-- Le javascript
     ================================================== -->
+	<!-- MathJax Section -->
+
+	  <script type="text/javascript"
+	   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	  <script>
+		MathJax.Hub.Config({
+		  tex2jax: {
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		  }
+		});
+		MathJax.Hub.Queue(function() {
+			var all = MathJax.Hub.getAllJax(), i;
+			for(i=0; i < all.length; i += 1) {
+				all[i].SourceElement().parentNode.className += ' has-jax';
+			}
+		});
+	  </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap-transition.js"></script>

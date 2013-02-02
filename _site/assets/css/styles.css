@@ -23,38 +23,6 @@ body{
 
 .break {page-break-before: always;}
 
-body div.content {padding-bottom: 120px;}
-    body div.content pre {
-        background-color: #f8f8f8;
-        border: 1px solid #ccc;
-        font-size: 13px;
-        line-height: 19px;
-        overflow: auto;
-        padding: 6px 10px;
-        border-radius: 3px;
-    }
-    body div.content code {
-        margin: 0 2px;
-        padding: 0px 5px;
-        border: 1px solid #eaeaea;
-        background-color: #f8f8f8;
-        border-radius: 3px;
-    }
-    body div.content pre > code {
-        padding: 0;
-        background-color: transparent;
-        border: 0;
-    }
-    body div.content .has-jax {
-        font: inherit;
-        font-size: 100%;
-        background: inherit;
-        border: inherit;
-    }
-    body .gist {
-        font-size: 12px;
-    }
-
 a{
   color: #227CE8;
 }
@@ -77,15 +45,6 @@ hr{
   margin: 2em 1em;
 }
 
-.content{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  z-index: 0;
-}
 
 .intro{
 }
@@ -403,7 +362,7 @@ postamble a:visited {
 }
 
 a.tag {
-    background: #41B7D8;
+    background: #4100D8;
     transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     -ms-transition: background-color 0.2s;
@@ -421,121 +380,11 @@ a.tag {
     padding: 0.1em 0.5em 0.25em;
     margin-bottom: 10px;
     margin-right: 10px;
-    background: -moz-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(233, 92, 51, 1)),color-stop(100%,rgba(229, 59, 44, 1)));
-    background: -webkit-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
-    background: -o-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
-    background: -ms-linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
-    background: linear-gradient(top,rgba(233, 92, 51, 1) 0%,rgba(229, 59, 44, 1) 100%);
-    background-color: #E95C33;
-}
-
-/*
-##############
-### FOOTER ###
-##############
-*/
-
-footer {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  padding-top: 20px;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  bottom: 0;
-  left: 0;
-}
-
-footer hr {
-  clear: both;
-  margin: 10px 0 30px;
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -moz-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -ms-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-image: -o-linear-gradient(left,
-    rgba(0,0,0,0),
-    rgba(0,0,0,0.05),
-    rgba(0,0,0,0));
-  background-color: #FFF;
-}
-
-footer[role="contentinfo"] {
-  padding: 15px 0 0 0;
-  font-size: 1em;
-}
-
-footer[role="contentinfo"] nav ul li a {
-  text-decoration: none;
-  color: #A19C91;
-}
-
-footer[role="contentinfo"] nav ul li {
-  display: inline;
-  margin: 0 10px 0 0;
-  padding: 0 10px 0 0;
-  font-weight: bold;
-  font-family: ff-milo-web-pro,Helvetica,Arial,sans-serif;
-  border-right: 1px solid #ccc;
-  font-size: 0.824em;
-}
-
-footer[role="contentinfo"] nav ul li:last-child {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.copyright {
-  letter-spacing: 2px;
-  font-family: inherit;
-  color: #A19C91;
-  font-size: 0.824em;
-  text-transform: uppercase;
-}
-
-  .copyright a {
-    text-decoration: none;
-    font-weight: bold;
-    font-family: ff-milo-web-pro,Helvetica,Arial,sans-serif;
-    color:
-    #A19C91;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-
-.footer{
-  margin: 30px 0;
-  padding: 10px 0;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-.footer p{
-  margin-top: 0px;
-}
-.footer img{
-  position: relative;
-  float: left;
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-left: -60px;
-  border-radius: 4px;
-}
-.footer .copy{
-  padding-left: 60px;
-}
-.footer .twitter-follow-button{
-  width: 75px !important;
+    background: -moz-linear-gradient(top,rgba(2, 92, 51, 1) 0%,rgba(2, 59, 44, 1) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(2, 92, 51, 1)),color-stop(100%,rgba(2, 59, 44, 1)));
+    background: -webkit-linear-gradient(top,rgba(2, 92, 51, 1) 0%,rgba(2, 59, 44, 1) 100%);
+    background: -o-linear-gradient(top,rgba(2, 92, 51, 1) 0%,rgba(2, 59, 44, 1) 100%);
+    background: -ms-linear-gradient(top,rgba(2, 92, 51, 1) 0%,rgba(2, 59, 44, 1) 100%);
+    background: linear-gradient(top,rgba(2, 92, 51, 1) 0%,rgba(2, 59, 44, 1) 100%);
+    background-color: #E90033;
 }

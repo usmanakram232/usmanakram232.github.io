@@ -1,4 +1,6 @@
 
+http://usmanakram.me/blog.html
+
 http://usmanakram.me/courses.html
 
 http://usmanakram.me/disclaimer.html
@@ -7,3 +9,9 @@ http://usmanakram.me/index.html
 
 http://usmanakram.me/sitemap.txt
 
+http://usmanakram.me/toollist.html
+
+
+http://usmanakram.me/posts/lets-check-new-post
+
+http://usmanakram.me/posts/jekyll-blogging

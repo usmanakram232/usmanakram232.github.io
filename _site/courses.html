@@ -11,10 +11,11 @@
 	<meta name="author" content="usmanakram232">
 
     <!-- Le styles -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/css/docs.css" rel="stylesheet">
+    <link href="/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <style>
       body { padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */ }
 		
@@ -152,14 +153,33 @@
 	  
 </div>
 
+<div>
 	<footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
-      </footer>
+        <p class="pull-right" style="margin-right:20px;"><a href="#">Back to top</a></p>
+        <p style="margin-left:20px;">© 2013 Usman Aram. · <a href="/disclaimer.html">Disclaimer</a> ·</p>
+    </footer>
+</div>
 <br/>
 
     <!-- Le javascript
     ================================================== -->
+	<!-- MathJax Section -->
+
+	  <script type="text/javascript"
+	   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	  <script>
+		MathJax.Hub.Config({
+		  tex2jax: {
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		  }
+		});
+		MathJax.Hub.Queue(function() {
+			var all = MathJax.Hub.getAllJax(), i;
+			for(i=0; i < all.length; i += 1) {
+				all[i].SourceElement().parentNode.className += ' has-jax';
+			}
+		});
+	  </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap-transition.js"></script>
