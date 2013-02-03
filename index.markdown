@@ -108,7 +108,14 @@ title: "Muhammad Usman Akram"
 				</ul>
 			</div>
 		</section>
-		
+      <hr class="featurette-divider">
+		<section id="hobbies">
+      		<div class="featurette">
+			<h2 class="featurette-heading">My Hobbies</h2>
+				<p class="lead"><a href="https://www.flickr.com/photos/usmanakram232/" style="text-decoration: none;">Photography</a>, Travelling, Trekking, and Reading.</p>
+
+			</div>
+		</section>
       <hr class="featurette-divider">
 		<section id="contactMe">
 		  <div style="float:right;">
