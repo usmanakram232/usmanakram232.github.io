@@ -111,11 +111,10 @@ title: "Muhammad Usman Akram"
       <hr class="featurette-divider">
 		<section id="hobbies">
       		<div class="featurette">
-				<a href="https://www.flickr.com/photos/usmanakram232/7967148272/sizes/l/in/photostream/">
-		        <img class="featurette-image pull-right" src="https://farm9.staticflickr.com/8460/7967148272_79984b4f3d.jpg" style="width:100%;"></a>
+				<a href="https://www.flickr.com/photos/usmanakram232/">
+		        <img class="featurette-image pull-right" src="https://farm9.staticflickr.com/8460/7967148272_79984b4f3d.jpg"></a>
 				<h2 class="featurette-heading">My Hobbies</h2>
 				<p class="lead"><a href="https://www.flickr.com/photos/usmanakram232/" style="text-decoration: none;">Photography</a>, Travelling, Trekking, and Reading.</p>
-
 			</div>
 		</section>
       <hr class="featurette-divider">
