@@ -11,7 +11,3 @@ http://usmanakram.me/sitemap.txt
 
 http://usmanakram.me/toollist.html
 
-
-http://usmanakram.me/posts/lets-check-new-post
-
-http://usmanakram.me/posts/jekyll-blogging

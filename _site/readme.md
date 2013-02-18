@@ -7,12 +7,5 @@ This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [git
 This is a fork of [cwoebker's](http://twitter.com/cwoebker) jekyll-powered blog.
 Feel free to browse the source, fork, [ask me questions](http://twitter.com/usmanakram232). 
 
-Regards!
-
+Regards,<br>
 Usman
-
-## Behind the scenes. ##
-
-- Fabric for easy deployment.
-- Runs on Rack::TryStatic.
-- Using the thin webserver.
