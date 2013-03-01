@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Muhammad Usman Akram</title>
+	<title>Social Network Analysis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="web home of usman akram">
 	<meta name="author" content="usmanakram232">
@@ -97,34 +97,145 @@
       .featurette-image.pull-right { margin-left: 40px; }	  
     </style>
 	
-      <div class="content" id="page">
+      <div class="content">
     <div class="container">
-        <div class="blog">
-            <h2>My Log</h2>
-            <ul>
-            
-                <li>
-                <span>February 23, 2013</span> - <a href="/posts/installing-matlab-on-remote-server-via-ssh-terminal-without-x11">Installing matlab on Remote server via SSH/Terminal (without X11)</a>
-                </li>
-            
-                <li>
-                <span>February 19, 2013</span> - <a href="/posts/social-network-analysis">Social Network Analysis</a>
-                </li>
-            
-                <li>
-                <span>February 19, 2013</span> - <a href="/posts/introduction-to-massive-data-analytics">Introduction to Massive Data Analytics</a>
-                </li>
-            
-                <li>
-                <span>February 19, 2013</span> - <a href="/posts/introduction-to-abit-advance-business-intelligence-techniques">Introduction to ABIT (Advance Business Intelligence Techniques)</a>
-                </li>
-            
-            </ul>
-        </div>
-      <hr class="featurette-divider">
-    </div> <!-- /container -->
-</div>
+  <div id="featurette">
+    <h1 class="featurette-heading">
+	  <a href="/posts/social-network-analysis">Social Network Analysis</a>
+    </h1>
+    <section class="byline">Feb 19, 2013</section>
+    <div class="featurette">
+      <h1>Network Analysis (maybe social)</h1>
 
+<h1>Put Definition here.</h1>
+
+<p>We can mostly represent data in from of graphs with node representing products, or customers. We need to find different relations in different subset of graphs. Importance of our data is not properties of single items but on the relations between different items.</p>
+
+<h4>Keywords:</h4>
+
+<ul>
+<li>Directed Graph (showing prerequist or dependency) like, Twitter follow</li>
+<li>Undirected () like, facebook friendship</li>
+<li>Bipartite (nodes can be split in two subsets, such that there is no edge in side anysubset) like, books &ndash; authors, product &ndash; buyer</li>
+</ul>
+
+
+<p>First, we will refer to hyper text (test that contains links to other text) or more apropriatly in modren term web. A web of documents (lots of) can be represented as a directed graph.</p>
+
+<p>We take the graph \(E={e}_{ij}\): </p>
+
+
+<p><code class=" has-jax">\[
+\begin{aligned}
+A \rightarrow B \\ 
+A \rightarrow D\\ 
+B \rightarrow E\\ 
+C \rightarrow B\\ 
+D \rightarrow C\\ 
+E \rightarrow A
+\end{aligned}
+\]</code></p>
+
+
+<p>We take web as our first exapmle of big data, without any search engine digging for information from this huge pile of hypertext if very difficult. Lets consider how old search engines worked, some companies (Digital research) built search engine (ALTAVISTA). They used to crawl web for keywords and index web on keywords, but these initiall search engines did not give any importance to relavency.  The results were provided in almost random order, so finding relevant information on first page might not be possible. What is needed to possibly, providing relevant pages first. Google did that very well (using PageRank algorithm), and theiir solution was to include page relationships, along with indexing for keywords. They gave a relvance socre or rank to each page. Considering, web page being referred as a vote that page is ralevent (still people found SEO tricks to improve their page&rsquo;s rank).</p>
+
+<h3>PageRank (Algorithm)</h3>
+
+<p>\(P_A\) Prestige (Relavance of Page A), if we can comeup with a rank for page A, than rank of A is split evenly among aall pages referred by page it.</p>
+
+
+<p></p>
+
+<p>We consider prestige as a quantity which can be exchanged among pages.</p>
+
+<p>Calculation of prestige is a repeated process,</p>
+
+<p>t  A   B   C   D   E <br>
+0  1   0   0   0   0 <br>
+1  0  &frac12;  0  &frac12;  0 <br>
+2  0   0  &frac12;  0  &frac12;<br>
+3 &frac12; &frac12;  0   0   0 <br>
+4  0  &frac14;  0  &frac14; &frac12;</p>
+
+<p>Does a distribution of prestige exist, such that it does not changes much just because of iterations.</p>
+
+<p>Static version of the evulotion of process:<br></p>
+
+<p><code class=" has-jax">\[
+\begin{alignaaaat}
+P_A, P_B, P_C, P_D, P_E \medskip s.t. \medskip P_A +...+P_E=1\ \\ 
+P_A = P_E \\ 
+P_B = \frac{1,2}P_A+P_C \\ 
+P_C=P_D \\ 
+P_D=1/2P_A\\ 
+P_E=P_B\\
+P_A=P_E=P_B=2*P_D = 2*P_C\\
+P_C+P_A-1/2P_A
+\end{alignat}
+\]</code></p>
+
+
+
+
+<p>So, \(P_C = \mathbf{a}\) and \(8 \mathbf{a} = 1\) or \(\mathbf{a} = \frac{1,8}\).</p>
+
+
+
+
+<hr>
+
+
+<p>N: web pages
+E: (e_ij) adjacency matrix</p>
+
+<pre><code>e_ij = 1 if i -&gt; j else 0
+</code></pre>
+
+<p>d_i :  out degree of node i</p>
+
+<p>&lsquo;(d_i= \sum<em>{j=1}<sup>{N}</sup> e</em>{ij})&rsquo;</p>
+
+<p>1 &lt;=i&lt;=N
+{P}<sup>t</sup> + {l}_i = sum<sup>N_j=1</sup>  e_ji/d_j * P<sup>t_j</sup></p>
+
+<p>L = (l_ij) 1&lt;=i,j&lt;=N</p>
+
+<p>l_ij = e_ij / d_j</p>
+
+<p>P<sup>t+1</sup> = L<sup>T</sup> * P<sup>t</sup></p>
+
+<p>Refresh: Linear Algebera (Eigen Values, Eigen vectors)</p>
+
+    </div>
+    <br />
+    <ul class="log_taglist">
+    
+      <li><a class="tag" href="/tag/Business Intelligence">Business Intelligence</a></li>
+    
+      <li><a class="tag" href="/tag/Course Work">Course Work</a></li>
+    
+    </ul>
+	</div>
+      <hr class="featurette-divider">
+    
+<div id="aboutMe" class="featurette">
+    <h2 class="featurette-heading">By <a href="/index.html">Muhammad Usman Akram</a></h2>
+    <img  class="avatar featurette-image pull-right" src="http://www.gravatar.com/avatar/e8618020c343b3f27948e8ddf0d993f1.png" height="128" width="128">
+    <div itemscope itemtype="http://data-vocabulary.org/Person" class="left">
+        <p class="lead">My name is <span itemprop="name">Muhammad Usman Akram</span>.<br>
+        I am <span itemprop="role">graduate</span> <span itemprop="title">Student</span> at <span itemprop="affiliation"><a href="http://unitn.it/">University of Trento</a></span>.
+        I live in <span itemprop="address" itemscope
+              itemtype="http://data-vocabulary.org/Address">
+              <span itemprop="locality">Trento</span>,
+              <span itemprop="country-name">Italy</span>.
+           </span></p>
+        <p class="lead">I'm a developer and data scientist (atleast on the way to become one). Follow me on <a href="http://twitter.com/usmanakram232">Twitter</a>.
+        <br>Feel free to ask me a question: <i>muhammadusman.akram[at]studenti.unitn.it</i></p>
+    </div>
+</div>
+      <hr class="featurette-divider">
+  </div>
+</div>
 
 	  
 </div>

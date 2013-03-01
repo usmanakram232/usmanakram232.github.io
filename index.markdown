@@ -122,8 +122,7 @@ title: "Muhammad Usman Akram"
 		  <div style="float:right;">
 			<h2 class="featurette-heading">Contact</h2>
 		  </div>
-			<p>Email: usman.akram232[at]gmail.com<br><a href="http://twitter.com/usmanakram232">@usmanakram232</a></p>
-
+			<p><a href="http://twitter.com/usmanakram232">@usmanakram232</a></p>
 		</section>
       <hr class="featurette-divider">
     </div> <!-- /container -->
