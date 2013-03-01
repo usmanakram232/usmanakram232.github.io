@@ -33,9 +33,9 @@ Edit installer_input file to provide Path key and other inputs and remember to a
 Also, edit activate.ini for activation information.
 
 <code> ./install <br/>
-cd $Matlab_PATH/bin<br/>
+cd Matlab_PATH/bin<br/>
 ./activate_matlab.sh<br/>
-alias matlab=$Matlab_PATH/bin/matlab<br/>
+alias matlab=Matlab_PATH/bin/matlab<br/>
 </code>
 
 ta-da .... Now you have matlab, without using X11. Have fun.

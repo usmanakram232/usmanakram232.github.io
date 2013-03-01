@@ -105,7 +105,41 @@
     </h1>
     <section class="byline">Feb 23, 2013</section>
     <div class="featurette">
-      
+      <h2>Matlab on Remote Linux Server without X11 and root Access</h2>
+
+<p>I will be explaining installation for acdemic use (as I needed to install it on our Lab Server and Acdemic access is what I get.)</p>
+
+<p>Thing you will be needing:</p>
+
+<p>-Valid key and activation file (getting activation file is explained.)
+-Matlab (32bit is only supported uptill Matlab R2012a.)
+-Remote access to Linux server (also valid forlocal machine.)</p>
+
+<h3>Obtaining Activation File</h3>
+
+<p>-Creat Mathworks account, if you already do not hae one, using your university email address and selecting &ldquo;Acdemic Use&rdquo;.
+-Associate with the valid acdemic use key.
+-Now go to &ldquo;My Account &ndash;> Manage Licenses&rdquo;, select a key and go to &ldquo;Activation and Installation&rdquo; tab (for generating activation file: you will be needing hardware address (of eth0) of target machine.)
+-Once you have provided required information (i.e hardware address, machine name, userid), just click on &ldquo;Get License File&rdquo; you will be able to download or email file  along with activation key.</p>
+
+<h3>Obtaining Matlab</h3>
+
+<p>Now once again reach to &ldquo;My Account&rdquo; and proceed to &ldquo;Get Licensed Products and Updates&rdquo; under &ldquo;My Download&rdquo;. Select you requireed version and download.</p>
+
+<h3>Instalation</h3>
+
+<p>Once you have obtained Matlab, just copy it to target machine.
+Edit installer_input file to provide Path key and other inputs and remember to add mode=silent, because unavailability of X11 will make installation to fail otherwise.</p>
+
+<p>Also, edit activate.ini for activation information.</p>
+
+<p><code> ./install
+cd Matlab_PATH/bin
+./activate_matlab.sh
+alias matlab=Matlab_PATH/bin/matlab
+</code></p>
+
+<p>ta-da &hellip;. Now you have matlab, without using X11. Have fun.</p>
 
     </div>
     <br />

@@ -14,8 +14,6 @@ http://usmanakram.me/toollist.html
 
 http://usmanakram.me/posts/installing-matlab-on-remote-server-via-ssh-terminal-without-x11
 
-http://usmanakram.me/posts/social-network-analysis
-
 http://usmanakram.me/posts/introduction-to-massive-data-analytics
 
 http://usmanakram.me/posts/introduction-to-abit-advance-business-intelligence-techniques
