@@ -8,7 +8,9 @@ title: "Muhammad Usman Akram"
 		  <div class="container">
 			<br/><br/>
 			<h1>Muhammad Usman Akram</h1>
+            <!---
 			<p>A graduate student in Computer Sciences with specialization in Data Management & Information Processing, at Università degli Studi di Trento, Italy.</p>
+            -->
 			<p>
 			  <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
 			</p>
