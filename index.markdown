@@ -35,12 +35,12 @@ title: "Muhammad Usman Akram"
 		  </div>
       		<div class="featurette">
 		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
-				<p class="lead">Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing. <br>University of Trento, is an excellent higher education institute of Italy, with a large active research community. It is located in heart of <a href="https://encrypted.google.com/search?q=beautiful+lakes+of+trento&hl=en&safe=off&tbo=d&source=lnms&tbm=isch&sa=X&ei=pbwJUduTBuSF4gSmooDgCQ&ved=0CAcQ_AUoAA&biw=1356&bih=645">Trento's</a> scenic valley. Department of Information & Computer Sciences is located at uphill campus at Povo, Trento.</p>
+				<p class="lead">Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing. <br>University of Trento, is an excellent higher education institute of Italy, with a large active research community. It is located in <a href="https://encrypted.google.com/search?q=beautiful+lakes+of+trento&hl=en&safe=off&tbo=d&source=lnms&tbm=isch&sa=X&ei=pbwJUduTBuSF4gSmooDgCQ&ved=0CAcQ_AUoAA&biw=1356&bih=645">Trento</a>. Department of Information & Computer Sciences is located at uphill campus at Povo, Trento.</p>
 				<br>
 	      		<div class="featurette">
 					<a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
 			        <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
-					<p class="lead"> I am currently doing my thesis on <strong>Time series analysis</strong>, on the way to become a data scientist.</p>
+					<p class="lead"> I have been working on development of a framework for correlation aware time series analysis for my Master's thesis work.</p>
 	
 				</div>
 
