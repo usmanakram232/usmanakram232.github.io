@@ -50,7 +50,7 @@ title: "Muhammad Usman Akram"
 
  	     <div class="featurette">
 	        <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
-	        <p class="lead">I have worked as Research Assistant with <a href="http://sse.lums.edu.pk/AtifAlvi.htm">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
+	        <p class="lead">I have worked as Research Assistant with <a href="http://www.linkedin.com/pub/atif-alvi/56/606/570">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
 	      </div>
 
       <hr class="featurette-divider">
