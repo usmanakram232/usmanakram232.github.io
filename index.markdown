@@ -49,7 +49,7 @@ title: "Muhammad Usman Akram"
                 <a href="http://www.convo.com/">
                 <img class="featurette-image pull-right" src="assets/img/convologo.png"/></a>
                 <h2 class="featurette-heading">Professional Exp. <span class="muted"> Software Engineer (back-end)</span></h2>
-                <p class="lead">I worked at <a href="http://www.convo.com/">Convo</a>, as a software engineer in 2014. Wile, I was planing to move back to Pakistan but latter changed my mind.
+                <p class="lead">I worked at <a href="http://www.convo.com/">Convo</a>, as a software engineer in 2014. While, I was planing to move back to Islamabad.
                 I worked on development and optimization of server side back-end web services using PHP, JAVA, and Oracle 11g.</p>
 
             </div>
