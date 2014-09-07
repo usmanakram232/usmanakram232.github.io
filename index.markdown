@@ -118,6 +118,7 @@ title: "Muhammad Usman Akram"
 				</ul>
 			</div>
             <div>
+      <hr class="featurette-divider">
             <h4>Development Projects</h4>
                 <ul>
                     <li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
