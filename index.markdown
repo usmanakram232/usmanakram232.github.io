@@ -38,7 +38,7 @@ title: "Muhammad Usman Akram"
                 <div class="featurette">
                     <a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
                     <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
-                    <p class="lead"> I am did my thesis on <strong> correlation aware time series analysis</strong>.</p>
+                    <p class="lead"> I did my thesis on <strong> correlation aware time series analysis</strong>. I will be defending it in second week of October, 2014.</p>
     
                 </div>
 
