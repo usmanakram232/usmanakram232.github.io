@@ -7,23 +7,21 @@ title: "Muhammad Usman Akram"
 		<div class="jumbotron masthead">
 		  <div class="container">
 			<br/><br/>
-			<h1>Muhammad Usman Akram</h1>
-            <!---
-			<p>A graduate student in Computer Sciences with specialization in Data Management & Information Processing, at Università degli Studi di Trento, Italy.</p>
-            -->
+            <h1>Akram, Muhammad Usman (wolfie)</h1>
+            <p>Software Engineer / Data Scientist</p>
 			<p>
 			  <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
 			</p>
-			<ul class="masthead-links">
-			  <li>
-				<a href="mailto:muhammadusman.akram[at]studenti.unitn.it">Email</a>
-			  </li>
-			  <li>
-				<a href="http://db.disi.unitn.eu/">dbTrento</a>
-			  </li>
-			  <li>
-				<a href="http://www.unitn.it">UniTN</a>
-			  </li>
+            <ul class="masthead-links">
+              <li>
+                <a href="mailto:muhammadusman.akram[at]studenti.unitn.it">Email</a>
+              </li>
+              <li>
+                <a href="https://www.dropbox.com/s/3vm4mtwwk4nxq2t/Akram-MuhammadUsman.pdf?dl=0">Résumé</a>
+              </li>
+              <li>
+                <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
+              </li>
 			</ul>
 		  </div>
 		</div>
@@ -33,34 +31,45 @@ title: "Muhammad Usman Akram"
 		  <div class="page-header">
 			<h1  class="featurette-heading">About Me</h1>
 		  </div>
-      		<div class="featurette">
-		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
-				<p class="lead">Currently, I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing. <br>University of Trento, is an excellent higher education institute of Italy, with a large active research community. It is located in <a href="https://encrypted.google.com/search?q=beautiful+lakes+of+trento&hl=en&safe=off&tbo=d&source=lnms&tbm=isch&sa=X&ei=pbwJUduTBuSF4gSmooDgCQ&ved=0CAcQ_AUoAA&biw=1356&bih=645">Trento</a>. Department of Information & Computer Sciences is located at uphill campus at Povo, Trento.</p>
-				<br>
-	      		<div class="featurette">
-					<a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
-			        <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
-					<p class="lead"> I have been working on development of a framework for correlation aware time series analysis for my Master's thesis work.</p>
-	
-				</div>
+            <div class="featurette">
+                <img class="featurette-image pull-left" src="assets/img/UniTNLogo.jpg" />
+                <p class="lead">I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing at <a href="http://www.unitn.it/">University</a> of <a href="http://www.discovertrento.it/en/home">Trento</a>.</p>
+                <br>
+                <div class="featurette">
+                    <a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
+                    <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
+                    <p class="lead"> I am did my thesis on <strong> correlation aware time series analysis</strong>.</p>
+    
+                </div>
 
-			</div>
-
-      <hr class="featurette-divider">
-
- 	     <div class="featurette">
-	        <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
-	        <p class="lead">I have worked as Research Assistant with <a href="http://www.linkedin.com/pub/atif-alvi/56/606/570">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
-	      </div>
+            </div>
 
       <hr class="featurette-divider">
-      		<div class="featurette">
-				<!-- a href="http://www.elixir.com/">
-		        <img class="featurette-image pull-right" src="assets/img/elixirlogo.png"/></a -->
-        		<h2 class="featurette-heading">Professional Exp. <span class="muted"> Software Engineer</span></h2>
-				<p class="lead">I worked at <a href="http://www.elixir.com/">Elixir Technologies Corporation</a>, as a software engineer from 2008 – 2010. I worked on development of the ETL (Extraction, Transformation & Loading) layer of "Tango" platform called "Data Manager/Server". Data Manager is a very agile ETL (Extraction-Transformation-Loading of data) solution using C++ and is not just limited to be part of Tango. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end and innovative UI, using on-demand plugins to reduce memory foot print. It is available of all major plateforms.</p>
+            <div class="featurette">
+                <a href="http://www.convo.com/">
+                <img class="featurette-image pull-right" src="assets/img/convologo.png"/></a>
+                <h2 class="featurette-heading">Professional Exp. <span class="muted"> Software Engineer (back-end)</span></h2>
+                <p class="lead">I worked at <a href="http://www.convo.com/">Convo</a>, as a software engineer in 2014. Wile, I was planing to move back to Pakistan but latter changed my mind.
+                I worked on development and optimization of server side back-end web services using PHP, JAVA, and Oracle 11g.</p>
 
-			</div>
+            </div>
+            
+      <hr class="featurette-divider">
+
+         <div class="featurette">
+            <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
+                <h2 class="featurette-heading">Research Assistant <span class="muted">(RA)</span></h2>
+            <p class="lead">I have worked as Research Assistant with <a href="http://sse.lums.edu.pk/AtifAlvi.htm">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
+          </div>
+
+      <hr class="featurette-divider">
+            <div class="featurette">
+                <a href="http://www.elixir.com/">
+                <img class="featurette-image pull-right" src="assets/img/elixirlogo.png"/></a>
+                <h2 class="featurette-heading">Professional Exp. <span class="muted"> Software Engineer</span></h2>
+                <p class="lead">I worked at <a href="http://www.elixir.com/">Elixir Technologies Corporation</a>, as a software engineer from 2008 – 2010. I worked on development of the ETL (Extraction, Transformation & Loading) layer of "Tango" platform called "Data Manager/Server". Data Manager is a very agile ETL (Extraction-Transformation-Loading of data) solution using C++ and is not just limited to be part of Tango. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end and innovative UI, using on-demand plugins to reduce memory foot print. It is available of all major plateforms.</p>
+
+            </div>
 
       <hr class="featurette-divider">
 			<h4 class="featurette-heading"><span class="muted">Favourite Quotes:</span></h4>
