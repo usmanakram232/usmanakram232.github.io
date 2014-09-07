@@ -114,10 +114,16 @@ title: "Muhammad Usman Akram"
 					<li>Machine Learning (Report: <a href="assets/reports/mllocalsvm.pdf">Arrhythmia Recognition using Local SVM</a>)</li>
 					<li>Mathematical Cryptography (Report: <a href="assets/reports/rng.pdf">Research Number Generators</a>)</li>
 					<li>Pervasive Computing (Report: <a href="assets/reports/resourcerecommendation.pdf">Resurce Recommendation using CBR</a>)</li>
-					<li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
 					<li>Thesis (Biomedical Signal Processing) - Automatic Detection of Cardiac Arrhythmias using ECG Signal Processing (<a href="/assets/reports/summary.pdf">Summary</a>)</li>
 				</ul>
 			</div>
+            <div>
+            <h4>Development Projects</h4>
+                <ul>
+                    <li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
+					<li>Distributed Software System Design (Demo video: <a href:"https://www.dropbox.com/s/xq1uzkw9tpz56j3/The_Social_Network.wmv?dl=0">Development of a social network</a>)</li>
+                </ul>
+            </div>
 		</section>
       <hr class="featurette-divider">
 		<section id="hobbies">
@@ -125,7 +131,7 @@ title: "Muhammad Usman Akram"
 				<a href="https://www.flickr.com/photos/usmanakram232/">
 		        <img class="featurette-image pull-right" src="https://farm9.staticflickr.com/8460/7967148272_79984b4f3d.jpg"></a>
 				<h2 class="featurette-heading">My Hobbies</h2>
-				<p class="lead"><a href="https://www.flickr.com/photos/usmanakram232/" style="text-decoration: none;">Photography</a>, Travelling, Trekking, and Reading.</p>
+				<p class="lead"><a href="http://instagram.com/usmanakram" style="text-decoration: none;">Photography</a>, Travelling, Trekking, and Reading.</p>
 			</div>
 		</section>
       <hr class="featurette-divider">
