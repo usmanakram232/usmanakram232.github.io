@@ -6,8 +6,11 @@ title: "Muhammad Usman Akram"
 <div class="content" id="page">
 		<div class="jumbotron masthead">
 		  <div class="container">
-			<br/><br/>
-            <h1>Akram, Muhammad Usman (wolfie)</h1>
+          
+            <div class="featurette">
+                <a href="http://www.convo.com/">
+                <img class="featurette-image pull-right" src="assets/img/me.jpg"/></a>
+                <h1>Akram, Muhammad Usman (wolfie)</h1>
             <p>Software Engineer / Data Scientist</p>
 			<p>
 			  <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
@@ -23,6 +26,8 @@ title: "Muhammad Usman Akram"
                 <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
               </li>
 			</ul>
+            </div>
+            
 		  </div>
 		</div>
 
