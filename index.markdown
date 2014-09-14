@@ -4,11 +4,11 @@ title: "Muhammad Usman Akram"
 ---
 
 <div class="content" id="page">
-		<div class="jumbotron masthead">
             <div class="featurette">
                 <!-- a href="http://www.convo.com/">
                 -->
-                <img class="featurette-image pull-right" src="assets/img/me.jpg"/></a>
+                <img class="featurette-image pull-right" src="assets/img/me.jpg"/>
+		<div class="jumbotron masthead">
 		  <div class="container">
           
                 <h1>Akram, Muhammad Usman (wolfie)</h1>
