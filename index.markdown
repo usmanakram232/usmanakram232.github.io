@@ -5,27 +5,28 @@ title: "Muhammad Usman Akram"
 
 <div class="content" id="page">
 		<div class="jumbotron masthead">
+            <div class="featurette">
+                <!-- a href="http://www.convo.com/">
+                -->
+                <img class="featurette-image pull-right" src="assets/img/me.jpg"/></a>
 		  <div class="container">
           
-            <div class="featurette">
-                <a href="http://www.convo.com/">
-                <img class="featurette-image pull-right" src="assets/img/me.jpg"/></a>
                 <h1>Akram, Muhammad Usman (wolfie)</h1>
-            <p>Software Engineer / Data Scientist</p>
-			<p>
-			  <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
-			</p>
-            <ul class="masthead-links">
-              <li>
-                <a href="mailto:muhammadusman.akram[at]studenti.unitn.it">Email</a>
-              </li>
-              <li>
-                <a href="https://www.dropbox.com/s/3vm4mtwwk4nxq2t/Akram-MuhammadUsman.pdf?dl=0">Résumé</a>
-              </li>
-              <li>
-                <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
-              </li>
-			</ul>
+                <p>Software Engineer / Data Scientist</p>
+                <p>
+                 <a href="http://twitter.com/usmanakram232" class="btn btn-primary btn-large");">@usmanakram232</a>
+                </p>
+                <ul class="masthead-links">
+                 <li>
+                  <a href="mailto:muhammadusman.akram[at]studenti.unitn.it">Email</a>
+                 </li>
+                 <li>
+                  <a href="https://www.dropbox.com/s/3vm4mtwwk4nxq2t/Akram-MuhammadUsman.pdf?dl=0">Résumé</a>
+                 </li>
+                 <li>
+                  <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
+                 </li>
+                </ul>
             </div>
             
 		  </div>
