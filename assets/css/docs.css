@@ -90,7 +90,7 @@ hr.soften {
 .jumbotron {
   position: relative;
   padding: 40px 0;
-  color: #fff;
+  color: #0033;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
   background: #020031; /* Old browsers */
@@ -193,7 +193,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .masthead {
   padding: 70px 0 80px;
   margin-bottom: 0;
-  color: #fff;
+  color: #0033;
 }
 .masthead h1 {
   font-size: 120px;
@@ -214,7 +214,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .masthead-links li {
   display: inline;
   padding: 0 10px;
-  color: rgba(255,5,25,.25);
+  color: rgba(5,0,51,.25);
 }
 
 /* Social proof buttons from GitHub & Twitter */
