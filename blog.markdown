@@ -9,7 +9,7 @@ title: "Muhammad Usman Akram"
 	        <h2>My Log</h2>
 	        <ul>
 	            <li>
-	            <span>October 09, 2014</span> - <a href="https://gist.github.com/2f4cdd7cbf1791d735ad.git">GISTasEntry</a>
+	            <span>October 09, 2014</span> - <a href="https://gist.github.com/2f4cdd7cbf1791d735ad.git">A GIST as an Entry</a>
                 </li>
 	        {% for log in site.posts %}
 	            <li>
