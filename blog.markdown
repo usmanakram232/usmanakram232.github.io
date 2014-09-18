@@ -8,14 +8,14 @@ title: "Muhammad Usman Akram"
 	    <div class="blog">
 	        <h2>My Log</h2>
 	        <ul>
+	            <li>
+	            <span>"October 09, 2014"</span> - <a href="https://gist.github.com/2f4cdd7cbf1791d735ad.git">GISTasEntry</a>
+                </li>
 	        {% for log in site.posts %}
 	            <li>
 	            <span>{{ log.date | date: "%B %e, %Y" }}</span> - <a href="{{ log.url }}">{{ log.title }}</a>
 	            </li>
 	        {% endfor %}
-	            <li>
-	            <span>date: "October 09, 2014" }}</span> - <a href="https://gist.github.com/2f4cdd7cbf1791d735ad.git">GISTasEntry</a>
-                </li>
 	        </ul>
 	    </div>
       <hr class="featurette-divider">
