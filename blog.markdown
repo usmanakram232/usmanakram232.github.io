@@ -8,6 +8,9 @@ title: "Muhammad Usman Akram"
 	    <div class="blog">
 	        <h2>My Log</h2>
 	        <ul>
+                <li>
+                <span>October 24, 2014</span> - <a href="https://gist.github.com/usmanakram232/2e82d052170cd6701eb5">How to learn better: Chunking</a>
+                </li>
 	            <li>
 	            <span>October 09, 2014</span> - <a href="https://gist.github.com/usmanakram232/2f4cdd7cbf1791d735ad">A GIST as an Entry</a>
                 </li>
