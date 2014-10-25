@@ -12,11 +12,11 @@ title: "Muhammad Usman Akram"
 		        <img class="featurette-image pull-right" src="assets/img/UniTNLogo.jpg" />
 			<h4 class="featurette-heading">Graduate Courses (<a href="http://www.unitn.it/">UniTN</a>) Eramsus Mundus</h4>
 			<ul >
-			  <li><a href="http://disi.unitn.it/~themis/courses/MassiveDataAnalytics/">Massive Data Analytics</a></li>
 			  <li><a href="http://disi.unitn.it/moschitti/teaching.html">Natural Language Processing & Information Retrival </a></li>
 			  <li><a href="http://disi.unitn.it/~velgias/dii/">Data & Information Integration</a></li>
 			  <li><a href="http://disi.unitn.it/~brunato/ABIT/">Advance Business Intelligence Techniques</a></li>
 			  <li><a href="http://base.liquidjournal.org/IC_Classes/#!event/10015">Business Process Management</a></li>
+			  <li><a href="http://disi.unitn.it/~themis/courses/MassiveDataAnalytics/">Massive Data Analytics</a></li>
 			  <li><a href="https://www.esse3.unitn.it/Guide/PaginaADErogata.do;jsessionid=E73EDB004CB10FD035C47C2ABF15E5C9.jvm_unitn_esse3web01?ad_er_id=2012*N0*N0*S1*29433*87821&ANNO_ACCADEMICO=2012&mostra_percorsi=S">Laboratory of Biological Data Mining</a></li>
 			  <li><a href="http://disi.unitn.it/~passerini/teaching/2011-2012/MachineLearning/">Machine Learning</a></li>
 			  <li><a href="http://disi.unitn.it/~ldkr/ml2012/">Mathematical Logic</a></li>
@@ -55,7 +55,6 @@ title: "Muhammad Usman Akram"
 			  <li>Compiler Construction</li>
 			  <li>Modelling & Simulation</li>
 			  <li>Information System Analysis & Design</li>
-			  <li>Detailed List [pdf]</li>
 			</ul>
 			</div>
       <hr class="featurette-divider">
