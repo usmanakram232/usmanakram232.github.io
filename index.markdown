@@ -7,9 +7,8 @@ title: "Muhammad Usman Akram"
 		<div class="jumbotron masthead">
 		  <div class="container">
             <div class="featurette">
-                <!-- a href="http://www.convo.com/">
-                -->
-                <img class="featurette-image pull-right" src="assets/img/me.jpg"/>
+                <a href="https://www.linkedin.com/profile/view?id=33831662&authType=name&authToken=u4kI">
+                <img class="featurette-image pull-right" src="assets/img/me.jpg"/></a>
           
                 <h1>Akram, Muhammad Usman (wolfie)</h1>
                 <p>Software Engineer / Data Scientist</p>
@@ -65,7 +64,7 @@ title: "Muhammad Usman Akram"
          <div class="featurette">
             <img class="featurette-image pull-left" src="assets/img/lumslogo.png">
                 <h2 class="featurette-heading">Research Assistant <span class="muted">(RA)</span></h2>
-            <p class="lead">I have worked as Research Assistant with <a href="http://sse.lums.edu.pk/AtifAlvi.htm">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
+            <p class="lead">I have worked as Research Assistant with <a href="https://www.linkedin.com/profile/view?id=198579108">Atif Alvi</a> at <a href="http://www.lums.edu.pk/">LUMS</a> from 2010 to 2011. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.</p>
           </div>
 
       <hr class="featurette-divider">
