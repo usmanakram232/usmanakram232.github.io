@@ -9,7 +9,7 @@ title: "Muhammad Usman Akram"
 	        <h2>My Log</h2>
 	        <ul>
                 <li>
-                <span>October 25, 2014</span> - <a href="https://gist.github.com/usmanakram232/20d39adf19710d3e4071">How to learn better: Applying effective learning Techniques</a>
+                <!--span>October 25, 2014</span> - <a href="https://gist.github.com/usmanakram232/20d39adf19710d3e4071">How to learn better: Applying effective learning Techniques</a> -->
                 </li>
                 <li>
                 <span>October 24, 2014</span> - <a href="https://gist.github.com/usmanakram232/2e82d052170cd6701eb5">How to learn better: Chunking</a>
