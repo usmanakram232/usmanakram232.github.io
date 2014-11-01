@@ -27,9 +27,6 @@ title: "Muhammad Usman Akram"
                  </li>
                 </ul>
                 <a href="http://www.haskellers.com/user/3416"><img src="http://www.haskellers.com/static/badge.png" alt="I'm a Haskeller">
-</a><br/>
-<a href="http://stackexchange.com/users/40914">
-<img src="http://stackexchange.com/users/flair/40914.png" width="208" height="58" alt="profile for Wolfie on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Wolfie on Stack Exchange, a network of free, community-driven Q&amp;A sites">
 </a>
             </div>
             
