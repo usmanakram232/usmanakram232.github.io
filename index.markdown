@@ -26,6 +26,8 @@ title: "Muhammad Usman Akram"
                   <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
                  </li>
                 </ul>
+                <a href="http://www.haskellers.com/user/3416"><img src="http://www.haskellers.com/static/badge.png" alt="I'm a Haskeller">
+</a>
             </div>
             
 		  </div>
