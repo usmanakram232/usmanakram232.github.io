@@ -9,6 +9,9 @@ title: "Muhammad Usman Akram"
 	        <h2>My Log</h2>
 	        <ul>
                 <li>
+                <a href="https://gist.github.com/usmanakram232/b76672dcbe4a6ea62467#wolfies-list">Aggregated list of tools, I find useful</a>
+                </li>
+                <li>
                 <span>October 28, 2014</span> - <a href="https://gist.github.com/usmanakram232/5cb8746da82fc4f1a992#a-framework-for-efficent-learning">How to learn better: Efficient Learning</a>
                 </li>
                 <li>
