@@ -131,7 +131,7 @@ title: "Muhammad Usman Akram"
 			</div>
             <div>
       <hr class="featurette-divider">
-            <h4>Development Projects</h4>
+            <h4>Development Projects (excluding work done under NDAs)</h4>
                 <ul>
                     <li>Emerging Software Engineering Platforms (Report: <a href="assets/reports/ipdc.pdf">iPDC</a>)</li>
 					<li>Distributed Software System Design (Demo video: <a href:"https://www.dropbox.com/s/xq1uzkw9tpz56j3/The_Social_Network.wmv?dl=0">Development of a social network</a>)</li>
