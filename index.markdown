@@ -38,7 +38,7 @@ title: "Muhammad Usman Akram"
 		  </div>
             <div class="featurette">
                 <a href="http://www.atooma.com/">
-                <img class="featurette-image pull-right" src="assets/img/atooma.png" style="margin-right: 40px;"/></a>
+                <img class="featurette-image pull-right" src="assets/img/atooma.jpg" style="margin-right: 40px;"/></a>
                 <p class="lead">Currently, I am working at <a href="http://www.atooma.com/">atooma</a>, as a Data Analyst. I am working on user behaviour modelling for providing an context-aware api to be used with Internet of Things or more accurately Internet of Everything to provide smart applications.</p>
                 
             </div>
