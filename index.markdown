@@ -26,8 +26,6 @@ title: "Muhammad Usman Akram"
                   <a href="https://www.dropbox.com/s/ohgfncagv9zgl4w/Akram-MuhammadUsman-Italiano.pdf?dl=0">Résumé (Italiano)</a>
                  </li>
                 </ul>
-                <a href="http://www.haskellers.com/user/3416"><img src="http://www.haskellers.com/static/badge.png" alt="I'm a Haskeller">
-</a>
             </div>
             
 		  </div>
@@ -39,16 +37,22 @@ title: "Muhammad Usman Akram"
 			<h1  class="featurette-heading">About Me</h1>
 		  </div>
             <div class="featurette">
+                <a href="http://www.atooma.com/">
+                <img class="featurette-image pull-right" src="assets/img/atooma.png" style="margin-right: 40px;"/></a>
+                <p class="lead">Currently, I am working at <a href="http://www.atooma.com/">atooma</a>, as a Data Analyst. I am working on user behaviour modelling for providing an context-aware api to be used with Internet of Things or more accurately Internet of Everything to provide smart applications.</p>
+                
+            </div>
+
+      <hr class="featurette-divider">
+            <div class="featurette">
                 <img class="featurette-image pull-left" src="assets/img/UniTNLogo.jpg" />
-                <p class="lead">I am graduate student in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing at <a href="http://www.unitn.it/">University</a> of <a href="http://www.discovertrento.it/en/home">Trento</a>.</p>
+                <p class="lead">I graduated from <a href="http://www.unitn.it/">University</a> of <a href="http://www.discovertrento.it/en/home">Trento</a> in Computer Sciences with specialization in <a href="http://db.disi.unitn.eu/">Data Management</a> and Information Processing.</p>
                 <br>
                 <div class="featurette">
                     <a href="http://db.disi.unitn.eu/index.html#content=Muhammad%20Usman%20Akram">
                     <img class="featurette-image pull-right" src="assets/img/dbtrentologo.png" style="margin-right: 40px;"/></a>
-                    <p class="lead"> I did my thesis on <strong> evaluation of correlation aware distance measures for time series</strong>. I will be defending it in second week of December, 2014.</p>
-    
+                    <p class="lead"> I did my thesis on <strong> evaluation of novel correlation aware distance measures for time series</strong>.</p>    
                 </div>
-
             </div>
 
       <hr class="featurette-divider">
