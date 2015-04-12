@@ -40,9 +40,9 @@ title: "Muhammad Usman Akram"
                 <p class="lead">Currently, I am working on financial data and as backend engineer.</p>
             </div>
             <div class="featurette">
-                <p class="lead">I am worked as a consultant:
+                <p class="lead">After graduation, I worked as a consultant for a while, doing:
                 <ul>
-                 <li>On user behaviour modelling for Internet of Things or more accurately Internet of Everything to provide smart applications.</li>
+                 <li>User behaviour modelling for Internet of Things or more accurately Internet of Everything to provide smart applications.</li>
                  <li>Systematic Review and Meta-Analysis for pharma-economic models</li>
                  </ul>
                  </p>
