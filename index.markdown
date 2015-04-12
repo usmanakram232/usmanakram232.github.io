@@ -37,9 +37,15 @@ title: "Muhammad Usman Akram"
 			<h1  class="featurette-heading">About Me</h1>
 		  </div>
             <div class="featurette">
-                <a href="http://www.atooma.com/">
-                <img class="featurette-image pull-right" src="assets/img/atooma.jpg" style="margin-right: 40px;"/></a>
-                <p class="lead">Currently, I am working at <a href="http://www.atooma.com/">atooma</a>, as a Data Analyst. I am working on user behaviour modelling for providing an context-aware api to be used with Internet of Things or more accurately Internet of Everything to provide smart applications.</p>
+                <p class="lead">Currently, I am working on financial data and as backend engineer.</p>
+            </div>
+            <div class="featurette">
+                <p class="lead">I am worked as a consultant:
+                <ul>
+                 <li>On user behaviour modelling for Internet of Things or more accurately Internet of Everything to provide smart applications.</li>
+                 <li>Systematic Review and Meta-Analysis for pharma-economic models</li>
+                 </ul>
+                 </p>
                 
             </div>
 
