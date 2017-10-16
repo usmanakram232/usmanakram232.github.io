@@ -12,7 +12,7 @@ title: "Muhammad Usman Akram"
                 <a href="https://gist.github.com/usmanakram232/b76672dcbe4a6ea62467#wolfies-list">Aggregated list of tools, I find useful</a>
                 </li>
 		<li>
-		<span>October 12, 2017</span> - <a href="https://gist.github.com/usmanakram232/7d05785e755a5656b64c74ce4b3a11a5">Description of process of resignation under Italian law</a>
+		<span>October 12, 2017</span> - <a href="https://gist.github.com/usmanakram232/7d05785e755a5656b64c74ce4b3a11a5">Description of process of resignation under Italian law</a> 
 		</li>		
 		<li>
 		<span>October 16, 2017</span> - <a href="https://gist.github.com/usmanakram232/e8281fa20f371f11fd2ec5fdb98c94e4">Description of process of aquiring German work visa</a>
