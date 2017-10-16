@@ -18,6 +18,7 @@ title: "Muhammad Usman Akram"
 		<li>
 		<span>October 16, 2017</span> - <a href="https://gist.github.com/usmanakram232/e8281fa20f371f11fd2ec5fdb98c94e4">Description of process of aquiring German work visa</a>
 		</li>
+		
                 <li>
                 <span>October 28, 2014</span> - <a href="https://gist.github.com/usmanakram232/5cb8746da82fc4f1a992#a-framework-for-efficent-learning">How to learn better: Efficient Learning</a>
                 </li>
