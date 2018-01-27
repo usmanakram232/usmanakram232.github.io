@@ -1,9 +1,9 @@
-/*neutral*/
+/*neutral #ABA0CB */
 * {
 	font-family: 'Fira', sans-serif;
 }.footer,
 .header {
-	background: #ABA0CB;
+	background: #eb1c3c;
 	color: white;
 }
 .ctas-button {
@@ -23,6 +23,7 @@ body {
   font-weight: 100;
   font-size: 45px;
   line-height: 68px;
+  color: #f3f3f3;
 }
 @media (max-width: 1000px) {
 .heading {
@@ -34,6 +35,7 @@ body {
   font-size: 25px;
   line-height: 40px;
   font-weight: 500;
+  color: #f3f3f3;
 }
 @media (max-width: 900px) {
   .subheading {
@@ -53,7 +55,7 @@ body {
   margin-top: 10px;
 }
 p.paragraph {
-  color: rgba(0,0,0,.5);
+  color: #6b9738;
 }
 .logo {
   font-size: 30px;
@@ -124,7 +126,7 @@ p.paragraph {
 }
 .col-1 {width: 8.333333%;}
 .col-2 {width: 16.666667%;}
-.col-3 {width: 33.333333%;}
+.col-3 {width: 33.333333%; color: #eb1c3c; }
 .col-4 {width: 33.333333%;}
 .col-5 {width: 41.666667%;}
 .col-6 {width: 50%;}
@@ -205,6 +207,7 @@ p.paragraph {
 	}
 }.socialproof {
 	padding: 90px 0;
+	background-color: #27181c;
 }
 .socialproof img {
 	max-height: 45px;
@@ -286,7 +289,8 @@ p.paragraph {
 	}
 }.feature3 {
 	padding: 90px 0;
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid #27181c;
+	background: #27181c;
 }
 .feature3 .emoji {
 	font-size: 55px;
