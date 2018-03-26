@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/usmanakram
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://usmanakram232.github.io
+  * I am usmanakram (https://keybase.io/usmanakram) on keybase.
+  * I have a public key with fingerprint ED17 4DFC E4D1 6DB6 DD91  BD70 D438 6424 271B FA6B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010198ed78c023378b40e27f7dc996f88b740d99c56cceff65edae1f73cc2cac93060a",
+      "fingerprint": "ed174dfce4d16db6dd91bd70d4386424271bfa6b",
+      "host": "keybase.io",
+      "key_id": "d4386424271bfa6b",
+      "kid": "010198ed78c023378b40e27f7dc996f88b740d99c56cceff65edae1f73cc2cac93060a",
+      "uid": "2509ea3a37c204bb73e8594be48b5b19",
+      "username": "usmanakram"
+    },
+    "service": {
+      "hostname": "usmanakram232.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1522055324,
+  "expire_in": 157680000,
+  "prev": "e037be455bd514431b1164178cde4546b770790c34bb5c31690a3de4a5d13509",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIvAnicrVJbSBVBGD4nu6hodAGjC0X7EJKmMzu7O7unO1FGVKjdTTzuXPaczXPO
+nvbs0UQiyiASKSiwqKiHkoqg20NI9yzDLqj40AUiKoyieyEl0UOzVk/12LwM88/3
+ff/3/TO3cjMC2cH3V3vL7py8vjt478axdKCire1Qg0QcVi+FGqQaPrjxGOMpL1xj
+MykkAQigoXOGdQpkhLBOFMBlbGFGDUOzdJ1gBTDDoKpGKbcsTeXM5NDCiFKZmtRA
+QAOmVChZdiLC3aRrJzwhyxnECrMoVxjUGNEYMyBhGDAF6ZoiKzKGxDI1IohRJ+Uz
+hDlipniR7YiaOIQH7f0D/599pwflZBUY3EQmwlQGCiEYcV01FMIVnagEGj4wxd2E
+GecCnU7FzYRZ45pxaXOhJOq1NuX+aP0sf2FkJBdFbC+aJr/CJV3Hc6gTE6Co5yVT
+IV/Eq0/6rDpOwr/1wsROMDFUwajlbsp2ElIICiT1bL8BVGUZqCqSlUKJb0raLg/b
+PkLFmg7E8vvwWv8pAMIih6oSpkJFQZBAqClQDI6JqqIRjAE2AEUitkoR1AxgInFl
+qgwiMRbJT7gx4UghVdg0I0IyZUcSppd2ubS5/Xrl0EAwOzB82BD/swWys0b9+YKf
+YpmBMytudlatLOgZe6XngZ7x/WVLd1Pmwb6Fxvanp5pnf9n6oX/Tx7vXNlQc16oy
+Hufkt+4uzq+asHzahpbbfbHnh162BtftXHmpOshWWK25C7a9aXcXOmfnTZ92esqP
+tsYp+a/Klu6b01kyfuqSjiPtLXjY5+jcgrJxq5pvrGvIyRuIPvlUPrI5Ur6r6fUO
+7+vyx53XlhSM7iyuji9+lv12xIwZpcXn25q0RUXv3TW9uehFqKf0wJ7LXRfX5xm7
+joyas/rd4f1f68b1VnTfGphklU7KutnxaMuj9m8l+R9mrZ14paQux6PdODLvRPfM
+yWFwbk9sfn+85cKz02Pq+xv33rcGuh4uq1x6tPEn971IeA==
+=SYLj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/usmanakram
+
+==================================================================
