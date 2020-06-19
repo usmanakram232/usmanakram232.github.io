@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'jekyll', "~> 3.6.3"
+gem 'jekyll', "~> 4.1.0"
 gem 'rack-contrib'
 gem 'rack-rewrite'
 #gem 'rack-slashenforce'
