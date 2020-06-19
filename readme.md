@@ -1,5 +1,6 @@
 # Usman Akram #
 
+![Jekyll site CI](https://github.com/usmanakram232/usmanakram232.github.io/workflows/Jekyll%20site%20CI/badge.svg)
 
 Hi.
 
