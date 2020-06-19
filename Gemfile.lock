@@ -22,7 +22,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
-    kgio (2.7.4)
+    kgio (2.10.0)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.2.1)
