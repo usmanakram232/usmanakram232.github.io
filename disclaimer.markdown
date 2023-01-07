@@ -11,9 +11,5 @@ title: "Disclaimer"
 			<p class="lead">Most of this is made using Twitter BootStrap and <a href="http://twitter.com/cwoebker">cwoebker's</a> jekyll-powered blog.
 			 Or at least, what it used to be.</p>
 		</div>
-
-      <hr class="featurette-divider">
-    	{% include about.html %}
-      <hr class="featurette-divider">
     </div> <!-- /container -->
 </div>
