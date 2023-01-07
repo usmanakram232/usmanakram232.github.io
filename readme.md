@@ -1,8 +1,5 @@
-# Usman Akram #
-
-![Jekyll site CI](https://github.com/usmanakram232/usmanakram232.github.io/workflows/Jekyll%20site%20CI/badge.svg)
-
-### Hi Hi 👋 🦕 >> It's me, Wolfie 🐺
+# Wolfie 🐺
+### Hi Hi 👋 🦕
 
 - 🔭 I’m currently working on Financial services (Java/FinTech-aaS).
 - 🌱 I’m currently learning ☁️ cloud native architecture and German 🇩🇪.
