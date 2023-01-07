@@ -2,11 +2,14 @@
 
 ![Jekyll site CI](https://github.com/usmanakram232/usmanakram232.github.io/workflows/Jekyll%20site%20CI/badge.svg)
 
-Hi.
+### Hi Hi 👋 🦕 >> It's me, Wolfie 🐺
 
-This is a [Jekyll](http://github.com/mojombo/jekyll)-powered blog hosted on [githubpages](http://github.com/).
-This is a fork of [cwoebker's](http://twitter.com/cwoebker) jekyll-powered blog.
-Feel free to browse the source, fork, [ask me questions](http://twitter.com/usmanakram232). 
+- 🔭 I’m currently working on Financial services (Java/FinTech-aaS).
+- 🌱 I’m currently learning ☁️ cloud native architecture and German 🇩🇪.
+- 👯 I’m interested in moving from tech/infra/dev to more security focused approach with DevSecOps.
+- 🤔 I’m looking for help with understanding Category Theory.
+- 💬 Ask me about Anything, though I might not be able to answer.
+- 📫 How to reach me: repo name  at G mail.
+- ⚡ Fun fact: I make some badass :cake: Tiramisu :heart: ... 
 
-Regards,<br>
-Usman
+![](https://komarev.com/ghpvc/?username=usmanakram232&color=blueviolet)
