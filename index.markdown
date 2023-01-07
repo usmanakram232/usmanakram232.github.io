@@ -12,7 +12,7 @@ title: "Muhammad Usman Akram"
                 <p>
                     <a href="https://www.linkedin.com/in/usmanakram/"
                         class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold"
-                        style="transition-property: -color, -background-color, -border-color, box-shadow !important; background-color: rgb(33, 8, 10) !important; --link-color: rgb(227, 221, 202) !important; --link-color-hover: rgb(227, 221, 202) !important; --link-color-active: rgb(227, 221, 202) !important; --visited-color: rgb(227, 221, 202) !important; --visited-color-hover: rgb(227, 221, 202) !important; --visited-color-active: rgb(227, 221, 202) !important; border-color: rgb(33, 8, 10) !important;">@usmanakram232</a>
+                        style="transition-property: -color, -background-color, -border-color, box-shadow !important; background-color: rgb(51, 106, 225) !important; --link-color: rgb(240, 206, 93) !important; --link-color-hover: rgb(244, 198, 48) !important; --link-color-active: rgb(177, 149, 54) !important; --visited-color: rgb(108, 65, 145) !important; --visited-color-hover: rgb(233, 187, 35) !important; --visited-color-active: rgb(135, 101, 229) !important; border-color: rgb(33, 8, 10) !important;">@usmanakram232</a>
                 </p>
                 <ul class="masthead-links">
                     <li>
