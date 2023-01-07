@@ -9,7 +9,6 @@ title: "Muhammad Usman Akram"
             <div class="page-header">
             <h1>Wolfie (Usman)</h1>
             <p>Snr. Software Engineer</p>
-            <h2 class="featurette-heading">About Me</h2>
             </div>
             <div class="featurette">
                 <p class="lead">Putting tech in FinTech.</p>
