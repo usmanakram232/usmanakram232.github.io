@@ -4,33 +4,16 @@ title: "Muhammad Usman Akram"
 ---
 
 <div class="content" id="page">
-    <div class="jumbotron masthead">
-        <div class="container">
-            <div class="featurette">
-                <h1>Wolfie (Usman)</h1>
-                <p>Snr. Software Engineer</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/usmanakram/"
-                        class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold"
-                        style="transition-property: -color, -background-color, -border-color, box-shadow !important; background-color: rgb(51, 106, 225) !important; --link-color: rgb(240, 206, 93) !important; --link-color-hover: rgb(244, 198, 48) !important; --link-color-active: rgb(177, 149, 54) !important; --visited-color: rgb(108, 65, 145) !important; --visited-color-hover: rgb(233, 187, 35) !important; --visited-color-active: rgb(135, 101, 229) !important; border-color: rgb(33, 8, 10) !important;">@usmanakram232</a>
-                </p>
-                <ul class="masthead-links">
-                    <li>
-                        <a href="mailto:muhammadusman.akram[at]--gmail--">Email</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <section id="about">
             <div class="page-header">
-                <h1 class="featurette-heading">About Me</h1>
+            <h1>Wolfie (Usman)</h1>
+            <p>Snr. Software Engineer</p>
+            <h2 class="featurette-heading">About Me</h1>
             </div>
             <div class="featurette">
                 <p class="lead">Putting tech in FinTech.</p>
-                <p>Developing microservices for financial processes using Java on AWS cloud infrastructure using AWS
-                    CloudFormation for IaC and Jenkins for CI/CD.</p>
+                <p>Developing microservices for financial processes using Java on AWS cloud infrastructure focusing on IaC and CI/CD.</p>
             </div>
 
             <hr class="featurette-divider">
