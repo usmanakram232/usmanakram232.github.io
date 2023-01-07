@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Tools I use."
+title: "THinking"
 ---
 
 <div class="content" id="page">

@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Muhammad Usman Akram"
+title: "Wolfie"
 ---
 
 <div class="content" id="page">
