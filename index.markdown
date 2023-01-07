@@ -11,7 +11,8 @@ title: "Muhammad Usman Akram"
                 <p>Snr. Software Engineer</p>
                 <p>
                     <a href="https://www.linkedin.com/in/usmanakram/"
-                        class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold">@usmanakram232</a>
+                        class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold"
+                        style="transition-property: -color, -background-color, -border-color, box-shadow !important; background-color: rgb(33, 8, 10) !important; --link-color: rgb(227, 221, 202) !important; --link-color-hover: rgb(227, 221, 202) !important; --link-color-active: rgb(227, 221, 202) !important; --visited-color: rgb(227, 221, 202) !important; --visited-color-hover: rgb(227, 221, 202) !important; --visited-color-active: rgb(227, 221, 202) !important; border-color: rgb(33, 8, 10) !important;">@usmanakram232</a>
                 </p>
                 <ul class="masthead-links">
                     <li>
