@@ -31,11 +31,40 @@
       line-height: 1.75;
     }
 
+    .skip-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10;
+      padding: 0.75rem 1rem;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-150%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 4px;
+    }
+
+    #work a:focus-visible,
+    #closing a:focus-visible,
+    .skip-link:focus-visible {
+      outline-color: #fff;
+    }
+
     /* ── HERO ─────────────────────────────── */
     #hero {
       position: relative;
-      height: 100vh;
-      min-height: 500px;
+      min-height: 100vh;
+      min-height: 100svh;
+      height: auto;
       background-image: url('https://live.staticflickr.com/2866/8764730852_50d3bbd2da_b.jpg');
       background-size: cover;
       background-position: center 40%;
@@ -57,7 +86,7 @@
     .hero-text {
       position: relative;
       z-index: 1;
-      padding: 3rem 2.5rem;
+      padding: clamp(1.25rem, 5vw, 3rem);
       max-width: 700px;
     }
 
@@ -80,7 +109,7 @@
 
     /* ── SHARED SECTION ───────────────────── */
     section {
-      padding: 7rem 2.5rem;
+      padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 5vw, 2.5rem);
     }
 
     .prose {
@@ -253,14 +282,22 @@
       padding: 3rem 2rem;
     }
 
+    .closing-inner > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1rem;
+    }
+
     .closing-inner a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
       color: rgba(255,255,255,0.75);
       text-decoration: none;
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin: 0 1rem;
       transition: color 0.2s;
     }
 
@@ -286,17 +323,28 @@
 
     /* ── FADE-IN ──────────────────────────── */
     .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      animation: fadeUp 0.7s ease both;
     }
 
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
     }
 
     /* ── RESPONSIVE ───────────────────────── */
+    @media (orientation: landscape) and (max-height: 520px) {
+      #hero {
+        min-height: 420px;
+      }
+    }
+
     @media (max-width: 700px) {
       .bio-grid,
       .work-inner {
@@ -310,11 +358,92 @@
         max-height: 300px;
       }
 
-      section { padding: 4rem 1.5rem; }
+      section {
+        padding: clamp(3.5rem, 10vw, 5rem) 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      #hero {
+        min-height: 100vh;
+        min-height: 100svh;
+        background-position: center 55%;
+      }
+
+      .hero-text h1 {
+        font-size: clamp(2rem, 12vw, 2.75rem);
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: clamp(3.5rem, 12vw, 5rem) 1.25rem;
+      }
+
+      .bio-grid,
+      .work-inner {
+        gap: 2rem;
+      }
+
+      .bio-grid img,
+      .work-img {
+        aspect-ratio: 4/5;
+        max-height: none;
+      }
+
+      .timeline {
+        padding-left: 1rem;
+      }
+
+      .timeline-item {
+        margin-bottom: 1rem;
+      }
+
+      .work-link {
+        margin-top: 1.5rem;
+      }
+
+      .closing-inner {
+        padding: 2rem 1rem;
+      }
+
+      .closing-inner .contact-email {
+        font-size: 1rem;
+        word-break: break-word;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .fade-in {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
 
   <!-- ── HERO ─────────────────────────── -->
   <section id="hero">
@@ -400,8 +529,8 @@
     </div>
   </section>
 
-  <!-- ── CLOSING ───────────────────────── -->
-  <section id="closing">
+  <!-- ── FOOTER ────────────────────────── -->
+  <footer id="closing">
     <div class="closing-inner fade-in">
       <a class="contact-email" href="mailto:akram.muhammadusman@gmail.com">
         akram.muhammadusman@gmail.com
@@ -413,21 +542,8 @@
       </div>
       <span class="location">Frankfurt am Main</span>
     </div>
-  </section>
+  </footer>
 
-  <script>
-    // Fade-in on scroll
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      }),
-      { threshold: 0.15 }
-    );
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
-
+  </main>
 </body>
 </html>
