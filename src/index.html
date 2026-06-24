@@ -22,6 +22,7 @@
     /* Dark mode (default) */
     [data-theme="dark"] {
       --bg:        #0f0e0c;
+      --bg-bio:    #1e1912;   /* warmer elevated dark — distinct from work's #1a1812 */
       --ink:       #e8e4dc;
       --ink-muted: #9e9a94;
       --ink-faint: #6b6860;
@@ -31,6 +32,7 @@
     /* Light mode */
     [data-theme="light"] {
       --bg:        #f9f8f6;
+      --bg-bio:    var(--bg);  /* bio uses page bg in light mode */
       --ink:       #1a1a1a;
       --ink-muted: #4a4a4a;
       --ink-faint: #5a5652;
@@ -174,7 +176,7 @@
 
     /* ── BIO ──────────────────────────────── */
     #bio {
-      background: var(--bg);
+      background: var(--bg-bio);
     }
 
     .bio-grid {
@@ -610,12 +612,6 @@
   <!-- ── WORK ─────────────────────────── -->
   <section id="work">
     <div class="work-inner fade-in">
-      <img
-        class="work-img"
-        src="assets/img/clock-tower.jpeg"
-        alt="An ornate clock tower in Italy at dusk"
-        loading="lazy"
-      />
       <div class="work-text">
         <h2>A decade building<br>financial software.</h2>
         <p>
@@ -645,6 +641,12 @@
           Full profile on LinkedIn ↗
         </a>
       </div>
+      <img
+        class="work-img"
+        src="assets/img/clock-tower.jpeg"
+        alt="An ornate clock tower in Italy at dusk"
+        loading="lazy"
+      />
     </div>
   </section>
 
