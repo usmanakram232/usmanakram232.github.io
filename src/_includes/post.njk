@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} · M. Usman Akram</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f9f8f6;
+      --ink:          #1a1a1a;
+      --ink-muted:    #6b6b6b;
+      --ink-faint:    #b0aca4;
+      --code-bg:      #1a1812;
+      --code-text:    #c8c4bc;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+      --font-mono:    'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+      --max-prose:    660px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    /* ── NAV ─────────────────────────────── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid #e8e4dc;
+      padding: 0.9rem clamp(1.25rem, 5vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .site-nav a {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:hover { color: var(--ink); }
+
+    .site-nav .sep {
+      color: var(--ink-faint);
+      font-size: 0.82rem;
+    }
+
+    /* ── ARTICLE ─────────────────────────── */
+    .article-wrap {
+      max-width: var(--max-prose);
+      margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 2rem);
+    }
+
+    .article-meta {
+      margin-bottom: 2.5rem;
+    }
+
+    .series-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
+    .article-meta h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .article-date {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── PROSE ───────────────────────────── */
+    .prose p {
+      margin-bottom: 1.4rem;
+    }
+
+    .prose h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 400;
+      margin: 3rem 0 1rem;
+      color: var(--ink);
+    }
+
+    .prose h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin: 2rem 0 0.75rem;
+    }
+
+    .prose h4 {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .prose a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--ink-faint);
+      transition: text-decoration-color 0.2s;
+    }
+
+    .prose a:hover {
+      text-decoration-color: var(--ink);
+    }
+
+    .prose ul, .prose ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .prose li {
+      margin-bottom: 0.4rem;
+    }
+
+    .prose blockquote {
+      border-left: 2px solid #d4cfc8;
+      padding-left: 1.25rem;
+      margin: 2rem 0;
+      color: var(--ink-muted);
+      font-style: italic;
+    }
+
+    .prose hr {
+      border: none;
+      border-top: 1px solid #e8e4dc;
+      margin: 3rem 0;
+    }
+
+    /* ── TABLES ──────────────────────────── */
+    .prose table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .prose th {
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--ink-muted);
+      border-bottom: 1px solid #d4cfc8;
+      padding: 0.5rem 1rem 0.5rem 0;
+    }
+
+    .prose td {
+      padding: 0.6rem 1rem 0.6rem 0;
+      border-bottom: 1px solid #ece8e0;
+      vertical-align: top;
+    }
+
+    .prose tr:last-child td { border-bottom: none; }
+
+    /* ── INLINE CODE ─────────────────────── */
+    .prose :not(pre) > code {
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      background: #ede9e0;
+      color: #3a3530;
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      font-feature-settings: "liga" 0;
+    }
+
+    /* ── CODE BLOCKS (Prism) ─────────────── */
+    .prose pre[class*="language-"],
+    .prose pre:not([class]) {
+      background: var(--code-bg);
+      color: var(--code-text);
+      font-family: var(--font-mono);
+      font-size: 0.84rem;
+      line-height: 1.65;
+      font-feature-settings: "liga" 1, "calt" 1;
+      padding: 1.5rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.75rem 0;
+    }
+
+    .prose code[class*="language-"] {
+      font-family: var(--font-mono);
+      font-size: inherit;
+      font-feature-settings: "liga" 1, "calt" 1;
+    }
+
+    /* Warm dark token colours */
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata         { color: #6b6860; font-style: italic; }
+    .token.punctuation   { color: #8b8780; }
+    .token.namespace     { opacity: 0.7; }
+    .token.property,
+    .token.tag,
+    .token.boolean,
+    .token.number,
+    .token.constant,
+    .token.symbol,
+    .token.deleted       { color: #b8a070; }
+    .token.selector,
+    .token.attr-name,
+    .token.string,
+    .token.char,
+    .token.builtin,
+    .token.inserted      { color: #a09060; }
+    .token.operator,
+    .token.entity,
+    .token.url           { color: #c8b880; }
+    .token.atrule,
+    .token.attr-value,
+    .token.keyword       { color: #d4b880; }
+    .token.function,
+    .token.class-name    { color: #e0c890; }
+    .token.regex,
+    .token.important,
+    .token.variable      { color: #c8c090; }
+    .token.important,
+    .token.bold          { font-weight: bold; }
+    .token.italic        { font-style: italic; }
+    .token.entity        { cursor: help; }
+
+    /* ── SERIES NAV ──────────────────────── */
+    .series-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e8e4dc;
+      font-size: 0.85rem;
+    }
+
+    .series-nav a {
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .series-nav a:hover { color: var(--ink); }
+
+    .series-nav .next { text-align: right; }
+
+    /* ── FOOTER ──────────────────────────── */
+    .article-footer {
+      margin-top: 4rem;
+      padding: 2rem clamp(1.25rem, 5vw, 2.5rem);
+      border-top: 1px solid #e8e4dc;
+      text-align: center;
+    }
+
+    .article-footer a {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .article-footer a:hover { color: var(--ink); }
+
+    /* ── RESPONSIVE ──────────────────────── */
+    @media (max-width: 480px) {
+      body { font-size: 1rem; }
+
+      .prose pre[class*="language-"] {
+        font-size: 0.78rem;
+        padding: 1rem;
+        border-radius: 0;
+        margin: 1.5rem -1.25rem;
+      }
+
+      .prose table {
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Breadcrumb">
+    <a href="/">M. Usman Akram</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href="/blog/">Writing</a>
+  </nav>
+
+  <article>
+    <div class="article-wrap">
+      <header class="article-meta">
+        {% if series %}
+        <span class="series-tag">{{ series }}{% if part %} &middot; Part {{ part }} of {{ totalParts }}{% endif %}</span>
+        {% endif %}
+        <h1>{{ title }}</h1>
+        <time class="article-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      </header>
+
+      <div class="prose">
+        {{ content | safe }}
+      </div>
+
+      {% set sortedPosts = collections.post | sort(false, false, "data.part") %}
+      {% set prevPost = null %}
+      {% set nextPost = null %}
+      {% for p in sortedPosts %}
+        {% if p.data.part == part - 1 %}{% set prevPost = p %}{% endif %}
+        {% if p.data.part == part + 1 %}{% set nextPost = p %}{% endif %}
+      {% endfor %}
+
+      <nav class="series-nav" aria-label="Series navigation">
+        {% if prevPost %}
+        <a href="{{ prevPost.url }}" class="prev">&#8592; {{ prevPost.data.title }}</a>
+        {% else %}
+        <span></span>
+        {% endif %}
+        {% if nextPost %}
+        <a href="{{ nextPost.url }}" class="next">{{ nextPost.data.title }} &#8594;</a>
+        {% endif %}
+      </nav>
+    </div>
+  </article>
+
+  <footer class="article-footer">
+    <a href="/blog/">Back to writing</a>
+  </footer>
+
+</body>
+</html>

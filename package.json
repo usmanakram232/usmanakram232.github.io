@@ -1,0 +1,13 @@
+{
+  "name": "usmanakram-site",
+  "version": "1.0.0",
+  "description": "Personal website for M. Usman Akram",
+  "scripts": {
+    "build": "rm -rf _site && eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}

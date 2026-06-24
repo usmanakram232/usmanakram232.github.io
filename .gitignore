@@ -3,3 +3,10 @@
 
 # Local plans (not for repo)
 docs/plans/
+
+# Eleventy build output
+_site/
+
+# Node
+node_modules/
+

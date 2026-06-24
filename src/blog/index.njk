@@ -1,0 +1,244 @@
+---
+layout: false
+title: Writing
+permalink: /blog/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing · M. Usman Akram</title>
+  <meta name="description" content="A five-part series on building a fully declarative Linux workstation with NixOS, agentic AI tooling, and defence-in-depth security." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f9f8f6;
+      --ink:          #1a1a1a;
+      --ink-muted:    #6b6b6b;
+      --ink-faint:    #b0aca4;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+      --max-prose:    660px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid #e8e4dc;
+      padding: 0.9rem clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    .site-nav a {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:hover { color: var(--ink); }
+
+    .page-wrap {
+      max-width: var(--max-prose);
+      margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 2rem);
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-header p {
+      color: var(--ink-muted);
+      max-width: 520px;
+    }
+
+    /* ── SERIES BLOCK ────────────────────── */
+    .series-block {
+      margin-bottom: 3.5rem;
+    }
+
+    .series-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1rem;
+    }
+
+    .series-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .series-desc {
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
+      max-width: 480px;
+    }
+
+    /* ── POST LIST ───────────────────────── */
+    .post-list {
+      list-style: none;
+      border-top: 1px solid #e8e4dc;
+    }
+
+    .post-item {
+      border-bottom: 1px solid #e8e4dc;
+    }
+
+    .post-item a {
+      display: block;
+      padding: 1.25rem 0;
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s;
+    }
+
+    .post-item a:hover .post-title { color: var(--ink-muted); }
+    .post-item a:hover .post-arrow { opacity: 1; }
+
+    .post-inner {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .post-part {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      flex-shrink: 0;
+    }
+
+    .post-content {
+      flex: 1;
+    }
+
+    .post-title {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
+      transition: color 0.2s;
+    }
+
+    .post-desc {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      line-height: 1.5;
+    }
+
+    .post-arrow {
+      color: var(--ink-faint);
+      opacity: 0;
+      transition: opacity 0.2s;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    /* ── FOOTER ──────────────────────────── */
+    .page-footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e8e4dc;
+    }
+
+    .page-footer a {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .page-footer a:hover { color: var(--ink); }
+
+    @media (max-width: 480px) {
+      .post-arrow { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Site navigation">
+    <a href="/">M. Usman Akram</a>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <header class="page-header">
+        <h1>Writing</h1>
+        <p>Technical writing on systems, tooling, and the odd rabbit hole worth documenting.</p>
+      </header>
+
+      <section class="series-block">
+        <p class="series-label">Series</p>
+        <h2 class="series-title">From dotfiles to declarative desktops</h2>
+        <p class="series-desc">How a Linux workstation evolved from shell scripts to a fully declarative NixOS setup, with agentic AI tooling and defence-in-depth security.</p>
+
+        <ul class="post-list">
+          {%- set posts = collections.post | sort(false, false, "data.part") -%}
+          {%- for post in posts -%}
+          <li class="post-item">
+            <a href="{{ post.url }}">
+              <div class="post-inner">
+                <span class="post-part">Part {{ post.data.part }}</span>
+                <div class="post-content">
+                  <div class="post-title">{{ post.data.title }}</div>
+                  <div class="post-desc">{{ post.data.description }}</div>
+                </div>
+                <span class="post-arrow" aria-hidden="true">&#8594;</span>
+              </div>
+            </a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+
+      <footer class="page-footer">
+        <a href="/">Back to home</a>
+      </footer>
+    </div>
+  </main>
+
+</body>
+</html>
