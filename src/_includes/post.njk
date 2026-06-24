@@ -322,6 +322,76 @@
       }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://usmanakram232.github.io/#website",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://usmanakram232.github.io/#person",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram",
+        "sameAs": [
+          "https://www.linkedin.com/in/usmanakram",
+          "https://github.com/usmanakram232",
+          "https://www.flickr.com/photos/usmanakram232/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#webpage",
+        "url": "https://usmanakram232.github.io{{ page.url }}",
+        "isPartOf": { "@id": "https://usmanakram232.github.io/#website" },
+        "name": {{ title | dump | safe }},
+        "inLanguage": "en",
+        "breadcrumb": { "@id": "https://usmanakram232.github.io{{ page.url }}#breadcrumb" }
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#blogposting",
+        "url": "https://usmanakram232.github.io{{ page.url }}",
+        "mainEntityOfPage": { "@id": "https://usmanakram232.github.io{{ page.url }}#webpage" },
+        "isPartOf": { "@id": "https://usmanakram232.github.io/blog/#blog" },
+        "headline": {{ title | dump | safe }},
+        "description": {{ description | dump | safe }},
+        "inLanguage": "en",
+        "datePublished": "{{ date | htmlDateString }}T00:00:00.000Z",
+        "author": { "@id": "https://usmanakram232.github.io/#person" },
+        "publisher": { "@id": "https://usmanakram232.github.io/#person" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/",
+            "position": 1,
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/blog/",
+            "position": 2,
+            "name": "Writing"
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io{{ page.url }}",
+            "position": 3,
+            "name": {{ title | dump | safe }}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

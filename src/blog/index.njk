@@ -196,6 +196,69 @@ permalink: /blog/
       *, *::before, *::after { transition-duration: 0.01ms !important; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://usmanakram232.github.io/#website",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://usmanakram232.github.io/#person",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram",
+        "sameAs": [
+          "https://www.linkedin.com/in/usmanakram",
+          "https://github.com/usmanakram232",
+          "https://www.flickr.com/photos/usmanakram232/"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://usmanakram232.github.io/blog/#webpage",
+        "url": "https://usmanakram232.github.io/blog/",
+        "isPartOf": { "@id": "https://usmanakram232.github.io/#website" },
+        "name": "Writing",
+        "description": "Technical writing on systems, tooling, and the odd rabbit hole worth documenting.",
+        "inLanguage": "en",
+        "about": { "@id": "https://usmanakram232.github.io/#person" },
+        "breadcrumb": { "@id": "https://usmanakram232.github.io/blog/#breadcrumb" }
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://usmanakram232.github.io/blog/#blog",
+        "isPartOf": { "@id": "https://usmanakram232.github.io/#website" },
+        "mainEntityOfPage": { "@id": "https://usmanakram232.github.io/blog/#webpage" },
+        "name": "Writing by M. Usman Akram",
+        "description": "Technical writing on systems, tooling, and the odd rabbit hole worth documenting.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://usmanakram232.github.io/#person" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://usmanakram232.github.io/blog/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/",
+            "position": 1,
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/blog/",
+            "position": 2,
+            "name": "Writing"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
