@@ -4,8 +4,10 @@ title: Writing
 permalink: /blog/
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
+  <!-- no-FOUC: apply saved theme before first paint -->
+  <script>try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Writing · M. Usman Akram</title>
@@ -17,13 +19,27 @@ permalink: /blog/
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:           #f9f8f6;
-      --ink:          #1a1a1a;
-      --ink-muted:    #6b6b6b;
-      --ink-faint:    #b0aca4;
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body:    'Inter', system-ui, sans-serif;
       --max-prose:    660px;
+    }
+
+    /* Dark mode (default) */
+    [data-theme="dark"] {
+      --bg:        #0f0e0c;
+      --ink:       #e8e4dc;
+      --ink-muted: #9e9a94;
+      --ink-faint: #6b6860;
+      --border:    #2a2820;
+    }
+
+    /* Light mode */
+    [data-theme="light"] {
+      --bg:        #f9f8f6;
+      --ink:       #1a1a1a;
+      --ink-muted: #4a4a4a;
+      --ink-faint: #5a5652;
+      --border:    #dcd8d0;
     }
 
     html { scroll-behavior: smooth; }
@@ -35,14 +51,43 @@ permalink: /blog/
       font-weight: 300;
       font-size: 1.05rem;
       line-height: 1.75;
+      transition: background-color 0.25s ease, color 0.25s ease;
     }
+
+    /* ── THEME TOGGLE ────────────────────── */
+    .theme-toggle {
+      margin-left: auto;
+      flex-shrink: 0;
+      background: none;
+      border: 1px solid var(--ink-faint);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      color: var(--ink-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      line-height: 1;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .theme-toggle:hover        { color: var(--ink); border-color: var(--ink-muted); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+    .theme-toggle svg           { pointer-events: none; display: block; }
+
+    [data-theme="dark"]  .icon-sun  { display: block; }
+    [data-theme="dark"]  .icon-moon { display: none; }
+    [data-theme="light"] .icon-sun  { display: none; }
+    [data-theme="light"] .icon-moon { display: block; }
 
     .site-nav {
       position: sticky;
       top: 0;
       z-index: 10;
       background: var(--bg);
-      border-bottom: 1px solid #e8e4dc;
+      border-bottom: 1px solid var(--border);
       padding: 0.9rem clamp(1.25rem, 5vw, 2.5rem);
     }
 
@@ -111,11 +156,11 @@ permalink: /blog/
     /* ── POST LIST ───────────────────────── */
     .post-list {
       list-style: none;
-      border-top: 1px solid #e8e4dc;
+      border-top: 1px solid var(--border);
     }
 
     .post-item {
-      border-bottom: 1px solid #e8e4dc;
+      border-bottom: 1px solid var(--border);
     }
 
     .post-item a {
@@ -174,7 +219,7 @@ permalink: /blog/
     .page-footer {
       margin-top: 4rem;
       padding-top: 2rem;
-      border-top: 1px solid #e8e4dc;
+      border-top: 1px solid var(--border);
     }
 
     .page-footer a {
@@ -264,6 +309,10 @@ permalink: /blog/
 
   <nav class="site-nav" aria-label="Site navigation">
     <a href="/">M. Usman Akram</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <svg class="icon-sun" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
   </nav>
 
   <main>
@@ -302,6 +351,23 @@ permalink: /blog/
       </footer>
     </div>
   </main>
-
+  <script>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      function sync(theme) {
+        var dark = theme === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.setAttribute('aria-pressed', String(!dark));
+      }
+      sync(document.documentElement.getAttribute('data-theme') || 'dark');
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync(next);
+      });
+    })();
+  </script>
 </body>
 </html>
