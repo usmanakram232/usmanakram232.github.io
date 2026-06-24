@@ -6,6 +6,9 @@
     "build": "rm -rf _site && eleventy",
     "serve": "eleventy --serve"
   },
+  "overrides": {
+    "js-yaml": "^4.2.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"

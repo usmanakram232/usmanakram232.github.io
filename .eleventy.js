@@ -1,7 +1,21 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Override gray-matter's default YAML engine so it uses js-yaml 4.x
+  // (yaml.safeLoad was removed in 4.x; replaced by yaml.load).
+  // This is required because the npm override forces gray-matter's bundled
+  // js-yaml from 3.14.2 to 4.2.0, which drops the safeLoad/safeDump API.
+  eleventyConfig.setFrontMatterParsingOptions({
+    engines: {
+      yaml: {
+        parse: (str) => yaml.load(str),
+        stringify: (data) => yaml.dump(data),
+      },
+    },
+  });
 
   // Passthrough copy: everything that isn't a template
   eleventyConfig.addPassthroughCopy("src/assets");
