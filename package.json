@@ -7,7 +7,7 @@
     "serve": "eleventy --serve"
   },
   "overrides": {
-    "js-yaml": "^4.2.0"
+    "js-yaml": "^4.3.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
