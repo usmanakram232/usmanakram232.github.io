@@ -19,7 +19,7 @@ The defensive posture is defence-in-depth: multiple independent layers so that a
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 1: Boot security (Secure Boot + systemd-boot)     │
+│  Layer 1: Boot security (systemd-boot generations)       │
 ├─────────────────────────────────────────────────────────┤
 │  Layer 2: Encrypted secrets (sops-nix + age)             │
 ├─────────────────────────────────────────────────────────┤
@@ -39,7 +39,7 @@ The defensive posture is defence-in-depth: multiple independent layers so that a
 
 ## Layer 1: Boot security
 
-The NixOS config uses `systemd-boot` with a boot partition signed via Secure Boot. The kernel and initrd are managed, version-controlled derivations. Boot generations are limited to 10 to prevent partition exhaustion:
+The NixOS config uses `systemd-boot`. The kernel and initrd are managed, version-controlled derivations. Boot generations are limited to 10 to prevent partition exhaustion. Note: this config does not enable UEFI Secure Boot signing (no `lanzaboote`/`sbctl` — that would be a reasonable future addition, not something already in place here):
 
 ```nix
 boot.loader.systemd-boot.enable = true;
@@ -91,16 +91,9 @@ end
 
 The result: secrets are committed to the repo (encrypted), decrypted at build time rather than runtime, never in environment variables of child processes unless explicitly loaded, and rotated by re-encrypting a single file.
 
-### Backup password migration
+### Backup password migration (planned)
 
-The restic backup passwords are still plaintext `~/.restic/p.txt` (with `chmod 600`). The migration path is documented in `backup.nix`:
-
-```nix
-# CURRENT:  ~/.restic/p.txt — plaintext, chmod 600
-# TARGET:   sops-nix encrypted secrets
-```
-
-Once the restic repositories are re-initialised with new passwords, the plaintext files disappear.
+The SSH key and GPG key are sops-encrypted in `secrets/keys.yaml`. The restic backup passwords are not — they still live as plaintext, `chmod 600` files at `~/.restic/p.txt` and `~/.restic/gdrive-p.txt`. Migrating them into the same sops-nix flow (`config.sops.secrets."restic-password".path`) is a documented next step, not yet wired up.
 
 ## Layer 3: Encrypted DNS with Unbound + NextDNS
 
@@ -122,7 +115,7 @@ services.unbound = {
       name = ".";
       forward-tls-upstream = "yes";
       forward-addr = [
-        "45.90.28.0@853#usman-ca9fb1.dns.nextdns.io"
+        "45.90.28.0@853#profile-a1b2c3.dns.nextdns.io"
       ];
     }];
   };
@@ -142,6 +135,8 @@ services.opensnitch.enable = true;
 ```
 
 The rules accumulate in `~/.config/opensnitch/` and persist across reboots. If `curl` suddenly tries to connect to a new IP, you see it. If a compromised npm package tries to phone home, you see it. If an agent process makes unexpected outbound connections, you see it.
+
+On macOS, opensnitch doesn't exist. The equivalent is the macOS Application Firewall, configured via `networking.applicationFirewall` in nix-darwin. It provides block-all-incoming and signed-app filtering: less granular than opensnitch, but operating on the same principle of default-deny inbound. The audit in [Part 7](/blog/part-7-security-audit/) covers what I found when I actually checked those settings.
 
 ## Layer 5: Zero-trust networking with Tailscale
 
@@ -182,12 +177,12 @@ extraPolicies = {
   DisableAppUpdate = true;
   Proxy = {
     ConnectionType = "pac";
-    AutoConfigURL  = "file://${HOME}/.config/ginmon/proxy.pac";
+    AutoConfigURL  = "file://${HOME}/.config/work/proxy.pac";
   };
 };
 ```
 
-The proxy PAC file routes `*.ginmon-internal.com` through a SOCKS5 proxy while everything else goes direct. No full-tunnel VPN needed for work.
+The proxy PAC file routes `*.corp.internal` through a SOCKS5 proxy while everything else goes direct. No full-tunnel VPN needed for work.
 
 ## Layer 7: Credential hygiene
 

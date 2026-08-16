@@ -23,7 +23,7 @@ The premise: if you can declare your desktop in Nix, you can declare your agent 
 ├─────────────────────────────────────────────────────┤
 │                   Skill System                       │
 │  93 skills across: superpowers · data-analytics ·    │
-│  baoyu · ginmon · personal · graphify · banana       │
+│  baoyu · work · personal · graphify · banana       │
 ├─────────────────────────────────────────────────────┤
 │                 AI Model Providers                    │
 │  DeepSeek V4 Flash  │  OpenRouter  │  Ollama (local)  │
@@ -59,7 +59,7 @@ The agent workspace is structured for this:
 └── status/      # @implement writes completion status
 ```
 
-Fish abbreviations (`aw`, `awr`, `awp`, `aws`, `awt`) and helper functions (`agent-status`, `agent-pipeline`, `agent-archive`) make the workspace navigable from the terminal.
+Fish abbreviations (`aw`, `awr`, `awp`, `awspec`, `awt`) and helper functions (`agent-status`, `agent-pipeline`, `agent-archive`) make the workspace navigable from the terminal.
 
 ## OpenCode configuration
 
@@ -111,7 +111,7 @@ Skills are structured prompts that tell the AI how to approach specific tasks. T
 | superpowers-skills (obra) | ~40 | Nix store (`fetchFromGitHub`) |
 | data-analytics-skills (nimrodfisher) | ~30 | Live git clone |
 | baoyu/superpowers (skills CLI) | ~10 | `npx skills` + lockfile |
-| ginmon (private work) | ~3 | Committed to dotfiles |
+| work (private, employer-specific) | ~3 | Committed to dotfiles |
 | Personal (banana, graphify, UI/UX) | ~5 | Committed to dotfiles |
 
 ### Skill deployment
@@ -139,7 +139,7 @@ home.file.".claude/skills" = {
 ```nix
 home.activation.installAgentSkills = lib.hm.dag.entryAfter [ "installNpmAiTools" ] ''
   if [ -f "$AGENTS_DIR/.skill-lock.json" ]; then
-    ( cd "$AGENTS_DIR" && npx skills experimental_install )
+    ( cd "$AGENTS_DIR" && npx skills install )
   fi
 '';
 ```
@@ -158,7 +158,7 @@ A git MCP that blocks dangerous operations: `push`, `reset --hard`, `clean -fd`,
 
 ### Context7 MCP
 
-Resolves library IDs and queries up-to-date documentation for any framework. This is how agents get current API docs without being trained on stale data. The `context7-mcp` skill describes the exact workflow: `resolve-library-id` then `query-docs`.
+Resolves library IDs and queries up-to-date documentation for any framework. This is how agents get current API docs without being trained on stale data. The two tools it exposes are used in sequence: `resolve-library-id` then `query-docs`.
 
 ### graphify
 
@@ -174,11 +174,11 @@ Different agents use different models, chosen for their strengths:
 | Claude Sonnet 4 | plan | Superior nuanced reasoning |
 | Ollama qwen3.5:4b | Walker LLM menu, private docs | Runs locally (4GB), no data leaves machine |
 
-The `ai` devshell bundles all dependencies:
+The `ai` devshell wraps local-model tooling:
 
 ```bash
 nix develop ~/dotfiles/nix#ai
-# → Python ML stack: torch, transformers, accelerate, vllm
+# → ollama, for one-off local inference (Walker LLM menu uses the system service instead)
 ```
 
 ## VSCodium with AI extensions

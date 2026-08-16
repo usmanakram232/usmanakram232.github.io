@@ -10,3 +10,6 @@ _site/
 # Node
 node_modules/
 
+# Nix build result symlink
+result
+

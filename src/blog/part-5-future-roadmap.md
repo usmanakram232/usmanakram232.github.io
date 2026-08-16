@@ -22,7 +22,7 @@ The design is validated (`autonomous-agents-design.md`) and the implementation p
 
 ### Milestone 0 — scaffolding and gVisor runtime
 - [x] Design document written and reviewed
-- [x] Implementation plan with all 6 milestones
+- [x] Implementation plan written, covering all milestones (8, numbered 0-7 in the plan doc — condensed to 7 phases below for readability)
 - [ ] Install gVisor (`runsc`) and register as Docker runtime
 - [ ] First tracer bullet: `docker run --runtime=runsc hello-world`
 
@@ -62,7 +62,7 @@ The design is validated (`autonomous-agents-design.md`) and the implementation p
 
 gVisor is the starting point because it's simpler to integrate (Docker runtime, no kernel management). The real target is Firecracker microVMs, which provide hardware-level isolation.
 
-The repo already has a working Firecracker setup (`nix/vms/hermes/`) with TAP device + NAT networking, port forwarding (VM:3000 to host:3000 for Hermes Studio), systemd lifecycle management, and krops-based deploy (NixOS config push via SSH).
+The repo already has a declarative Firecracker configuration for this (`nix/vms/hermes/`) — a different, already-existing system (the Hermes agent, not the autonomous-agent runner from Phase 1) — with TAP device + NAT networking, port forwarding (VM:3000 to host:3000 for Hermes Studio), systemd lifecycle management, and an SSH-based deploy script (`krops-hermes-deploy` — despite the name, it doesn't yet call the `krops` tool itself; it's a plain `nix build` + `nix copy` + SSH activation). None of this has been switched to and run on real hardware yet: it lives inside `nixosConfigurations.default`, the full NixOS config for the Linux desktop, which — as Phase 4 below covers — that machine hasn't adopted. It's a template to build Phase 2 from, not a proven deployment.
 
 ```
 nixosConfigurations.hermes-vm  →  builds the VM rootfs
@@ -75,34 +75,24 @@ The transition from gVisor to Firecracker means each agent gets a dedicated kern
 
 ## Phase 3: Heracles — the Hermes agent evolution
 
-The Hermes system (already running in the Firecracker VM) will evolve into a full agent platform called Heracles:
+The Hermes system (with a declarative Firecracker VM config already written, per Phase 2 above — not yet switched to and running) will evolve into a full agent platform called Heracles:
 
 - **Studio**: Web UI for agent task management, audit log browsing, and manual review of agent outputs
 - **Cron**: Scheduled agent runs (daily ops triage, weekly code health checks)
 - **MCP catalog**: Agent-discoverable MCP tool registry
 - **Insights**: Token usage tracking and cost attribution
 
-The Hermes VM currently runs with 2 vCPUs and 1 GB RAM. That's enough for the ops agent (I/O-bound, reading Jira/CloudWatch/DBs) and the code agent (CPU-bound but limited by LLM latency, not sandbox compute).
+The Hermes VM is configured for 2 vCPUs and 1 GB RAM. That should be enough for the ops agent (I/O-bound, reading Jira/CloudWatch/DBs) and the code agent (CPU-bound but limited by LLM latency, not sandbox compute) — once it's actually running.
 
 ## Phase 4: full NixOS switch
 
-The NixOS migration still has items on the list:
+The new machine arrived. It was a MacBook, not a new Linux workstation. So the Phase 4 plan shifted.
 
-```
-CURRENT                → TARGET
-─────────────────────────────────────────────────────
-Fedora + GNOME         → NixOS + Hyprland
-dnf + topgrade         → nixos-rebuild switch
-mise for languages     → nix develop devshells
-GNOME Shell            → Hyprland + waybar + walker
-creatlinks.sh          → home-manager (already done)
-```
+The Linux desktop is still on Fedora with home-manager applied on top: `home-manager switch --flake .#usman`. That still works, and the full NixOS switch for it remains on the list. The NVMe encryption hardware limitation hasn't been resolved.
 
-The gap is NVMe-backed full disk encryption. The current machine has a hardware limitation that prevents a seamless reinstall. The workaround:
+What changed is the assumption. The expectation was: new machine equals NixOS. The reality: new machine equals the best tool for the job. For a work laptop running macOS-native apps (IntelliJ, AWS VPN, TestContainers via OrbStack), that's nix-darwin. [Parts 6-8](/blog/part-6-macos-migration/) of this series cover that migration.
 
-1. Continue running `home-manager switch --flake .#usman` on Fedora (already works)
-2. When a new machine arrives, NixOS goes on it first
-3. The old machine becomes the homeserver or a build worker
+The Linux machine will eventually get a full NixOS switch. When it does, the flake already supports it: `nixosConfigurations.default` is ready. The Fedora workaround delays that transition, it doesn't prevent it.
 
 ## Phase 5: skill architecture improvements
 
@@ -152,7 +142,7 @@ The goal: each devshell should have a `README.md` (or Nix doc comment) explainin
 
 ## Phase 8: dependency audit and reduction
 
-The current `home.packages` list has about 70 packages. Some are redundant and should be reviewed quarterly. Remove anything not used in 90 days.
+The current `home.packages` list runs well past 100 packages (125 on the Linux config, 88 on macOS, as of this writing). Some are redundant and should be reviewed quarterly. Remove anything not used in 90 days.
 
 ## The ten-year arc
 

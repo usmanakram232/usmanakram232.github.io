@@ -16,6 +16,8 @@ The solution is a security model I call Pattern 2 (documented in `nix/autonomous
 
 > The agent process holds zero secrets. A control plane (MCP broker) on the host holds every credential and mediates every privileged action. The agent can only do what the broker exposes as a narrow, audited tool.
 
+A note on status: what follows describes a validated design and a written implementation plan, not a system that's running yet. As of this writing, none of the implementation milestones (broker, sandbox image, egress proxy, token minter, supervisor) exist on disk. The architecture, tool list, and lifecycle below are the target this design commits to, to be verified against the checklist further down before go-live.
+
 ```
 ┌───────────────────────── HOST (trusted) ─────────────────────────┐
 │                                                                   │
@@ -53,7 +55,7 @@ The solution is a security model I call Pattern 2 (documented in `nix/autonomous
 
 ## The two agents
 
-Two autonomous agents, each with a distinct capability matrix.
+Two autonomous agents are planned, each with a distinct capability matrix.
 
 ### Code agent
 
@@ -79,7 +81,7 @@ Two autonomous agents, each with a distinct capability matrix.
 
 ## The MCP broker: control plane
 
-The broker exposes exactly 7 tools. Each has per-action enforcement:
+The broker is designed to expose exactly 7 tools. Each has per-action enforcement:
 
 | Tool | Used by | Enforcement |
 |---|---|---|
@@ -93,7 +95,7 @@ The broker exposes exactly 7 tools. Each has per-action enforcement:
 
 Hard-blocked everywhere: Slack post, email send, DB write, infra mutation, git merge, force-push, push to protected branches.
 
-Every tool call is appended to a structured audit log: agent ID, tool name + params, timestamp, result (success/failure + truncated response). The broker refuses to serve calls that bypass the logger.
+The design requires every tool call to be appended to a structured audit log: agent ID, tool name + params, timestamp, result (success/failure + truncated response). The broker is specified to refuse serving calls that bypass the logger — this is a design requirement, not yet a built and tested guarantee.
 
 ## LLM inference: session-scoped Bedrock API key
 
@@ -124,7 +126,7 @@ const { Credentials } = await sts.assumeRole({
 });
 ```
 
-Why it's safe: the key only authenticates Bedrock runtime. A leaked key cannot pivot to RDS, CloudWatch, SQS, or S3. The key lives for at most 12 hours, or however long the job runs. The session policy restricts to specific model ARNs, so the agent can't invoke arbitrary models. CloudWatch billing alarms and model-invocation logging cap token-cost DoS and prompt exfiltration.
+Why it's safe: the key only authenticates Bedrock runtime. A leaked key cannot pivot to RDS, CloudWatch, SQS, or S3. The key lives for at most 12 hours, or however long the job runs. The session policy restricts to specific model ARNs, so the agent can't invoke arbitrary models. CloudWatch billing alarms and model-invocation logging are the planned mitigations for token-cost DoS and prompt exfiltration — not yet wired up (they're tracked as residual-risk hardening in the implementation plan).
 
 ## Isolation layer: gVisor
 
@@ -139,12 +141,12 @@ docker run --runtime=runsc \
   run-task.sh
 ```
 
-From inside the sandbox, `~/.aws`, `~/.ssh`, `~/.ginmon`, and the host `/home/` are not reachable. Egress is denied to everything except the allowlist. The Bedrock token cannot call a non-Bedrock AWS API (`s3 ls` returns denied). Forbidden tools are absent or blocked.
+By design, `~/.aws`, `~/.ssh`, `~/.work`, and the host `/home/` should not be reachable from inside the sandbox. Egress should be denied to everything except the allowlist. The Bedrock token should not be able to call a non-Bedrock AWS API (`s3 ls` should return denied). Forbidden tools should be absent or blocked. None of this is a claim about a running system yet — it's exactly what the checklist below exists to verify before go-live.
 
 ### Verification checklist (before go-live)
 
 ```
-□ Confirm ~/.aws, ~/.ssh, ~/.ginmon are NOT reachable from inside sandbox
+□ Confirm ~/.aws, ~/.ssh, ~/.work are NOT reachable from inside sandbox
 □ Confirm only the scoped repo bind-mount is visible
 □ Confirm egress to arbitrary hosts fails
 □ Confirm Bedrock token cannot call S3/EC2/RDS
@@ -153,6 +155,8 @@ From inside the sandbox, `~/.aws`, `~/.ssh`, `~/.ginmon`, and the host `/home/` 
 ```
 
 ## Job lifecycle
+
+This is the planned lifecycle — the sequence the supervisor is designed to enforce once built:
 
 ```
 1. TRIGGER: Manual / scheduler only
@@ -186,11 +190,11 @@ gVisor is Phase 1. The design document already describes Phase 2: Firecracker mi
 
 Firecracker is AWS's open-source VM manager (the technology behind Lambda and Fargate). Each agent runs in its own microVM with hardware virtualisation via KVM — stronger isolation than gVisor's user-space kernel. No shared kernel surface at all. Virtio-fs handles shared filesystems; vsock replaces the Unix domain socket for host-guest communication.
 
-The transition from gVisor to Firecracker is already tested. The repo has a working Hermes VM configuration (`nix/vms/hermes/`) that proves the networking, storage, and lifecycle management on this hardware.
+The repo already has a declarative Firecracker VM configuration — but for a different, already-existing system: the Hermes agent (`nix/vms/hermes/`), not the autonomous-agent runner described above. That config defines the TAP networking, virtio-fs shares, and systemd lifecycle management a Firecracker microVM needs on this hardware, and it's a useful template for what Phase 2 of the autonomous-agent runner will need. It hasn't been switched to and run on real hardware yet, though — it lives inside `nixosConfigurations.default`, the full NixOS config for the Linux desktop, which (as covered in [Part 5](/blog/part-5-future-roadmap/)) that machine hasn't adopted; it's still running Fedora with home-manager layered on top. So "the transition from gVisor to Firecracker" isn't tested yet — what exists is a config that hasn't been booted.
 
 ## Deployment: NixOS systemd services
 
-The entire autonomous agent system is declared in Nix:
+The plan is to declare the entire autonomous agent system in Nix:
 
 ```nix
 # Planned in nix/home/autonomous-agents.nix
@@ -199,7 +203,7 @@ services.agent-supervisor = {
   agents = {
     code = {
       sandbox = "runsc";          # or "firecracker" in Phase 2
-      repo-bind = "/home/usman/repos/ginmon-backend";
+      repo-bind = "/home/developer/repos/work-project";
       schedule = "daily 06:00";
     };
     ops = {
@@ -210,7 +214,7 @@ services.agent-supervisor = {
 };
 ```
 
-The supervisor runs as a `systemd --user` service, and the per-agent sandboxes are spawned as transient systemd scopes for resource accounting.
+The supervisor is designed to run as a `systemd --user` service, with per-agent sandboxes spawned as transient systemd scopes for resource accounting.
 
 ## What Pattern 2 enables
 

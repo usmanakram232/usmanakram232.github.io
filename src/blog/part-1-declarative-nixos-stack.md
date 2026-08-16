@@ -73,7 +73,7 @@ The outputs cover everything:
 | `nixosConfigurations.hermes-vm` | Firecracker microVM config |
 | `homeConfigurations.usman` | Standalone home-manager (testing on Fedora) |
 | `packages.krops-hermes-deploy` | Deploy script for the VM |
-| `devShells.java`, `devShells.node`, ... | 10 per-project development shells |
+| `devShells.java`, `devShells.node`, ... | 9 per-project development shells |
 
 ### Why standalone home-manager?
 
@@ -109,8 +109,8 @@ services.unbound = {
       name = ".";
       forward-tls-upstream = "yes";
       forward-addr = [
-        "45.90.28.0@853#usman-ca9fb1.dns.nextdns.io"
-        "45.90.30.0@853#usman-ca9fb1.dns.nextdns.io"
+        "45.90.28.0@853#profile-a1b2c3.dns.nextdns.io"
+        "45.90.30.0@853#profile-a1b2c3.dns.nextdns.io"
       ];
     }];
   };
@@ -140,7 +140,7 @@ The Intel iGPU drives all displays (Hyprland runs on it). The NVIDIA Quadro P620
 boot.plymouth = {
   enable = true;
   theme  = "spinner";
-  logo   = ../../resources/ginmon.png;
+  logo   = ../../../resources/logo.png;   # path relative to hosts/default/
 };
 ```
 
@@ -235,7 +235,7 @@ wrapFish = shell: shell.overrideAttrs (old: {
 });
 ```
 
-I have 10 devshells currently: `java`, `node`, `rust`, `go`, `python` (uv2nix-backed), `cuda`, `android`, `ai`, and `pageindex`. Each is a complete, reproducible environment entered with `nix develop`.
+I have 9 devshells currently: `java`, `node`, `rust`, `go`, `python` (uv2nix-backed), `cuda`, `android`, `ai`, and `pageindex`. Each is a complete, reproducible environment entered with `nix develop`.
 
 ### direnv integration
 

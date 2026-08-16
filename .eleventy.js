@@ -19,8 +19,9 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy: everything that isn't a template
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy({ "src/index.html": "index.html" });
   eleventyConfig.addPassthroughCopy({ "src/404.html": "404.html" });
+  // index.html is processed through Nunjucks (htmlTemplateEngine: "njk")
+  // so it can use dynamic collections (blog post count, etc.)
 
   // Readable date filter for Nunjucks
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -37,6 +38,19 @@ module.exports = function (eleventyConfig) {
     const d = new Date(dateObj);
     return d.toISOString().split("T")[0];
   });
+
+  // Split a post collection into series posts (have a part number) vs standalone
+  eleventyConfig.addFilter("hasPart", (posts) =>
+    (posts || []).filter((p) => p.data && p.data.part != null)
+  );
+  eleventyConfig.addFilter("noPart", (posts) =>
+    (posts || []).filter((p) => p.data && p.data.part == null)
+  );
+
+  // Zero-pad a number: {{ 3 | zeroPad }} → "03"
+  eleventyConfig.addFilter("zeroPad", (n, width) =>
+    String(n).padStart(width || 2, "0")
+  );
 
   return {
     markdownTemplateEngine: "njk",
