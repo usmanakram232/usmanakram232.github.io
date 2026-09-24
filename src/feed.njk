@@ -1,0 +1,23 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. Usman Akram — Writing</title>
+    <link>https://usmanakram232.github.io/blog/</link>
+    <atom:link href="https://usmanakram232.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>A running series on building a fully declarative Nix workstation (NixOS + nix-darwin), agentic AI tooling, and defence-in-depth security.</description>
+    <language>en</language>
+{%- for post in collections.post | sort(true, false, "date") %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>https://usmanakram232.github.io{{ post.url }}</link>
+      <guid isPermaLink="true">https://usmanakram232.github.io{{ post.url }}</guid>
+      <pubDate>{{ post.date | rfc822Date }}</pubDate>
+      <description>{{ post.data.description }}</description>
+    </item>
+{%- endfor %}
+  </channel>
+</rss>

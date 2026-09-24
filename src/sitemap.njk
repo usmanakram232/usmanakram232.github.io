@@ -1,0 +1,19 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://usmanakram232.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://usmanakram232.github.io/blog/</loc>
+  </url>
+{%- for post in collections.post %}
+  <url>
+    <loc>https://usmanakram232.github.io{{ post.url }}</loc>
+    <lastmod>{{ post.date | htmlDateString }}</lastmod>
+  </url>
+{%- endfor %}
+</urlset>

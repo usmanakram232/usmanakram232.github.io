@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- no-FOUC: apply saved theme before first paint -->
+  <script>try{var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} · M. Usman Akram</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="canonical" href="https://usmanakram232.github.io{{ page.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="M. Usman Akram — Writing" href="https://usmanakram232.github.io/feed.xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url" content="https://usmanakram232.github.io{{ page.url }}" />
+  <meta property="og:image" content="https://usmanakram232.github.io{{ image or '/assets/img/hero-landscape.jpeg' }}" />
+  <meta property="article:published_time" content="{{ date | htmlDateString }}T00:00:00Z" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="https://usmanakram232.github.io{{ image or '/assets/img/hero-landscape.jpeg' }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Cormorant Garamond (editorial serif) + DM Sans (body) + DM Mono (labels/code meta) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --code-bg:      #0d1017;   /* always dark — code blocks never flip */
+      --code-text:    #c4cad6;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --font-mono:    'DM Mono', 'Menlo', monospace;
+      --font-code:    'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+      --max-prose:    660px;
+    }
+
+    /* ── Dark mode (default) — cold precision ── */
+    [data-theme="dark"] {
+      --bg:              #0b0c10;
+      --ink:             #dde1e8;
+      --ink-muted:       #7f8899;
+      --ink-faint:       #707a94;
+      --border:          #1c1f2a;
+      --border-subtle:   #181b25;
+      --border-table:    #161920;
+      --inline-code-bg:  #131620;
+      --inline-code-fg:  #a8b4c8;
+      --blockquote-line: #252a38;
+      --accent:          #4a84b8;
+    }
+
+    /* ── Light mode — cool off-white ── */
+    [data-theme="light"] {
+      --bg:              #f2f3f6;
+      --ink:             #141720;
+      --ink-muted:       #454d5e;
+      --ink-faint:       #5c6479;
+      --border:          #d0d4dd;
+      --border-subtle:   #c8cdd8;
+      --border-table:    #dde0e8;
+      --inline-code-bg:  #e4e7ef;
+      --inline-code-fg:  #2a3245;
+      --blockquote-line: #c4c9d5;
+      --accent:          #2c6fa6;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* ── THEME TOGGLE ────────────────────── */
+    .theme-toggle {
+      margin-left: auto;
+      flex-shrink: 0;
+      background: none;
+      border: 1px solid var(--ink-faint);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      color: var(--ink-faint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      line-height: 1;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .theme-toggle:hover        { color: var(--ink); border-color: var(--ink-muted); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .theme-toggle svg           { pointer-events: none; display: block; }
+
+    /* ── SKIP LINK ───────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 20;
+      padding: 0.75rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      transform: translateY(-150%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    [data-theme="dark"]  .icon-sun  { display: block; }
+    [data-theme="dark"]  .icon-moon { display: none; }
+    [data-theme="light"] .icon-sun  { display: none; }
+    [data-theme="light"] .icon-moon { display: block; }
+
+    /* ── NAV ─────────────────────────────── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0.875rem clamp(1.25rem, 5vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: background-color 0.25s ease;
+    }
+
+    .site-nav a {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:hover { color: var(--ink); }
+    .site-nav a:first-child { color: var(--ink-muted); }
+
+    .site-nav .sep {
+      color: var(--ink-faint);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+    }
+
+    /* ── ARTICLE HEADER ──────────────────── */
+    .article-wrap {
+      max-width: var(--max-prose);
+      margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5.5rem) clamp(1.25rem, 5vw, 2rem);
+    }
+
+    .article-meta {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .series-tag {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .meta-sep {
+      color: var(--ink-faint);
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+    }
+
+    .article-date,
+    .reading-time {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .article-meta h1 {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .article-description {
+      font-size: 1rem;
+      color: var(--ink-muted);
+      line-height: 1.65;
+      max-width: 52ch;
+      font-weight: 300;
+    }
+
+    /* ── PROSE ───────────────────────────── */
+    .prose p {
+      margin-bottom: 1.4rem;
+    }
+
+    .prose h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+      font-weight: 400;
+      font-style: italic;
+      margin: 3rem 0 1rem;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .prose h3 {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin: 2.5rem 0 0.875rem;
+    }
+
+    .prose h4 {
+      font-size: 0.97rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin: 1.75rem 0 0.5rem;
+    }
+
+    .prose a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--ink-faint);
+      transition: text-decoration-color 0.2s;
+    }
+
+    .prose a:hover { text-decoration-color: var(--accent); }
+
+    .prose ul, .prose ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .prose li { margin-bottom: 0.4rem; }
+
+    .prose blockquote {
+      border-left: 2px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2.5rem 0;
+      color: var(--ink-muted);
+      font-style: italic;
+    }
+
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+
+    .prose img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 2rem 0;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      border-radius: 4px;
+    }
+
+    .prose img:hover { opacity: 0.88; }
+
+    /* ── TABLES ──────────────────────────── */
+    .prose table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .prose th {
+      text-align: left;
+      font-family: var(--font-mono);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      color: var(--ink-muted);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.5rem 1rem 0.5rem 0;
+    }
+
+    .prose td {
+      padding: 0.65rem 1rem 0.65rem 0;
+      border-bottom: 1px solid var(--border-table);
+      vertical-align: top;
+      font-size: 0.93rem;
+    }
+
+    .prose tr:last-child td { border-bottom: none; }
+
+    /* ── INLINE CODE ─────────────────────── */
+    .prose :not(pre) > code {
+      font-family: var(--font-code);
+      font-size: 0.84em;
+      background: var(--inline-code-bg);
+      color: var(--inline-code-fg);
+      padding: 0.15em 0.45em;
+      border-radius: 3px;
+      font-feature-settings: "liga" 0;
+    }
+
+    /* ── CODE BLOCKS (Prism) ─────────────── */
+    .prose pre[class*="language-"],
+    .prose pre:not([class]) {
+      background: var(--code-bg);
+      color: var(--code-text);
+      font-family: var(--font-code);
+      font-size: 0.84rem;
+      line-height: 1.65;
+      font-feature-settings: "liga" 1, "calt" 1;
+      padding: 1.5rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 1.75rem 0;
+    }
+
+    .prose code[class*="language-"] {
+      font-family: var(--font-code);
+      font-size: inherit;
+      font-feature-settings: "liga" 1, "calt" 1;
+    }
+
+    /* Cool-tinted syntax tokens */
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata         { color: #4d5a6e; font-style: italic; }
+    .token.punctuation   { color: #6b7894; }
+    .token.namespace     { opacity: 0.7; }
+    .token.property,
+    .token.tag,
+    .token.boolean,
+    .token.number,
+    .token.constant,
+    .token.symbol,
+    .token.deleted       { color: #7da4c8; }
+    .token.selector,
+    .token.attr-name,
+    .token.string,
+    .token.char,
+    .token.builtin,
+    .token.inserted      { color: #82b8a0; }
+    .token.operator,
+    .token.entity,
+    .token.url           { color: #9db8d8; }
+    .token.atrule,
+    .token.attr-value,
+    .token.keyword       { color: #6a9fd0; }
+    .token.function,
+    .token.class-name    { color: #a8c8e8; }
+    .token.regex,
+    .token.important,
+    .token.variable      { color: #8eb8d4; }
+    .token.important,
+    .token.bold          { font-weight: bold; }
+    .token.italic        { font-style: italic; }
+    .token.entity        { cursor: help; }
+
+    /* ── SERIES NAV ──────────────────────── */
+    .series-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .series-nav a {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s;
+      max-width: 46%;
+      line-height: 1.5;
+    }
+
+    .series-nav a:hover { color: var(--accent); }
+    .series-nav .next { text-align: right; }
+
+    /* ── FOOTER ──────────────────────────── */
+    .article-footer {
+      margin-top: 4rem;
+      padding: 2rem clamp(1.25rem, 5vw, 2.5rem);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .article-footer a {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .article-footer a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ──────────────────────── */
+    @media (max-width: 480px) {
+      body { font-size: 1rem; }
+
+      .article-meta h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+
+      .prose pre[class*="language-"] {
+        font-size: 0.78rem;
+        padding: 1rem;
+        border-radius: 0;
+        margin: 1.5rem -1.25rem;
+      }
+
+      .prose table { font-size: 0.82rem; }
+    }
+
+    /* ── EXPANDABLE IMAGE OVERLAY ── */
+    .img-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      padding: clamp(1rem, 4vw, 2.5rem);
+    }
+
+    .img-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .img-overlay img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      cursor: default;
+      margin: 0;
+    }
+
+    .img-overlay .overlay-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+      font-family: var(--font-mono, monospace);
+      line-height: 1;
+    }
+
+    .img-overlay .overlay-close:hover { opacity: 1; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://usmanakram232.github.io/#website",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://usmanakram232.github.io/#person",
+        "url": "https://usmanakram232.github.io/",
+        "name": "M. Usman Akram",
+        "sameAs": [
+          "https://www.linkedin.com/in/usmanakram",
+          "https://github.com/usmanakram232",
+          "https://www.flickr.com/photos/usmanakram232/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#webpage",
+        "url": "https://usmanakram232.github.io{{ page.url }}",
+        "isPartOf": { "@id": "https://usmanakram232.github.io/#website" },
+        "name": {{ title | dump | safe }},
+        "inLanguage": "en",
+        "breadcrumb": { "@id": "https://usmanakram232.github.io{{ page.url }}#breadcrumb" }
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#blogposting",
+        "url": "https://usmanakram232.github.io{{ page.url }}",
+        "mainEntityOfPage": { "@id": "https://usmanakram232.github.io{{ page.url }}#webpage" },
+        "isPartOf": { "@id": "https://usmanakram232.github.io/blog/#blog" },
+        "headline": {{ title | dump | safe }},
+        "description": {{ description | dump | safe }},
+        "inLanguage": "en",
+        "datePublished": "{{ date | htmlDateString }}T00:00:00.000Z",
+        "author": { "@id": "https://usmanakram232.github.io/#person" },
+        "publisher": { "@id": "https://usmanakram232.github.io/#person" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://usmanakram232.github.io{{ page.url }}#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/",
+            "position": 1,
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io/blog/",
+            "position": 2,
+            "name": "Writing"
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://usmanakram232.github.io{{ page.url }}",
+            "position": 3,
+            "name": {{ title | dump | safe }}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Breadcrumb">
+    <a href="/">M. Usman Akram</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href="/blog/">Writing</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <svg class="icon-sun" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </nav>
+
+  <article id="main">
+    <div class="article-wrap">
+      <header class="article-meta">
+        <div class="meta-row">
+          {% if series %}
+          <span class="series-tag">{{ series }}{% if part %} · {{ part }}/{{ totalParts }}{% endif %}</span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          {% endif %}
+          <time class="article-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="reading-time"></span>
+        </div>
+        <h1>{{ title }}</h1>
+        {% if description %}
+        <p class="article-description">{{ description }}</p>
+        {% endif %}
+      </header>
+
+      <div class="prose">
+        {{ content | safe }}
+      </div>
+
+      {% set sortedPosts = collections.post | sort(false, false, "data.part") %}
+      {% set prevPost = null %}
+      {% set nextPost = null %}
+      {% for p in sortedPosts %}
+        {% if p.data.part == part - 1 %}{% set prevPost = p %}{% endif %}
+        {% if p.data.part == part + 1 %}{% set nextPost = p %}{% endif %}
+      {% endfor %}
+
+      <nav class="series-nav" aria-label="Series navigation">
+        {% if prevPost %}
+        <a href="{{ prevPost.url }}" class="prev">← {{ prevPost.data.title }}</a>
+        {% else %}
+        <span></span>
+        {% endif %}
+        {% if nextPost %}
+        <a href="{{ nextPost.url }}" class="next">{{ nextPost.data.title }} →</a>
+        {% endif %}
+      </nav>
+    </div>
+  </article>
+
+  <footer class="article-footer">
+    <a href="/blog/">← Back to writing</a>
+  </footer>
+
+  <!-- ── Image overlay ── -->
+  <div id="img-overlay" class="img-overlay" role="dialog" aria-modal="true" aria-label="Image expanded view">
+    <button class="overlay-close" aria-label="Close expanded image">&times;</button>
+    <img id="overlay-img" src="" alt="" />
+  </div>
+
+  <script>
+    // ── Theme toggle ──
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      function sync(theme) {
+        var dark = theme === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.setAttribute('aria-pressed', String(!dark));
+      }
+      sync(document.documentElement.getAttribute('data-theme') || 'dark');
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync(next);
+      });
+    })();
+
+    // ── Reading time estimate ──
+    (function () {
+      var el = document.querySelector('.reading-time');
+      if (!el) return;
+      // Count words in rendered prose, not the raw content attribute
+      var prose = document.querySelector('.prose');
+      if (!prose) return;
+      var words = prose.innerText.trim().split(/\s+/).length;
+      var mins = Math.max(1, Math.round(words / 200));
+      el.textContent = mins + ' min read';
+    })();
+
+    // ── Expandable image overlay ──
+    (function () {
+      var overlay = document.getElementById('img-overlay');
+      var overlayImg = document.getElementById('overlay-img');
+      var closeBtn = overlay.querySelector('.overlay-close');
+      if (!overlay || !overlayImg || !closeBtn) return;
+
+      function open(src, alt) {
+        overlayImg.src = src;
+        overlayImg.alt = alt || '';
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(function () { overlayImg.src = ''; }, 300);
+      }
+
+      closeBtn.addEventListener('click', close);
+
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) close();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.classList.contains('open')) close();
+      });
+
+      // Wire up all images inside .prose
+      var prose = document.querySelector('.prose');
+      if (prose) {
+        var imgs = prose.querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+          imgs[i].addEventListener('click', function () {
+            open(this.src, this.alt);
+          });
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>
