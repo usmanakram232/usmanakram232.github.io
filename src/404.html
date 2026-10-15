@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found · M. Usman Akram</title>
+  <meta name="description" content="This page does not exist. Go back to the home page or the blog." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    [data-theme="dark"]  { --bg:#0b0c10; --ink:#dde1e8; --muted:#7f8899; --accent:#4a84b8; }
+    [data-theme="light"] { --bg:#f2f3f6; --ink:#141720; --muted:#454d5e; --accent:#286799; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 300;
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 5rem; font-weight: 400; color: var(--ink); line-height: 1; margin-bottom: 1rem; }
+    p  { font-size: 1rem; margin-bottom: 2rem; }
+    a  { color: var(--accent); margin: 0 0.75rem; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <p>Nothing here. The road continues elsewhere.</p>
+    <a href="/">Home</a><a href="/blog/">Writing</a>
+  </main>
+</body>
+</html>
