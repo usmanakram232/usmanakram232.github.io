@@ -20,7 +20,12 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy: everything that isn't a template
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  // Self-contained single-page apps (plain HTML/JS/JSON, not templated)
+  eleventyConfig.addPassthroughCopy("src/apps/*/**");
   eleventyConfig.addPassthroughCopy({ "src/404.html": "404.html" });
+  // 404.html is copied verbatim; keep it out of template processing so it is
+  // not also written to _site/404/index.html (racy with the copy during --serve)
+  eleventyConfig.ignores.add("src/404.html");
   // index.html is processed through Nunjucks (htmlTemplateEngine: "njk")
   // so it can use dynamic collections (blog post count, etc.)
 

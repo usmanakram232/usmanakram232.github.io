@@ -1,0 +1,49 @@
+---
+layout: false
+title: Apps
+permalink: /apps/
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <script>try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps · M. Usman Akram</title>
+  <meta name="description" content="Small single-page apps I build for myself: private, offline-first, no accounts." />
+  <link rel="canonical" href="https://usmanakram232.github.io/apps/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --font-display:'Cormorant Garamond',Georgia,serif; --font-body:'DM Sans',system-ui,sans-serif; --font-mono:'DM Mono',Menlo,monospace; }
+    [data-theme="dark"]  { --bg:#0b0c10; --ink:#dde1e8; --muted:#9aa3b5; --faint:#7a8397; --border:#222633; --accent:#4a84b8; }
+    [data-theme="light"] { --bg:#f2f3f6; --ink:#141720; --muted:#454d5e; --faint:#5c6479; --border:#d0d4dd; --accent:#286799; }
+    body { background:var(--bg); color:var(--ink); font-family:var(--font-body); font-weight:300; line-height:1.7; }
+    :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+    .site-nav { border-bottom:1px solid var(--border); padding:.875rem clamp(1.25rem,5vw,2.5rem); display:flex; gap:.9rem; align-items:center; }
+    .site-nav a { font-family:var(--font-mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); text-decoration:none; }
+    .site-nav a:hover { color:var(--ink); }
+    .wrap { max-width:660px; margin:0 auto; padding:clamp(3rem,7vw,5rem) clamp(1.25rem,5vw,2rem); }
+    h1 { font-family:var(--font-display); font-style:italic; font-weight:400; font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.1; margin-bottom:.75rem; }
+    .lead { color:var(--muted); margin-bottom:2.5rem; padding-bottom:2rem; border-bottom:1px solid var(--border); }
+    .app { display:block; text-decoration:none; color:inherit; padding:1.25rem 0; border-bottom:1px solid var(--border); }
+    .app:hover h2 { color:var(--accent); }
+    .app h2 { font-family:var(--font-display); font-weight:500; font-size:1.35rem; margin-bottom:.25rem; }
+    .app p { color:var(--muted); font-size:.95rem; }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Site"><a href="/">Home</a><a href="/blog/">Writing</a></nav>
+  <main class="wrap">
+    <h1>Apps</h1>
+    <p class="lead">Small single-page tools I build for myself and keep here. Each runs entirely in your browser, with no account and no tracking.</p>
+    <a class="app" href="/apps/toddler-planner/">
+      <h2>Toddler play planner</h2>
+      <p>Three activity ideas that fit your time, energy and mess limits for a toddler, with safety notes and a skills tracker. Built from a curated set of early-childhood sources.</p>
+    </a>
+  </main>
+</body>
+</html>

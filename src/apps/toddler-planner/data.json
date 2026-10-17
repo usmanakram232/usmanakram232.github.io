@@ -1,0 +1,1942 @@
+{
+ "domains": {
+  "move": "Move",
+  "hands": "Hands",
+  "words": "Words",
+  "senses": "Senses",
+  "pretend": "Pretend and people",
+  "daily": "Everyday skills",
+  "mind": "Thinking"
+ },
+ "activities": [
+  {
+   "id": "squishy-sponges",
+   "title": "Squishy Sponges",
+   "domain": "senses",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Wet sponges, water bucket, sidewalk or tricycle",
+   "steps": [
+    "Soak sponges in water.",
+    "Show toddler how to squeeze water out onto sidewalk or trike.",
+    "Let toddler wash items or stamp wet shapes."
+   ],
+   "easier": "Squeeze sponge inside a shallow dish or basin.",
+   "harder": "Stamp specific wet sponge shapes in a straight line.",
+   "builds": "Physical skills in hands and fingers, hand-eye coordination",
+   "safety": [
+    "water"
+   ],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "leaf-collector",
+   "title": "Leaf Collector",
+   "domain": "move",
+   "level": "now",
+   "energy": "medium",
+   "setting": "outdoor",
+   "minutes": 20,
+   "mess": "low",
+   "materials": "Small basket",
+   "steps": [
+    "Take a outdoor walk with a small basket.",
+    "Encourage toddler to squat and pick up leaves and outdoor items.",
+    "Place gathered items into the basket."
+   ],
+   "easier": "Pick up leaves from a small outdoor patch without walking far.",
+   "harder": "Collect only leaves of a specific color or size.",
+   "builds": "Gross motor balance and fine motor squatting/picking skills",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "freeze-dance",
+   "title": "Freeze Dance",
+   "domain": "move",
+   "level": "now",
+   "energy": "high",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Music player",
+   "steps": [
+    "Play music and dance together.",
+    "Pause the music abruptly.",
+    "Instruct toddler to stop dancing when music ends."
+   ],
+   "easier": "Just dance freely to music without freeze stops.",
+   "harder": "Freeze instantly in a specific pose when music pauses.",
+   "builds": "Listening skills and self-regulation",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "fill-and-dump-ball-transfer",
+   "title": "Fill and Dump Ball Transfer",
+   "domain": "move",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Homemade paper balls with tape, 2 shoeboxes/baskets",
+   "steps": [
+    "Wad paper into balls with masking tape and place in a basket.",
+    "Set a second basket a few steps away.",
+    "Show child how to carry balls one by one to transfer between boxes."
+   ],
+   "easier": "Transfer balls between two boxes placed right next to each other.",
+   "harder": "Increase distance between boxes and run between them.",
+   "builds": "Cross-body hand movement, gross motor walking/carrying",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "teddy-bear-pretend-care",
+   "title": "Teddy Bear Pretend Care",
+   "domain": "pretend",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Stuffed animal, cup, blanket",
+   "steps": [
+    "Pretend stuffed animal fell and needs a hug.",
+    "Offer a prop cup to give Teddy a drink.",
+    "Use a blanket to put Teddy to sleep."
+   ],
+   "easier": "Hug the stuffed animal on demonstration.",
+   "harder": "Create a multi-step sequence of feeding, wiping, and tucking Teddy in.",
+   "builds": "Early pretend play, empathy, social-emotional development",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "how-does-your-garden-grow",
+   "title": "How Does Your Garden Grow",
+   "domain": "senses",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 20,
+   "mess": "high",
+   "materials": "Pot or dirt patch, seeds, shovel, water cup",
+   "steps": [
+    "Shovel dirt into a pot or patch.",
+    "Plant seeds and cover with dirt.",
+    "Pour water onto the seeds."
+   ],
+   "easier": "Scoop dry dirt in and out of pots with spoons.",
+   "harder": "Pinch individual small seeds carefully into tiny pre-dug holes.",
+   "builds": "Fine motor finger/hand control, early science concepts",
+   "safety": [
+    "dirt"
+   ],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "classic-shell-game",
+   "title": "Classic Shell Game",
+   "domain": "mind",
+   "level": "stretch",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Plastic cups, small toy",
+   "steps": [
+    "Show toddler a small toy.",
+    "Cover toy slowly with one plastic cup.",
+    "Ask toddler to lift cup and find the hidden toy."
+   ],
+   "easier": "Partially hide toy under a soft cloth.",
+   "harder": "Use 2 or 3 plastic cups and slide them around before lifting.",
+   "builds": "Thinking skills, hand-eye coordination, object permanence",
+   "safety": [
+    "smallobj"
+   ],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "band-together",
+   "title": "Band Together",
+   "domain": "words",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Noise-making items (rattles, bells, household pots)",
+   "steps": [
+    "Gather noise-making objects.",
+    "Start singing a song.",
+    "Pick up an instrument and make music together."
+   ],
+   "easier": "Bang single noise-maker in rhythm with adult singing.",
+   "harder": "Stop playing instrument when song pauses, then resume.",
+   "builds": "Language acquisition, physical control, auditory processing",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "bubble-mound-exploration",
+   "title": "Bubble Mound Exploration",
+   "domain": "senses",
+   "level": "now",
+   "energy": "calm",
+   "setting": "both",
+   "minutes": 10,
+   "mess": "medium",
+   "materials": "Small bowl, bubble liquid, straw",
+   "steps": [
+    "Fill bowl with bubble liquid.",
+    "Blow through straw to create a large mound of bubbles.",
+    "Let child explore bubbles with hands under strict supervision."
+   ],
+   "easier": "Pop bubbles blown into air by adult.",
+   "harder": "Blow softly onto bubble mound to see it move without popping.",
+   "builds": "Sensory exploration, tactile awareness",
+   "safety": [
+    "bubble"
+   ],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "diaper-naming-game",
+   "title": "Diaper Naming Game",
+   "domain": "words",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 5,
+   "mess": "low",
+   "materials": "None",
+   "steps": [
+    "Lift toddler's foot during routine change.",
+    "Ask 'What's this?' and answer 'It's a foot!'.",
+    "Point to belly, knees, and toes naming each."
+   ],
+   "easier": "Adult points and names body parts continuously.",
+   "harder": "Ask child 'Where are your toes?' and pause for pointing response.",
+   "builds": "Vocabulary expansion, body awareness",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "picture-story-cards",
+   "title": "Picture Story Cards",
+   "domain": "words",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Photos of activity steps, index cards, glue",
+   "steps": [
+    "Take photos of start, middle, end of daily activity.",
+    "Glue photos onto index cards.",
+    "Show cards in sequence and talk about steps taken."
+   ],
+   "easier": "Look at single photo of child doing an activity.",
+   "harder": "Let toddler arrange 3 photo cards in order.",
+   "builds": "Sequencing, thinking and language skills",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "point-it-out-reading",
+   "title": "Point It Out Reading",
+   "domain": "words",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Picture book",
+   "steps": [
+    "Open picture book together.",
+    "Ask toddler 'Point to the cat' or 'Show me the moon'.",
+    "Point out pictures together as you read."
+   ],
+   "easier": "Adult points to pictures while naming them.",
+   "harder": "Toddler points out 3 specific objects independently when prompted.",
+   "builds": "Word-picture connection, vocabulary building",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "cardboard-box-tunnel",
+   "title": "Cardboard Box Tunnel",
+   "domain": "move",
+   "level": "now",
+   "energy": "high",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Large cardboard box open at both ends",
+   "steps": [
+    "Open both ends of a large cardboard box to form a tunnel.",
+    "Place toddler at one end and sit at opposite end.",
+    "Peek in and say 'Hi!', then lean away and say 'Bye!'."
+   ],
+   "easier": "Crawl through a short open box without hide-and-seek cues.",
+   "harder": "Crawl through tunnel carrying a stuffed animal safely.",
+   "builds": "Crawling, problem-solving, social communication",
+   "safety": [],
+   "source": "Play Activities for 12 to 24 Months | ZERO TO THREE"
+  },
+  {
+   "id": "living-room-obstacle-course",
+   "title": "Living Room Obstacle Course",
+   "domain": "move",
+   "level": "now",
+   "energy": "high",
+   "setting": "indoor",
+   "minutes": 20,
+   "mess": "low",
+   "materials": "Cushions, tape line on floor, cardboard box",
+   "steps": [
+    "Set cushions to climb over, tape line to walk on, box to crawl through.",
+    "Demonstrate each station once.",
+    "Encourage toddler to attempt course."
+   ],
+   "easier": "Step over a single pillow on floor.",
+   "harder": "Complete obstacle course carrying a soft ball.",
+   "builds": "Balance, body awareness, spatial judgment",
+   "safety": [],
+   "source": "15 Best Activities for 2-Year-Old Development | Nurtoora Blog, LibraryCentral"
+  },
+  {
+   "id": "play-dough-squeezing-and-poking",
+   "title": "Play Dough Squeezing and Poking",
+   "domain": "hands",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Playdough",
+   "steps": [
+    "Hand toddler a ball of dough.",
+    "Model squeezing, rolling into snakes, and poking with fingers.",
+    "Let toddler squish dough freely."
+   ],
+   "easier": "Squeeze large soft ball of dough with both hands.",
+   "harder": "Poke small plastic buttons or forks into playdough.",
+   "builds": "Hand strength, finger control for pre-writing",
+   "safety": [
+    "dough"
+   ],
+   "source": "15 Best Activities for 2-Year-Old Development | Nurtoora Blog, Adventurers Nursery, Action for Children"
+  },
+  {
+   "id": "gentle-ball-roll-and-toss",
+   "title": "Gentle Ball Roll and Toss",
+   "domain": "move",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Large soft ball",
+   "steps": [
+    "Sit facing toddler with legs open.",
+    "Roll large soft ball back and forth.",
+    "Progress to short underhand tosses."
+   ],
+   "easier": "Roll ball back and forth on floor from short distance.",
+   "harder": "Attempt underhand throw while standing up.",
+   "builds": "Hand-eye coordination, turn-taking",
+   "safety": [],
+   "source": "15 Best Activities for 2-Year-Old Development | Nurtoora Blog, LibraryCentral"
+  },
+  {
+   "id": "action-song-sing-along",
+   "title": "Action Song Sing-Along",
+   "domain": "words",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "None",
+   "steps": [
+    "Sing 'Heads, Shoulders, Knees and Toes' slowly.",
+    "Demonstrate exaggerated movement actions.",
+    "Pause before key words to let child fill in gap."
+   ],
+   "easier": "Adult performs actions while toddler watches and imitates simple motions.",
+   "harder": "Toddler fills in missing rhyme words independently while doing actions.",
+   "builds": "Language recall, motor coordination",
+   "safety": [],
+   "source": "15 Best Activities for 2-Year-Old Development | Nurtoora Blog"
+  },
+  {
+   "id": "color-sorting-trays",
+   "title": "Color Sorting Trays",
+   "domain": "mind",
+   "level": "stretch",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Household objects of various colors, box/cups",
+   "steps": [
+    "Gather colored household items (socks, blocks, caps).",
+    "Set out colored cups/containers.",
+    "Show toddler how to group same-color items together."
+   ],
+   "easier": "Sort items into two distinct contrasting groups (big vs small).",
+   "harder": "Sort objects into three distinct color bins independently.",
+   "builds": "Visual discrimination, logic, classification",
+   "safety": [],
+   "source": "Little Partners Blog, Early Childhood Family Guide, Smart Play"
+  },
+  {
+   "id": "pikler-climbing-exploration",
+   "title": "Pikler Climbing Exploration",
+   "domain": "move",
+   "level": "now",
+   "energy": "high",
+   "setting": "indoor",
+   "minutes": 20,
+   "mess": "low",
+   "materials": "Pikler triangle or low climbing structure",
+   "steps": [
+    "Set up low climbing structure safely.",
+    "Supervise as child grips rungs and pulls up.",
+    "Allow toddler to climb up and down."
+   ],
+   "easier": "Pull up to stand against structure without climbing up rungs.",
+   "harder": "Climb up to top rung and navigate down opposite side.",
+   "builds": "Gross motor strength, balance, coordination",
+   "safety": [
+    "climb"
+   ],
+   "source": "Little Partners Blog"
+  },
+  {
+   "id": "sponge-table-washing",
+   "title": "Sponge Table Washing",
+   "domain": "daily",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Sponge, bowl of water, child-safe soap",
+   "steps": [
+    "Provide small bowl of water and damp sponge.",
+    "Show toddler how to wipe table surface.",
+    "Turn cleaning into a joint game."
+   ],
+   "easier": "Wipe clean dry table with dry cloth.",
+   "harder": "Wipe up a real liquid spill with sponge and squeeze into bowl.",
+   "builds": "Practical life independence, fine motor strength",
+   "safety": [
+    "water"
+   ],
+   "source": "Little Partners Blog, Early Childhood Family Guide, ZERO TO THREE 18-24m"
+  },
+  {
+   "id": "finger-painting",
+   "title": "Finger Painting",
+   "domain": "senses",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "high",
+   "materials": "Paper, washable non-toxic paint, tray/tape",
+   "steps": [
+    "Tape paper to a tray.",
+    "Blob small amount of non-toxic paint on paper.",
+    "Show child how to paint with hands and fingers."
+   ],
+   "easier": "Paint with single color inside a sealable ziplock bag.",
+   "harder": "Mix two primary colors on paper to see color change.",
+   "builds": "Sensory exploration, cause-and-effect, fine motor dexterity",
+   "safety": [
+    "paint"
+   ],
+   "source": "Little Partners Blog, TinyPlay, Early Childhood Family Guide, ZERO TO THREE 12-18m"
+  },
+  {
+   "id": "large-bead-threading",
+   "title": "Large Bead Threading",
+   "domain": "hands",
+   "level": "stretch",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Large wooden beads (too big for a toilet-roll tube), thick stiff lace with a big stopper knot",
+   "steps": [
+    "Provide large wooden beads and stiff string.",
+    "Show child how to push string through bead hole.",
+    "Pull bead down string together."
+   ],
+   "easier": "Thread large ring or paper towel roll tube onto thick rod.",
+   "harder": "Thread 5 beads in specific alternating color pattern.",
+   "builds": "Bilateral hand coordination, pincer grasp",
+   "safety": [
+    "beads"
+   ],
+   "source": "Adventurers Nursery, Little Partners Blog"
+  },
+  {
+   "id": "tape-rescue",
+   "title": "Tape Rescue",
+   "domain": "hands",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Small toy animals/blocks, painter's tape, cookie sheet",
+   "steps": [
+    "Tape small toy animals onto a cookie sheet with painter's tape.",
+    "Show toddler how to find edge of tape.",
+    "Encourage toddler to peel tape to free the animals."
+   ],
+   "easier": "Leave long loose tape tabs for child to easily pull off.",
+   "harder": "Criss-cross multiple layers of tape over single object.",
+   "builds": "Finger dexterity, problem-solving, hand-eye coordination",
+   "safety": [
+    "tape"
+   ],
+   "source": "Action for Children"
+  },
+  {
+   "id": "crayon-or-card-drop",
+   "title": "Crayon or Card Drop",
+   "domain": "hands",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Empty oats container with cut lid slots, crayons or cards",
+   "steps": [
+    "Cut slots/holes into plastic lid of an empty container.",
+    "Show child how to push crayons or cards through slot.",
+    "Dump out container to repeat."
+   ],
+   "easier": "Push large pom-poms into single large round opening.",
+   "harder": "Drop thin playing cards through narrow, precise slot.",
+   "builds": "Hand-eye precision, spatial awareness, cause-and-effect",
+   "safety": [
+    "holes"
+   ],
+   "source": "Action for Children"
+  },
+  {
+   "id": "pom-pom-ice-tray-transfer",
+   "title": "Pom-Pom Ice Tray Transfer",
+   "domain": "hands",
+   "level": "stretch",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Large pom-poms (each too big to fit through a toilet-roll tube), 2 ice cube trays",
+   "steps": [
+    "Place pom-poms into sections of an ice tray.",
+    "Encourage child to pick up and transfer pom-poms to second tray.",
+    "Use fingers or kitchen tongs."
+   ],
+   "easier": "Transfer pom-poms using fingers from bowl to tray.",
+   "harder": "Use small kitchen tongs to transfer pom-poms one by one.",
+   "builds": "Pincer grasp, hand strength, precision",
+   "safety": [
+    "pompom"
+   ],
+   "source": "Action for Children, Montessori Parent Guide"
+  },
+  {
+   "id": "cardboard-pom-pom-tube-drop",
+   "title": "Cardboard Pom-Pom Tube Drop",
+   "domain": "move",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Paper towel tubes, tape, cardboard wall, large pom-poms (too big for a toilet-roll tube), bowl",
+   "steps": [
+    "Tape cardboard tubes vertically at various heights on wall.",
+    "Place catching bowl at bottom.",
+    "Drop pom-poms through tubes and watch them fall."
+   ],
+   "easier": "Drop balls down a single straight vertical tube.",
+   "harder": "Predict which tube pom-pom will exit from when angled.",
+   "builds": "Gross motor reach, cause-and-effect thinking",
+   "safety": [
+    "pompom"
+   ],
+   "source": "Action for Children"
+  },
+  {
+   "id": "ribbon-tugging-box",
+   "title": "Ribbon Tugging Box",
+   "domain": "hands",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "low",
+   "materials": "Cardboard box, short soft ribbons (under 20 cm) with knotted ends",
+   "steps": [
+    "Poke holes in the box and thread short, soft ribbons with big knots at both ends.",
+    "Tape the box closed.",
+    "Let your child pull the ribbons back and forth while you watch."
+   ],
+   "easier": "Tug single ribbon back and forth on flat plastic lid.",
+   "harder": "Identify specific ribbon by feel/texture before pulling.",
+   "builds": "Tactile sensory discrimination, grip strength",
+   "safety": [
+    "cord"
+   ],
+   "source": "Action for Children"
+  },
+  {
+   "id": "ice-toy-excavation",
+   "title": "Ice Toy Excavation",
+   "domain": "senses",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 20,
+   "mess": "medium",
+   "materials": "Paper cup, water, small non-choking bath toy",
+   "steps": [
+    "Freeze non-choking bath toy inside cup of water.",
+    "Peel off paper cup and place ice block in warm bath/tub.",
+    "Watch ice melt and extract toy."
+   ],
+   "easier": "Explore melting ice cubes with warm wet washcloth.",
+   "harder": "Pour small warm water cups over ice block to melt actively.",
+   "builds": "Science exploration, temperature concept",
+   "safety": [
+    "water",
+    "smallobj"
+   ],
+   "source": "TinyPlay, ZERO TO THREE 12-18m"
+  },
+  {
+   "id": "animal-walks",
+   "title": "Animal Walks",
+   "domain": "move",
+   "level": "now",
+   "energy": "high",
+   "setting": "both",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "None",
+   "steps": [
+    "Call out an animal name (bear, frog, duck).",
+    "Demonstrate walking/waddling like that animal.",
+    "Ask toddler to imitate movement across room."
+   ],
+   "easier": "Imitate single simple animal sound and movement on knees.",
+   "harder": "Switch rapidly between bear crawl and frog hop on command.",
+   "builds": "Gross motor strength, motor planning, pretend play",
+   "safety": [],
+   "source": "Little Partners Blog"
+  },
+  {
+   "id": "sponge-painting",
+   "title": "Sponge Painting",
+   "domain": "senses",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "high",
+   "materials": "Kitchen sponges, washable paint, paper",
+   "steps": [
+    "Cut sponges into basic shapes.",
+    "Dip sponges into washable paint.",
+    "Press sponges on paper to print shapes."
+   ],
+   "easier": "Dab full rectangular sponge randomly across paper.",
+   "harder": "Press specific sponge shape to make simple pattern.",
+   "builds": "Grasp strength, shape recognition",
+   "safety": [
+    "paint"
+   ],
+   "source": "Little Partners Blog"
+  },
+  {
+   "id": "heuristic-treasure-basket-exploration",
+   "title": "Heuristic Treasure Basket Exploration",
+   "domain": "senses",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 20,
+   "mess": "low",
+   "materials": "Basket, natural/household items (pinecone, wooden spoon, coaster, tin lid, ring, cloth)",
+   "steps": [
+    "Arrange 6-8 open-ended household items in a shallow basket on mat.",
+    "Sit quietly nearby without interrupting.",
+    "Allow toddler to explore textures, weights, and sounds freely."
+   ],
+   "easier": "Explore 3 distinct large items (wooden spoon, big shell, ring).",
+   "harder": "Stack and pair items from basket based on materials.",
+   "builds": "Sensory discovery, independent focus, trial-and-error logic",
+   "safety": [
+    "basket"
+   ],
+   "source": "Aistear Síolta Heuristic Play Tip Sheet"
+  },
+  {
+   "id": "in-and-out-container-play",
+   "title": "In and Out Container Play",
+   "domain": "mind",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Bucket or plastic container, child-safe toys",
+   "steps": [
+    "Give child a bucket and several safe toys.",
+    "Ask toddler to put toys 'in' the bucket.",
+    "Instruct toddler to dump/take toys 'out'."
+   ],
+   "easier": "Adult places items in and lets toddler pull them out.",
+   "harder": "Follow two-step command: 'Put blue block in, take red ball out'.",
+   "builds": "Fine motor grasp, spatial language comprehension",
+   "safety": [
+    "smallobj"
+   ],
+   "source": "UNICEF 21 Learning Activities"
+  },
+  {
+   "id": "tower-tumbler",
+   "title": "Tower Tumbler",
+   "domain": "hands",
+   "level": "now",
+   "energy": "medium",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Large building blocks or plastic containers",
+   "steps": [
+    "Stack 4 or more blocks together to build a tower.",
+    "Encourage toddler to knock tower down.",
+    "Rebuild together."
+   ],
+   "easier": "Knock down pre-built 2-block tower.",
+   "harder": "Toddler builds tower 4 blocks high independently before knocking down.",
+   "builds": "Bilateral hand use, cause and effect",
+   "safety": [],
+   "source": "UNICEF 21 Learning Activities, ZERO TO THREE 18-24m"
+  },
+  {
+   "id": "hide-and-search-towel-game",
+   "title": "Hide and Search Towel Game",
+   "domain": "mind",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Towel or small blanket, safe toy",
+   "steps": [
+    "Hide safe toy under towel while child watches.",
+    "Ask 'Where is it?'.",
+    "Encourage child to pull towel off and celebrate with 'Here it is!'."
+   ],
+   "easier": "Partially cover toy leaving edge exposed.",
+   "harder": "Hide toy under one of two towels while child watches.",
+   "builds": "Object permanence, problem solving",
+   "safety": [],
+   "source": "UNICEF 21 Learning Activities"
+  },
+  {
+   "id": "doll-brush-routine",
+   "title": "Doll Brush Routine",
+   "domain": "pretend",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Hairbrush, doll or stuffed animal",
+   "steps": [
+    "Provide hairbrush and stuffed animal.",
+    "Demonstrate brushing stuffed animal's hair gently.",
+    "Encourage toddler to practice brushing toy."
+   ],
+   "easier": "Adult guides child's hand to stroke plush animal.",
+   "harder": "Child brushes doll's hair then brushes own hair in mirror.",
+   "builds": "Imitation of daily care routines, fine motor control",
+   "safety": [],
+   "source": "ZERO TO THREE 12-18m"
+  },
+  {
+   "id": "interactive-book-animal-sounds",
+   "title": "Interactive Book Animal Sounds",
+   "domain": "words",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Board book with real animal pictures",
+   "steps": [
+    "Open board book with real animal photos.",
+    "Point to animal photo.",
+    "Make animal sound (e.g. 'Snake says sss') and encourage child to copy."
+   ],
+   "easier": "Adult makes sound when child touches picture.",
+   "harder": "Child identifies animal name and makes sound when adult asks 'What does cow say?'.",
+   "builds": "Phonetic expression, word-picture association",
+   "safety": [],
+   "source": "ZERO TO THREE 12-18m"
+  },
+  {
+   "id": "food-photo-collage",
+   "title": "Food Photo Collage",
+   "domain": "hands",
+   "level": "stretch",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Magazine food photos, paper, glue stick",
+   "steps": [
+    "Tear or help cut food photos from magazines (adult does the cutting).",
+    "Spread glue stick on the paper.",
+    "Stick the food photos on to make a collage."
+   ],
+   "easier": "Tear paper into strips and stick onto glued sheet.",
+   "harder": "Adult cuts simple squares; your child chooses and sticks them. Scissors stay with the adult.",
+   "builds": "Hand dexterity, bilateral tearing/cutting skills",
+   "safety": [
+    "scissors"
+   ],
+   "source": "ZERO TO THREE 18-24m"
+  },
+  {
+   "id": "water-table-soap-wash",
+   "title": "Water Table Soap Wash",
+   "domain": "daily",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Tub/water table, bar of soap, plastic animals/dolls",
+   "steps": [
+    "Fill tub with water and add bar of soap.",
+    "Place plastic animal figures in tub.",
+    "Have toddler scrub animals clean with soap and washcloth."
+   ],
+   "easier": "Rinse plastic toys in clear water tub with sponge.",
+   "harder": "Rub bar of soap between hands to lather before washing toys.",
+   "builds": "Sensory texture discrimination, self-care routine understanding",
+   "safety": [
+    "water"
+   ],
+   "source": "ZERO TO THREE 18-24m"
+  },
+  {
+   "id": "perforated-jug-pouring",
+   "title": "Perforated Jug Pouring",
+   "domain": "daily",
+   "level": "now",
+   "energy": "medium",
+   "setting": "both",
+   "minutes": 15,
+   "mess": "medium",
+   "materials": "Plastic milk jug with small bottom holes, water",
+   "steps": [
+    "Submerge perforated milk jug in water bath to fill.",
+    "Lift jug up and watch water stream out bottom.",
+    "Cover top opening with hand to alter water flow."
+   ],
+   "easier": "Pour water between solid plastic cups.",
+   "harder": "Block bottom holes with fingers to stop water flow.",
+   "builds": "Cause and effect, fluid mechanics concept",
+   "safety": [
+    "water"
+   ],
+   "source": "ZERO TO THREE 24-30m"
+  },
+  {
+   "id": "mystery-touch-bag",
+   "title": "Mystery Touch Bag",
+   "domain": "senses",
+   "level": "now",
+   "energy": "calm",
+   "setting": "indoor",
+   "minutes": 10,
+   "mess": "low",
+   "materials": "Cloth bag, familiar household objects (spoon, block, soft ball)",
+   "steps": [
+    "Place familiar items into a cloth bag.",
+    "Have toddler reach hand inside without looking.",
+    "Feel object and pull out to reveal."
+   ],
+   "easier": "Reach into open box to grab visible preferred item.",
+   "harder": "Guess item name by tactile feel before pulling out of bag.",
+   "builds": "Tactile discrimination, spatial memory",
+   "safety": [
+    "smallobj"
+   ],
+   "source": "Montessori Parent Guide"
+  }
+ ],
+ "burners": [
+  {
+   "cat": "Climbing",
+   "out": {
+    "title": "Park Playground Equipment Climbing",
+    "text": "Running and climbing on park playground structures and steps."
+   },
+   "indoor": {
+    "title": "Living Room Pillow & Box Obstacle Course",
+    "text": "Crawling through cardboard box tunnels and climbing over cushion stacks/pillows safely indoors."
+   }
+  },
+  {
+   "cat": "Climbing",
+   "out": {
+    "title": "Pikler Structure Outdoor Play",
+    "text": "Scaling low outdoor wooden climbing triangle frames."
+   },
+   "indoor": {
+    "title": "Indoor Pikler Set Climbing",
+    "text": "Scaling low Pikler triangle set inside on carpeted floor under supervision."
+   }
+  },
+  {
+   "cat": "Climbing",
+   "out": {
+    "title": "Furniture/Structure Step Climbing",
+    "text": "Climbing up low outdoor steps or park benches with assistance."
+   },
+   "indoor": {
+    "title": "Cushion Mountain",
+    "text": "Stacking couch cushions on carpet for toddler to climb up and slide down."
+   }
+  },
+  {
+   "cat": "Running",
+   "out": {
+    "title": "Outdoor Park Dash",
+    "text": "Running freely in open grass fields at local parks."
+   },
+   "indoor": {
+    "title": "Cardboard Box Tunnel Run",
+    "text": "Crawling and dashing through a long cardboard box tunnel in hallway."
+   }
+  },
+  {
+   "cat": "Running",
+   "out": {
+    "title": "Neighborhood Nature Walk",
+    "text": "Energetic walking and running while collecting leaves in a basket."
+   },
+   "indoor": {
+    "title": "Indoor Sock Laundry Dash",
+    "text": "Carrying rolled socks from one end of hallway to laundry bin at high pace."
+   }
+  },
+  {
+   "cat": "Pushing/Pulling",
+   "out": {
+    "title": "Outdoor Lawn Care Wagon/Trike Washing",
+    "text": "Pushing ride-on toys/trikes and pulling carts outdoors."
+   },
+   "indoor": {
+    "title": "Heavy Basket Shuttle",
+    "text": "Loading safe household items into a laundry basket and pushing/pulling across rug."
+   }
+  },
+  {
+   "cat": "Pushing/Pulling",
+   "out": {
+    "title": "Outdoor Toy Push",
+    "text": "Pushing lawn mowers or heavy ride-on vehicles on sidewalk."
+   },
+   "indoor": {
+    "title": "Furniture Dusting Sweep",
+    "text": "Pushing child-sized brooms or mops across hardwood floors."
+   }
+  },
+  {
+   "cat": "Throwing",
+   "out": {
+    "title": "Outdoor Ball Kick & Throw",
+    "text": "Throwing large soft balls overhand across grass fields."
+   },
+   "indoor": {
+    "title": "Doorway Sock Toss",
+    "text": "Tossing rolled-up socks into a laundry basket set in a doorway."
+   }
+  },
+  {
+   "cat": "Throwing",
+   "out": {
+    "title": "Outdoor Catch and Toss",
+    "text": "Throwing balls back and forth with adult in backyard."
+   },
+   "indoor": {
+    "title": "Fill and Dump Paper Ball Transfer",
+    "text": "Throwing wadded paper tape balls into shoeboxes across room."
+   }
+  },
+  {
+   "cat": "Throwing",
+   "out": {
+    "title": "Park Playground Ball Games",
+    "text": "Throwing and kicking various sized balls outdoors."
+   },
+   "indoor": {
+    "title": "Pom-Pom Cardboard Tube Drop",
+    "text": "Tossing pom-poms into wall-mounted paper towel tubes."
+   }
+  },
+  {
+   "cat": "Jumping",
+   "out": {
+    "title": "Outdoor Chalk Square Hop",
+    "text": "Jumping in and out of chalk squares drawn on pavement."
+   },
+   "indoor": {
+    "title": "Pillow Jump Stomp",
+    "text": "Jumping with both feet onto floor cushions or bubble wrap indoors."
+   }
+  },
+  {
+   "cat": "Jumping",
+   "out": {
+    "title": "Park Lawn Two-Foot Jumps",
+    "text": "Practicing jumping with both feet off ground on grass."
+   },
+   "indoor": {
+    "title": "Mat Jump Game",
+    "text": "Jumping on and off cushioned floor mats indoors."
+   }
+  },
+  {
+   "cat": "Dancing",
+   "out": {
+    "title": "Outdoor Music & Dance",
+    "text": "Dancing freely to music in park or backyard settings."
+   },
+   "indoor": {
+    "title": "Living Room Freeze Dance",
+    "text": "Dancing energetically to music indoors and stopping when music pauses."
+   }
+  },
+  {
+   "cat": "Dancing",
+   "out": {
+    "title": "Park Action Songs",
+    "text": "Performing exaggerated action songs outdoors."
+   },
+   "indoor": {
+    "title": "Indoor Action Dance Party",
+    "text": "High-energy dancing to action rhymes like 'If You're Happy and You Know It'."
+   }
+  },
+  {
+   "cat": "Dancing",
+   "out": {
+    "title": "Outdoor Animal Walks",
+    "text": "Hopping and running like frogs and bears across grass."
+   },
+   "indoor": {
+    "title": "Hallway Animal Crawls",
+    "text": "Energetic bear crawling and frog jumping down hallway."
+   }
+  }
+ ],
+ "safety": {
+  "smallobj": {
+   "title": "Small parts",
+   "rule": "Toys and loose items must not fit inside a toilet-roll tube. If they fit, they can block their airway.",
+   "src": "ZERO TO THREE",
+   "general": false
+  },
+  "water": {
+   "title": "Water play",
+   "rule": "Stay within arm's reach for every water activity, including a sponge bowl on the floor. Never leave to answer the door or phone.",
+   "src": "ZERO TO THREE",
+   "general": false
+  },
+  "bubble": {
+   "title": "Bubble liquid",
+   "rule": "Watch that your child does not drink or eat the bubble mix.",
+   "src": "ZERO TO THREE",
+   "general": false
+  },
+  "beads": {
+   "title": "Beads",
+   "rule": "Only large wooden beads, never small ones. Check the stopper knot is secure.",
+   "src": "Adventurers Nursery",
+   "general": false
+  },
+  "holes": {
+   "title": "Cut containers",
+   "rule": "Trim and sand sharp plastic or cardboard edges after cutting holes.",
+   "src": "Action for Children",
+   "general": false
+  },
+  "paint": {
+   "title": "Paint and art supplies",
+   "rule": "Non-toxic, washable only. Supervise from close by; they will taste it.",
+   "src": "Early-childhood guidance",
+   "general": false
+  },
+  "scissors": {
+   "title": "Scissors",
+   "rule": "Adult-only for now. Even child scissors need direct supervision and fine control toddlers do not have yet.",
+   "src": "Early-childhood guidance",
+   "general": false
+  },
+  "basket": {
+   "title": "Treasure basket",
+   "rule": "Check every item first: no small parts, no sharp edges, nothing they can break into pieces. Re-check as items wear.",
+   "src": "Aistear Síolta",
+   "general": false
+  },
+  "pompom": {
+   "title": "Pom-poms",
+   "rule": "Only large pom-poms that fail the toilet-roll test. Small craft pom-poms are a choking hazard.",
+   "src": "Early-childhood guidance",
+   "general": false
+  },
+  "climb": {
+   "title": "Climbing and hanging",
+   "rule": "Soft surface underneath, low height, stay close enough to catch. Let your child climb only as high as they can get themselves, and never lift them onto something they cannot get down from.",
+   "src": "General guidance",
+   "general": true
+  },
+  "cord": {
+   "title": "Cords and ribbons",
+   "rule": "Keep ribbon or string short (under 20 cm), knotted, and only in play you are watching. Never near the cot or their neck.",
+   "src": "General guidance",
+   "general": true
+  },
+  "dough": {
+   "title": "Play dough",
+   "rule": "Salty and not food. If they mouth it, redirect and offer a snack. Use shop-bought or homemade.",
+   "src": "General guidance",
+   "general": true
+  },
+  "dirt": {
+   "title": "Soil and seeds",
+   "rule": "Soil goes in mouths. Wash hands after. Skip small seeds or use big ones they cannot swallow whole.",
+   "src": "General guidance",
+   "general": true
+  },
+  "tape": {
+   "title": "Tape and small toys",
+   "rule": "Peeled tape pieces and small animals are mouthable. Use big toys and long tape strips.",
+   "src": "General guidance",
+   "general": true
+  },
+  "food": {
+   "title": "Choking foods",
+   "rule": "Cut grapes, cherry tomatoes and berries lengthwise and in quarters. No whole nuts, popcorn, or hard raw carrot or apple chunks. Your child sits to eat with an adult present. Confirm with your paediatrician.",
+   "src": "General guidance",
+   "general": true
+  }
+ },
+ "skills": [
+  {
+   "id": "walk",
+   "domain": "move",
+   "label": "Walks steadily without help",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "run",
+   "domain": "move",
+   "label": "Runs",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "climb",
+   "domain": "move",
+   "label": "Climbs on and off furniture",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "stairs-up",
+   "domain": "move",
+   "label": "Walks up stairs holding on",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "kick",
+   "domain": "move",
+   "label": "Kicks a ball forward",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "throw",
+   "domain": "move",
+   "label": "Throws a ball on purpose",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "push",
+   "domain": "move",
+   "label": "Pushes and pulls toys while walking",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "hang",
+   "domain": "move",
+   "label": "Hangs from a bar",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "jump",
+   "domain": "move",
+   "label": "Jumps with both feet together",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "stairs-down",
+   "domain": "move",
+   "label": "Walks down stairs with help",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "trike",
+   "domain": "move",
+   "label": "Pushes or pedals a ride-on or balance bike",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "scribble",
+   "domain": "hands",
+   "label": "Scribbles",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "stack2",
+   "domain": "hands",
+   "label": "Stacks 2+ blocks",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "pages",
+   "domain": "hands",
+   "label": "Turns board-book pages",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "post",
+   "domain": "hands",
+   "label": "Posts objects into a slot",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "cup",
+   "domain": "hands",
+   "label": "Drinks from an open cup smoothly",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "spoon",
+   "domain": "hands",
+   "label": "Gets food to mouth with a spoon smoothly",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "brush",
+   "domain": "hands",
+   "label": "Imitates brushing hair or teeth",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "tower4",
+   "domain": "hands",
+   "label": "Builds a tower of 4+ blocks",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "pour",
+   "domain": "hands",
+   "label": "Pours from a small jug without spilling much",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "words10",
+   "domain": "words",
+   "label": "Says several single words",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "words30",
+   "domain": "words",
+   "label": "Says 30 to 50 words",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "combine",
+   "domain": "words",
+   "label": "Combines two words (\"more milk\")",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "name-familiar",
+   "domain": "words",
+   "label": "Names most familiar things",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "mine",
+   "domain": "words",
+   "label": "Understands \"mine\", \"his\", \"hers\"",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "one-step",
+   "domain": "words",
+   "label": "Follows one-step instructions",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "imitate",
+   "domain": "pretend",
+   "label": "Imitates what you do",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "pretend",
+   "domain": "pretend",
+   "label": "Pretend play (phone, feeding a doll)",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "point",
+   "domain": "pretend",
+   "label": "Points to ask for things",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "peers",
+   "domain": "pretend",
+   "label": "Plays alongside other children",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "new-pretend",
+   "domain": "pretend",
+   "label": "Uses objects in new pretend ways (block as a phone)",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "no-phase",
+   "domain": "pretend",
+   "label": "Strong \"no\" and tantrum phase",
+   "band": "18 mo",
+   "src": "ref"
+  },
+  {
+   "id": "potty-interest",
+   "domain": "daily",
+   "label": "Shows interest in the potty",
+   "band": "24 mo",
+   "src": "ref"
+  },
+  {
+   "id": "potty-signals",
+   "domain": "daily",
+   "label": "Signals before or during a wee or poo",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "potty-sits",
+   "domain": "daily",
+   "label": "Sits on the potty calmly",
+   "band": "typical",
+   "src": "general"
+  },
+  {
+   "id": "wash",
+   "domain": "daily",
+   "label": "Washes hands with help",
+   "band": "typical",
+   "src": "general"
+  }
+ ],
+ "focus": [
+  {
+   "id": "pour",
+   "label": "Cup and pouring control",
+   "why": "Spills mean a skill still forming. Small volumes and lots of water-play practice.",
+   "activities": [
+    "perforated-jug-pouring",
+    "water-table-soap-wash",
+    "sponge-table-washing",
+    "squishy-sponges",
+    "ice-toy-excavation",
+    "fill-and-dump-ball-transfer"
+   ]
+  },
+  {
+   "id": "stack",
+   "label": "Stacking, posting, hand control",
+   "why": "Stacking 2+ now; 4+ is the 24-month marker. Posting and tape rescue train the same pincer control.",
+   "activities": [
+    "tower-tumbler",
+    "crayon-or-card-drop",
+    "tape-rescue",
+    "cardboard-pom-pom-tube-drop",
+    "in-and-out-container-play",
+    "play-dough-squeezing-and-poking"
+   ]
+  },
+  {
+   "id": "jump",
+   "label": "Jumping, stairs, balance",
+   "why": "Jumping with both feet and walking down stairs are the next gross-motor markers.",
+   "activities": [
+    "pikler-climbing-exploration",
+    "living-room-obstacle-course",
+    "animal-walks",
+    "freeze-dance",
+    "cardboard-box-tunnel",
+    "gentle-ball-roll-and-toss"
+   ]
+  },
+  {
+   "id": "words",
+   "label": "Two-word phrases",
+   "why": "The vocabulary is there; the next step is joining words. Repeat what your child says and add one word.",
+   "activities": [
+    "point-it-out-reading",
+    "interactive-book-animal-sounds",
+    "action-song-sing-along",
+    "band-together",
+    "picture-story-cards",
+    "diaper-naming-game"
+   ]
+  },
+  {
+   "id": "potty",
+   "label": "Potty, no pressure",
+   "why": "Interest and signals are the green lights. Pause after illness and let your child lead.",
+   "activities": [
+    "diaper-naming-game",
+    "doll-brush-routine",
+    "teddy-bear-pretend-care",
+    "sponge-table-washing"
+   ]
+  },
+  {
+   "id": "calm",
+   "label": "Calm and big feelings",
+   "why": "A \"no\" phase is normal at this age. Predictable calm slots help them settle.",
+   "activities": [
+    "bubble-mound-exploration",
+    "heuristic-treasure-basket-exploration",
+    "mystery-touch-bag",
+    "hide-and-search-towel-game",
+    "teddy-bear-pretend-care"
+   ]
+  }
+ ],
+ "routines": [
+  {
+   "routine": "Eating",
+   "text": "Practicing self-feeding with spoon and sippy cup; reviewing photos of foods in magazines to name and count them; making pudding together by pouring and stirring ingredients while parent expands language; preparing fun snacks like 'ants on a log'; offering limited choices between two snacks."
+  },
+  {
+   "routine": "Bath",
+   "text": "Pouring water with plastic cups, strainers, and squirters; floating frozen bath toys in paper cups to watch them melt; singing 'Five Little Ducks' while acting it out with rubber duckies; naming body parts as toddler washes with sponges or washcloths; washing plastic animals with a bar of soap in water; singing drying-off rhymes ('After my bath, I try, try, try')."
+  },
+  {
+   "routine": "Going out",
+   "text": "Describing clothing steps ('You're putting on your shoes. One shoe, two shoes!'); practicing pulling on socks and securing velcro shoes; offing limited choices between two outfits; neighborhood leaf collector walk with a small basket."
+  },
+  {
+   "routine": "Reading",
+   "text": "Pointing to pictures when asked ('Point to the cat'); asking open-ended questions ('What is the dog doing?'); pausing before familiar words in rhymes so child fills the blank; holding stuffed animals while reading; playing 'I Spy' during storytime."
+  },
+  {
+   "routine": "Rest",
+   "text": "Calming wind-down storytime; singing slow nursery songs; pretending to put Teddy Bear to sleep with a blanket."
+  }
+ ],
+ "resist": "When toddler shows unwanted behavior or resists, direct the child to another activity; spend more time encouraging wanted behaviors, recognizing it takes MANY reminders as toddlers learn expectations.",
+ "guide": {
+  "join": "Join in by imitating what the child is doing and using parallel talk to describe their actions in simple clear sentences.",
+  "span": "Focus duration for toddlers is often 3 to 10 minutes (or short work cycles of 2–10 minutes).",
+  "back": "Sit back and observe what the child is interested in without interrupting their play.",
+  "scaffold": "Break down activities into smaller steps, provide a small challenge without turning it into a strict lesson, assist minimally when asked to allow maximum independence, and expand on toddler speech (if child says 'ball', say 'Yes, the red ball is bouncing')."
+ },
+ "basket": [
+  "Stacking boxes",
+  "Tins with lids",
+  "Cotton reels",
+  "Cones",
+  "Coasters",
+  "Pieces of wood",
+  "Pinecones",
+  "Wooden spoons / rings"
+ ],
+ "gaps": [
+  {
+   "topic": "Tantrums",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  },
+  {
+   "topic": "Picky Eating",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  },
+  {
+   "topic": "Sleep Problems",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  },
+  {
+   "topic": "Teething",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  },
+  {
+   "topic": "Choking Foods",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  },
+  {
+   "topic": "Toilet Training / Potty Protocols",
+   "text": "Ask your paediatrician or a trusted parenting resource."
+  }
+ ],
+ "sources": [
+  "Rebecca Parlakian (ZERO TO THREE) (2022). Play Activities for 12 to 24 Months",
+  "Nurtoora Team (2026). 15 Best Activities for 2-Year-Old Development (By Domain)",
+  "Better Start / Aistear Síolta Quality Development (2021). Heuristic Play Tip Sheet for Early Years Educators",
+  "LibraryCentral Editorial Board (2026). Gross Motor Skills for 2 Year Olds: A Comprehensive Guide",
+  "Adventurers Nursery Team (2026). 6 Fine Motor Skills Activities for Toddlers",
+  "ZERO TO THREE Editorial Staff (2016). Developing Thinking Skills from 12-24 Months",
+  "Little Partners Editorial Team (2026). 27+ Fun Activities for 2-Year-Olds",
+  "BabyScroll Team (2026). Activities for 2-Year-Olds: A Full Guide for Play, Learning, and Calm",
+  "Action for Children (2020). Infant Toddler Fine Motor Activities",
+  "Early Childhood Family Guide / Pennsylvania Early Learning Keys (2020). Learning Key Areas: 12-18 Months, 18-24 Months, 24-30 Months",
+  "TinyPlay Team (2026). Toddler Activities and Play Guides",
+  "UNICEF / LEGO Foundation (2022). 21 Learning Activities for Babies and Toddlers",
+  "Montessori Parent Guide Team (2026). Montessori Activities and Toy Guides (Ages 1-3)",
+  "Smart Play Blog (2026). Everyday Smart Play Activities"
+ ],
+ "timing": "Milestones are ranges, and every child grows at their own pace.",
+ "references": {
+  "items": [
+   {
+    "id": "who",
+    "author": "World Health Organization",
+    "year": "2019",
+    "title": "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age",
+    "kind": "gov",
+    "covers": "Global benchmarks for physical activity, screen time and sleep in children under 5.",
+    "used": "The Movement today tracker (180 minutes of activity, 60 energetic) and the screen-time note.",
+    "rx": null,
+    "url": "https://www.who.int/publications/i/item/9789241550536",
+    "doi": null,
+    "note": null,
+    "findings": "Provides global health benchmarks for physical activity, screen time, and sleep in young children. Recommends that toddlers aged 1–2 years spend at least 180 minutes in physical activity throughout the day, with zero recommended screen time for 1-year-olds and minimal screen time thereafter. Emphasizes that healthy movement patterns early in life promote lifelong physical and mental wellbeing.",
+    "ages": "0 to 4 years (Under 5)"
+   },
+   {
+    "id": "cdc",
+    "author": "Centers for Disease Control and Prevention",
+    "year": "2022",
+    "title": "CDC's Learn the Signs. Act Early. Developmental Milestones",
+    "kind": "gov",
+    "covers": "Updated milestone checklists at 18, 24 and 30 months, with signs to raise with a doctor.",
+    "used": "Cross-check for the 18 and 24 month skills in the Growth tab and the paediatrician note.",
+    "rx": null,
+    "url": "https://www.cdc.gov/milestones",
+    "doi": null,
+    "note": null,
+    "findings": "Presents updated developmental milestone checklists for infants and toddlers at key age checkpoints (18, 24, 30 months). Provides parents and clinicians with clear behavioral indicators across motor, social-emotional, language, and cognitive domains. Highlights specific red flag behaviors that warrant consultation with a pediatrician.",
+    "ages": "0 to 5 years"
+   },
+   {
+    "id": "pa-keys",
+    "author": "Pennsylvania Office of Child Development and Early Learning",
+    "year": "2020",
+    "title": "Learning Key Areas: 12-18 Months, 18-24 Months, 24-30 Months (Everyday Learning Activities & Milestones)",
+    "kind": "gov",
+    "covers": "State early-learning guidance describing typical skills and everyday routine activities by age band.",
+    "used": "The 18 and 24 month skill markers in the Growth tab, the routine-based ideas, and several activities.",
+    "rx": "Early Childhood Family Guide",
+    "url": "https://www.pakeys.org",
+    "doi": null,
+    "note": null,
+    "findings": "Outlines developmental milestones and practical activities for infants and toddlers structured around daily routines (eating, getting clean, going out, and sharing words). Outlines key 24-month milestones: 'Says 30-50 words & says two word sentences, may show interest in the potty, shows a wide range of emotions, shows defiant behavior, builds towers of 4 or more blocks.' Includes safety precautions for bath play like using bath toys that are 'big enough to not fit into a toilet-paper roll to prevent possible choking.'",
+    "ages": "0 to 30 months"
+   },
+   {
+    "id": "aistear",
+    "author": "Aistear Siolta Quality Development / First 5 / LINC Programme",
+    "year": "2021",
+    "title": "Heuristic Play Tip Sheet for Early Years Educators",
+    "kind": "gov",
+    "covers": "Practitioner guidance on treasure baskets and open-ended materials, including a risk-benefit check.",
+    "used": "The treasure-basket activity, its material list and the safety check.",
+    "rx": "Aistear",
+    "url": "https://first5.gov.ie/userfiles/files/download/0d80ac9221b8eec1.pdf",
+    "doi": null,
+    "note": null,
+    "findings": "Details the methodology and materials for heuristic treasure basket play with open-ended natural objects (wooden spoons, pinecones, tins). Explains how exploratory play with real-world objects supports sensory and cognitive discovery in young children. Instructs that material 'selection must be age-appropriate; undertake a risk/benefit assessment before introducing new materials.'",
+    "ages": "12 to 24 months"
+   },
+   {
+    "id": "yogman",
+    "author": "Yogman, Garner, Hutchinson, Hirsh-Pasek, Golinkoff (American Academy of Pediatrics)",
+    "year": "2018",
+    "title": "The Power of Play: A Pediatric Role in Enhancing Development in Young Children",
+    "kind": "peer",
+    "covers": "AAP clinical report on why play matters for executive function, language and resilience.",
+    "used": "Background for the advice to play together and favour hands-on play over passive screens.",
+    "rx": null,
+    "url": "https://doi.org/10.1542/peds.2018-2058",
+    "doi": "10.1542/peds.2018-2058",
+    "note": "A clinical report, so it supports the general case for play rather than any single activity.",
+    "findings": "Clinical report affirming that play is essential for building executive functioning, language, and socio-emotional resilience in early childhood. Recommends that pediatricians write 'prescriptions for play' at well-child visits to support early brain development and buffer toxic stress. Emphasizes adult-child joint engagement and unstructured play over passive media consumption.",
+    "ages": "0 to 8 years"
+   },
+   {
+    "id": "schlesinger",
+    "author": "Schlesinger, Hassinger-Das, Zosh, Sawyer, Evans, Hirsh-Pasek",
+    "year": "2020",
+    "title": "Cognitive Behavioral Science behind the Value of Play",
+    "kind": "peer",
+    "covers": "Review of free play, guided play and everyday playful learning.",
+    "used": "Background for how to join in and scaffold play in the Guide.",
+    "rx": null,
+    "url": "https://doi.org/10.1080/15289168.2020.1755084",
+    "doi": "10.1080/15289168.2020.1755084",
+    "note": "A theory-and-review paper; it explains the approach rather than testing these activities.",
+    "findings": "Demonstrates how playful learning and cognitively enhanced physical activity foster social-emotional competence and executive function. Notes that 'cognitively enhanced physical activity, such as physical activity that has rules, is social, and requires attention to detail – often found as part of physically active play – has greater benefits for academic success than physical activity or exercise without rules or social interaction.' Observed children engaging in high levels of conversation, social interaction, and physical activity during play.",
+    "ages": "Preschool / Early Childhood"
+   },
+   {
+    "id": "sun",
+    "author": "Sun, Sahakian et al.",
+    "year": "2023",
+    "title": "Reading for pleasure early in childhood and cognitive performance and mental wellbeing in adolescence",
+    "kind": "peer",
+    "covers": "Cohort study of over 10,000 young adolescents linking early reading for pleasure to later outcomes.",
+    "used": "Background for the book and reading activities.",
+    "rx": null,
+    "url": "https://doi.org/10.1017/S0033291723001381",
+    "doi": "10.1017/S0033291723001381",
+    "note": "Outcomes are measured in adolescents and the link is an association, so treat it as supportive, not proof that reading causes later gains.",
+    "findings": "Investigated the long-term impact of early reading for pleasure using the ABCD cohort dataset of over 10,000 young adolescents. Found that 'early-initiated childhood reading for pleasure is associated with better cognitive performance, mental well-being and brain structure in young adolescence.' Establishing early reading habits supports brain development and creates cornerstones for future learning.",
+    "ages": "Early childhood through young adolescence"
+   },
+   {
+    "id": "rao",
+    "author": "Rao, Sun, Chen, Ip",
+    "year": "2017",
+    "title": "The Value of Play and Vocabulary Learning / Early Childhood Intervention Effectiveness",
+    "kind": "peer",
+    "covers": "Meta-analysis of early childhood development interventions.",
+    "used": "Background only: general case for early stimulation.",
+    "rx": null,
+    "url": "https://www.hkjpaed.org/pdf/2017_supplementary.pdf",
+    "doi": null,
+    "note": "Looks at programmes across ages 0 to 8, not individual home activities.",
+    "findings": "Meta-analysis of early childhood development interventions showing significant positive cognitive outcomes. The study highlights that 'child-focused education and stimulation' produced strong positive effect sizes on cognitive development and school readiness outcomes (Standardised Mean Difference 0.64 [0.42, 0.85], p < 0.0001). Interventions initiated early in childhood lay critical foundations for long-term health and educational success.",
+    "ages": "0 to 8 years"
+   },
+   {
+    "id": "z3-play",
+    "author": "Rebecca Parlakian, ZERO TO THREE",
+    "year": "2022",
+    "title": "Play Activities for 12 to 24 Months",
+    "kind": "nonprofit",
+    "covers": "Parent-facing activity ideas for toddlers 12 to 24 months, built around everyday routines.",
+    "used": "Most activity steps and easier/harder versions, the toilet-roll size test, bath and mealtime routines.",
+    "rx": "Play Activities for 12 to 24|ZERO TO THREE 12-18m|ZERO TO THREE 18-24m|ZERO TO THREE 24-30m",
+    "url": "https://www.zerotothree.org/resources/for-families/",
+    "doi": null,
+    "note": null,
+    "findings": "Offers low-cost play activities for toddlers using everyday household objects without needing complex electronic toys. Notes that 'there are many ways to play with toddlers with items you already have on hand' and that simpler toys encourage deeper learning. Highlights water supervision and avoiding small choking hazards as essential safety rules during play.",
+    "ages": "12 to 24 months"
+   },
+   {
+    "id": "z3-think",
+    "author": "ZERO TO THREE Editorial Staff",
+    "year": "2016",
+    "title": "Developing Thinking Skills from 12-24 Months",
+    "kind": "nonprofit",
+    "covers": "How toddlers learn to think: cause and effect, hiding and finding, sorting.",
+    "used": "Background for the Thinking activities (hide and search, sorting).",
+    "rx": null,
+    "url": "https://www.zerotothree.org/resources/for-families/",
+    "doi": null,
+    "note": null,
+    "findings": null,
+    "ages": null
+   },
+   {
+    "id": "unicef",
+    "author": "UNICEF / LEGO Foundation",
+    "year": "2022",
+    "title": "21 Learning Activities for Babies and Toddlers",
+    "kind": "nonprofit",
+    "covers": "Low-cost home play ideas for the first years.",
+    "used": "A small number of play, outdoor and language activities.",
+    "rx": "UNICEF",
+    "url": "https://www.unicef.org/parenting/child-care/21-learning-activities-babies-and-toddlers",
+    "doi": null,
+    "note": null,
+    "findings": "Provides simple, accessible play activities to foster physical, language, and cognitive skills using household items. Demonstrates how outdoor walks expose toddlers to new sights and sounds, helping them develop listening and visual skills. Emphasizes supporting motor skill milestones through play like rolling over, carrying, and exploring objects.",
+    "ages": "0 to 24 months"
+   },
+   {
+    "id": "afc",
+    "author": "Action for Children",
+    "year": "2020",
+    "title": "Infant Toddler Fine Motor Activities",
+    "kind": "nonprofit",
+    "covers": "Hand and finger activities for babies and toddlers.",
+    "used": "Fine-motor activities (posting, tape rescue, pouring) and the cut-edge safety rule.",
+    "rx": "Action for Children",
+    "url": "https://www.actionforchildren.org.uk/",
+    "doi": null,
+    "note": null,
+    "findings": "Presents fine motor play ideas such as tape rescue, card dropping, and pom-pom sorting to build finger strength and precision. Details safety precautions when creating DIY toys, advising adults to 'carefully trim off any sharp plastic pieces after cutting holes; sand down rough edges.' Shows how simple recycled containers foster hand-eye coordination and spatial understanding.",
+    "ages": "0 to 3 years"
+   },
+   {
+    "id": "naeyc",
+    "author": "National Association for the Education of Young Children",
+    "year": "2019",
+    "title": "Engaging Toddlers in Nature Play / Outdoor Play Resources",
+    "kind": "nonprofit",
+    "covers": "Why outdoor and nature play matters for young children.",
+    "used": "Background for the outdoor ideas (park play, leaf collecting).",
+    "rx": null,
+    "url": "https://www.naeyc.org/resources/blog/engaging-toddlers-nature-play",
+    "doi": null,
+    "note": null,
+    "findings": "Highlights the essential role of outdoor exploration and nature play in healthy early childhood development. Emphasizes that outdoor play builds gross motor skills and curiosity through direct interactions with natural elements. Promotes hands-on outdoor learning, such as worm studies and nature walks, to engage young children in inquiry-based exploration.",
+    "ages": "Toddlerhood (1 to 3 years)"
+   },
+   {
+    "id": "montessori",
+    "author": "Montessori Parent Guide Team",
+    "year": "2026",
+    "title": "Montessori Activities and Toy Guides (Ages 1-3)",
+    "kind": "commercial",
+    "covers": "Parent guide to Montessori-style activities and materials.",
+    "used": "A few practical-life and fine-motor activities.",
+    "rx": "Montessori",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": null,
+    "ages": null
+   },
+   {
+    "id": "nurtoora",
+    "author": "Nurtoora Team",
+    "year": "2026",
+    "title": "15 Best Activities for 2-Year-Old Development (By Domain)",
+    "kind": "commercial",
+    "covers": "Activity list grouped by developmental area.",
+    "used": "Several movement, sensory and language activities.",
+    "rx": "Nurtoora",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": null,
+    "ages": null
+   },
+   {
+    "id": "librarycentral",
+    "author": "LibraryCentral Editorial Board",
+    "year": "2026",
+    "title": "Gross Motor Skills for 2 Year Olds: A Comprehensive Guide",
+    "kind": "commercial",
+    "covers": "Gross-motor expectations and activities for two-year-olds.",
+    "used": "Movement activities and gross-motor markers.",
+    "rx": "LibraryCentral",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": "Reviews physical movement milestones for 2-year-olds including walking, running, jumping with both feet, and climbing low furniture. States that 'recent studies underscore the importance of responsive caregiving and enriched environments in promoting gross motor skills.' Explains how structured obstacle courses and ball play enhance spatial awareness and coordination.",
+    "ages": "24 months (2 years)"
+   },
+   {
+    "id": "adventurers",
+    "author": "Adventurers Nursery Team",
+    "year": "2026",
+    "title": "6 Fine Motor Skills Activities for Toddlers",
+    "kind": "commercial",
+    "covers": "Nursery-written fine-motor activity ideas.",
+    "used": "Fine-motor activities and the large-bead rule.",
+    "rx": "Adventurers",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": null,
+    "ages": null
+   },
+   {
+    "id": "littlepartners",
+    "author": "Little Partners Editorial Team",
+    "year": "2026",
+    "title": "27+ Fun Activities for 2-Year-Olds",
+    "kind": "commercial",
+    "covers": "Broad list of home activities for two-year-olds.",
+    "used": "Colour sorting, sponge washing, Pikler climbing and other practical-life activities.",
+    "rx": "Little Partners",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": "Compiles structured and unstructured home activities including color sorting, sponge table washing, and Pikler frame climbing. Addresses parent questions by clarifying that 'spending time outside is always good for your child's health' even if daily outdoor play isn't always possible. Highlights functional household chores as engaging learning opportunities for young children.",
+    "ages": "2 years (24 months)"
+   },
+   {
+    "id": "tinyplay",
+    "author": "TinyPlay Team",
+    "year": "2026",
+    "title": "Toddler Activities and Play Guides",
+    "kind": "commercial",
+    "covers": "Toddler motor and sensory activities and routine ideas.",
+    "used": "Sensory and water activities.",
+    "rx": "TinyPlay",
+    "url": "https://tinyplay.app",
+    "doi": null,
+    "note": "The source page quotes activity amounts attributed to the WHO that do not match the WHO guideline, so this app uses the WHO document directly.",
+    "findings": "Motor and sensory activity suggestions and routine frameworks for toddlers. Stresses that high activity levels are a developmental need rather than a behaviour problem.",
+    "ages": "1 to 4 years"
+   },
+   {
+    "id": "smartplay",
+    "author": "Smart Play Blog",
+    "year": "2026",
+    "title": "Everyday Smart Play Activities",
+    "kind": "commercial",
+    "covers": "Everyday play ideas.",
+    "used": "A small number of activities.",
+    "rx": "Smart Play",
+    "url": null,
+    "doi": null,
+    "note": null,
+    "findings": null,
+    "ages": null
+   },
+   {
+    "id": "wakeforest",
+    "author": "Wake Forest Pediatrics",
+    "year": "2026",
+    "title": "7 Outdoor Activities for Children / Toddler Outdoor Exploration",
+    "kind": "commercial",
+    "covers": "Nature walks and water play for cognitive and motor development.",
+    "used": "Background for the outdoor and water-play ideas.",
+    "rx": null,
+    "url": "http://wakeforestpediatrics.com/7-outdoor-activities-for-children/",
+    "doi": null,
+    "note": null,
+    "findings": "Explores how nature walks and water play support cognitive and motor development in toddlers. States that 'outdoor exploration is essential for physical development and cognitive growth.' Encourages introducing concepts like floating, sinking, and cause-and-effect through interactive water play.",
+    "ages": "1 to 3 years"
+   },
+   {
+    "id": "babyscroll",
+    "author": "BabyScroll Team",
+    "year": "2026",
+    "title": "Activities for 2-Year-Olds: A Full Guide for Play, Learning, and Calm",
+    "kind": "commercial",
+    "covers": "Play, learning and calming activities for two-year-olds.",
+    "used": "Background for calm activities and screen-time advice.",
+    "rx": null,
+    "url": "https://babyscroll.app/blog",
+    "doi": null,
+    "note": null,
+    "findings": "Offers positive parenting tips, sensory play ideas, and calm management strategies for toddlers. Recommends utilizing official CDC resources for monitoring developmental milestones and maintaining realistic daily routines. Highlights practical hacks for emotional development and managing toddler focus.",
+    "ages": "0 to 3 years"
+   },
+   {
+    "id": "babyscroll-emo",
+    "author": "BabyScroll Team",
+    "year": "2026",
+    "title": "How to Support Your Toddler's Emotional Development",
+    "kind": "commercial",
+    "covers": "Gentle strategies for emotional swings and behaviour changes.",
+    "used": "Background for the calm and big-feelings focus.",
+    "rx": null,
+    "url": "https://babyscroll.app/blog/how-to-support-your-toddlers-emotional-development",
+    "doi": null,
+    "note": null,
+    "findings": "Provides realistic parenting strategies for supporting toddlers' social-emotional growth and resilience. Focuses on gentle, calm techniques for managing emotional swings and behavioral changes. Connects emotional development to supportive daily care routines and positive parenting principles.",
+    "ages": "1 to 3 years"
+   }
+  ],
+  "kinds": {
+   "gov": "Government, WHO or standards",
+   "peer": "Peer-reviewed",
+   "nonprofit": "Non-profit or charity",
+   "commercial": "Blog or commercial guide"
+  },
+  "further": [
+   {
+    "title": "CDC: Learn the Signs. Act Early.",
+    "note": "Official milestone checklists and when to talk to a doctor.",
+    "url": "https://www.cdc.gov/act-early/"
+   },
+   {
+    "title": "AAP HealthyChildren.org",
+    "note": "American Academy of Pediatrics parent guidance on development, safety and sleep.",
+    "url": "https://www.healthychildren.org/"
+   },
+   {
+    "title": "WHO under-5 physical activity guideline",
+    "note": "The full guideline behind the movement targets.",
+    "url": "https://www.who.int/publications/i/item/9789241550536"
+   }
+  ]
+ }
+}
