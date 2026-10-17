@@ -1,0 +1,3969 @@
+{
+ "recipes": [
+  {
+   "id": "saag-chicken",
+   "name": "Punjabi chicken and spinach saag",
+   "cat": "main",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 25,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Chicken thigh, boneless",
+     "q": 600.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Spinach",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 4.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 30.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee or oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Fry cumin and chopped onion in the pot for 6 min until golden.",
+    "Add grated garlic and ginger, chopped tomato and the spices; cook 4 min.",
+    "Add chicken and 100 ml water; pressure cook on high for 8 min, natural release 5 min.",
+    "Stir in washed spinach until wilted, blend about half with a stick blender, simmer 5 min.",
+    "Cook rice separately in the rice cooker."
+   ],
+   "kid": "Take the toddler portion out before adding salt and any chilli. Shred the chicken finely and blend the saag smooth.",
+   "lite": "Serve over half the rice and add a side of cucumber and tomato salad.",
+   "store": "Fridge 2 days, freezer 2 months. Cool rice within 1 hour and reheat only once.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "protein",
+    "iron",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "keema-peppers",
+   "name": "Keema-stuffed bell peppers",
+   "cat": "main",
+   "app": [
+    "Oven",
+    "Pressure cooker"
+   ],
+   "active": 30,
+   "total": 60,
+   "ing": [
+    {
+     "i": "Minced beef or chicken",
+     "q": 500.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Bell pepper",
+     "q": 4.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee or oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Fresh coriander",
+     "q": 1.0,
+     "u": "bunch",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Cook chopped onion, garlic and ginger in ghee 5 min.",
+    "Add mince and spices and brown 8 min, add chopped tomato and cook until dry.",
+    "Halve and deseed the peppers, fill with keema.",
+    "Bake at 190 C for 25 min, or steam in the pressure cooker for 8 min.",
+    "Finish with fresh coriander."
+   ],
+   "kid": "Serve the toddler soft keema and pepper strips separately, with the keema taken out before salt and chilli.",
+   "lite": "Peppers are the carb here, so skip bread and rice and add a yogurt raita.",
+   "store": "Fridge 2 days, freezer 2 months.",
+   "alg": [],
+   "tags": [
+    "protein",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "karela-keema",
+   "name": "Keema-stuffed bitter gourd (karela)",
+   "cat": "main",
+   "app": [
+    "Pressure cooker",
+    "Stovetop"
+   ],
+   "active": 35,
+   "total": 65,
+   "ing": [
+    {
+     "i": "Bitter gourd (karela)",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Minced beef",
+     "q": 400.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee or oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Roti or paratha",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Cut the karela into 4 cm rings, scrape out the seeds, rub with salt and rest 20 min, then rinse and squeeze.",
+    "Brown onion, garlic and ginger, add mince, spices and tomato and cook until dry.",
+    "Stuff the rings with keema, lay in the pot with 100 ml water.",
+    "Pressure cook for 10 min, natural release.",
+    "Serve with roti."
+   ],
+   "kid": "Bitter gourd is a strong flavour. Offer the toddler the keema filling with roti and a small piece of karela, no pressure.",
+   "lite": "Karela is low calorie and high fibre; eat it with one roti and extra yogurt.",
+   "store": "Fridge 2 days.",
+   "alg": [],
+   "tags": [
+    "protein",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "nihari",
+   "name": "Beef or mutton nihari",
+   "cat": "main",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 20,
+   "total": 95,
+   "ing": [
+    {
+     "i": "Beef or mutton shank, bone-in",
+     "q": 800.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 40.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 5.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Whole wheat flour (atta)",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "G"
+    },
+    {
+     "i": "Ghee",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Nihari masala (low salt)",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Fresh coriander",
+     "q": 1.0,
+     "u": "bunch",
+     "a": "P"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Roti or naan",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Fry sliced onion in ghee until deep brown, add ginger, garlic, masala and the meat, brown 5 min.",
+    "Add 900 ml water; pressure cook for 50 min, natural release.",
+    "Mix atta with 100 ml cold water, stir in and simmer 10 min until thick.",
+    "Top with ginger strips, coriander and lemon juice."
+   ],
+   "kid": "Take the toddler portion before salt. Shred the meat finely and use plenty of gravy so it is easy to scoop. Remove any bone pieces.",
+   "lite": "Rich: serve a smaller portion with a green salad and one roti.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [],
+   "tags": [
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "shami-kabab-rice",
+   "name": "Chicken shami kababs with rice",
+   "cat": "main",
+   "app": [
+    "Pressure cooker",
+    "Food processor"
+   ],
+   "active": 30,
+   "total": 55,
+   "ing": [
+    {
+     "i": "Chicken breast or thigh",
+     "q": 500.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Chana dal (split chickpeas)",
+     "q": 120.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 4.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Egg",
+     "q": 2.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Oil",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Fresh mint",
+     "q": 1.0,
+     "u": "bunch",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Soak the dal 30 min. Pressure cook chicken, dal, onion, ginger, garlic and spices with 200 ml water for 15 min.",
+    "Drain any extra liquid, cool slightly, then pulse in the food processor to a coarse paste with the egg and mint.",
+    "Shape small flat patties.",
+    "Shallow-fry in 1 tbsp oil per batch, 3 min a side.",
+    "Cook rice separately."
+   ],
+   "kid": "Make a few mini patties for the toddler, flat and soft, broken into pieces. Good finger food.",
+   "lite": "Shallow-fry on a non-stick pan or bake at 200 C for 15 min.",
+   "store": "Patties freeze well (2 months); separate with baking paper.",
+   "alg": [
+    "egg"
+   ],
+   "tags": [
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "rajma",
+   "name": "Punjabi rajma (kidney bean curry)",
+   "cat": "main",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 20,
+   "total": 75,
+   "ing": [
+    {
+     "i": "Dried kidney beans",
+     "q": 300.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 4.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 30.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee or oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Soak beans overnight, drain and rinse.",
+    "Fry cumin and onion in ghee, add garlic, ginger, tomato and spices until soft and oily.",
+    "Add beans and 700 ml water; pressure cook on high for 30 min, natural release.",
+    "Mash a few beans into the gravy and simmer 5 min.",
+    "Serve with rice."
+   ],
+   "kid": "Beans must be fully soft; pressure cooking does this. Mash part of the beans for the toddler.",
+   "lite": "High in fibre and protein; use half the rice.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [],
+   "tags": [
+    "fibre",
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": true
+  },
+  {
+   "id": "yakhni-pulao",
+   "name": "Chicken yakhni pulao",
+   "cat": "main",
+   "app": [
+    "Rice cooker",
+    "Pressure cooker"
+   ],
+   "active": 25,
+   "total": 55,
+   "ing": [
+    {
+     "i": "Chicken on the bone",
+     "q": 700.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 350.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 5.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 100.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Cardamom pods",
+     "q": 3.0,
+     "u": "pc",
+     "a": "S"
+    },
+    {
+     "i": "Cinnamon stick",
+     "q": 1.0,
+     "u": "pc",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Oil or ghee",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Pressure cook chicken with half the onion, ginger, garlic and whole spices in 900 ml water for 15 min to make the stock (yakhni).",
+    "Strain the stock and keep the chicken.",
+    "Fry the remaining sliced onion in ghee until brown, add the chicken and yogurt and cook 5 min.",
+    "Add soaked rice and 600 ml of the stock; cook until the water is absorbed, then steam on low 10 min."
+   ],
+   "kid": "Shred the chicken, remove all bones and serve soft rice. Take the toddler portion before extra salt.",
+   "lite": "Serve a smaller rice portion and add a raita and a plate of salad.",
+   "store": "Fridge 2 days. Cool rice quickly and reheat only once.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "chana-masala",
+   "name": "Chana masala (spiced chickpea curry)",
+   "cat": "main",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 15,
+   "total": 60,
+   "ing": [
+    {
+     "i": "Dried chickpeas",
+     "q": 300.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 4.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 30.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee or oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Chana masala spice",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Roti or rice",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Soak chickpeas overnight.",
+    "Fry cumin and onion, add garlic, ginger, tomato and spices until oily.",
+    "Add chickpeas and 600 ml water; pressure cook for 20 min, natural release.",
+    "Mash some chickpeas to thicken, finish with lemon juice."
+   ],
+   "kid": "Squash or mash the chickpeas and serve with soft roti torn into small pieces.",
+   "lite": "High fibre and protein; fill half the plate with salad.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [],
+   "tags": [
+    "fibre",
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": true
+  },
+  {
+   "id": "baked-fish-potatoes",
+   "name": "Baked fish with spiced potatoes",
+   "cat": "main",
+   "app": [
+    "Oven"
+   ],
+   "active": 20,
+   "total": 50,
+   "ing": [
+    {
+     "i": "White fish fillets (cod or haddock)",
+     "q": 600.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Potato",
+     "q": 600.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 100.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Paprika, mild",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Oil",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Fresh coriander",
+     "q": 1.0,
+     "u": "bunch",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Cut potatoes into wedges, toss with half the oil and spices, roast at 200 C for 20 min.",
+    "Mix yogurt, garlic, lemon juice and spices; coat the fish.",
+    "Add the fish to the tray and bake 12 to 15 min.",
+    "Finish with coriander."
+   ],
+   "kid": "Check the fish very carefully for bones and flake it. Serve potato wedges as finger food.",
+   "lite": "Lean and high in protein; use half the potato and add roasted vegetables.",
+   "store": "Fridge 1 day only. Reheat until piping hot.",
+   "alg": [
+    "fish",
+    "dairy"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "kadhi-pakora",
+   "name": "Punjabi kadhi pakora (yogurt gravy)",
+   "cat": "main",
+   "app": [
+    "Stovetop",
+    "Food processor"
+   ],
+   "active": 30,
+   "total": 55,
+   "ing": [
+    {
+     "i": "Yogurt, plain",
+     "q": 500.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Gram flour (besan)",
+     "q": 120.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Spinach",
+     "q": 100.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Oil",
+     "q": 4.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Fenugreek seeds",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Whisk yogurt, 60 g besan, turmeric and 800 ml water until smooth, simmer 30 min stirring often.",
+    "Mix remaining besan with chopped onion, spinach, salt and a little water into a thick batter.",
+    "Fry or bake small spoonfuls (pakora) until crisp.",
+    "Temper oil with cumin and fenugreek, pour over the kadhi, add the pakora and serve with rice."
+   ],
+   "kid": "Bake the toddler pakora at 200 C so they are less oily and cut them in half. Offer the kadhi mild.",
+   "lite": "Bake the pakora instead of frying and use half the rice.",
+   "store": "Fridge 2 days. Kadhi thickens, add water to reheat.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "korma",
+   "name": "Degi style chicken or mutton korma",
+   "cat": "main",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 20,
+   "total": 55,
+   "ing": [
+    {
+     "i": "Chicken thigh or mutton",
+     "q": 700.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Onion",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 150.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Garlic",
+     "q": 5.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 30.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Ghee",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "S"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Cardamom pods",
+     "q": 3.0,
+     "u": "pc",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Naan or rice",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Fry sliced onion in ghee until golden, add ginger, garlic, spices and meat; brown 8 min.",
+    "Whisk in yogurt a spoon at a time.",
+    "Add 150 ml water; pressure cook for 12 min (chicken) or 35 min (mutton).",
+    "Reduce until the oil separates."
+   ],
+   "kid": "Take the toddler portion out before salt. Shred the meat; the sauce is mild and creamy.",
+   "lite": "Rich: smaller portion, extra vegetables or salad, less ghee.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "shepherd-pie",
+   "name": "Lentil and beef shepherd's pie",
+   "cat": "main",
+   "app": [
+    "Oven",
+    "Pressure cooker"
+   ],
+   "active": 25,
+   "total": 65,
+   "ing": [
+    {
+     "i": "Minced beef",
+     "q": 400.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Red lentils",
+     "q": 100.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Carrot",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Potato",
+     "q": 800.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Tomato paste",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 100.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Butter",
+     "q": 30.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Thyme, dried",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Brown the mince with onion and grated carrot.",
+    "Add lentils, tomato paste, thyme and 400 ml water; pressure cook for 8 min.",
+    "Boil and mash the potatoes with milk and butter.",
+    "Top the filling with mash and bake at 200 C for 20 min."
+   ],
+   "kid": "Soft texture all over; add a spoon of the filling without salt before seasoning.",
+   "lite": "Good for lighter eating: the lentils add fibre; use less mash and add peas.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "fibre",
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "fajitas",
+   "name": "Sheet pan chicken and pepper fajitas",
+   "cat": "main",
+   "app": [
+    "Oven"
+   ],
+   "active": 15,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Chicken breast",
+     "q": 600.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Bell pepper",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Wholemeal tortillas",
+     "q": 8.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Paprika, mild",
+     "q": 2.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garlic powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Lime",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 150.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Slice the chicken, peppers and onion.",
+    "Toss with oil and spices on a sheet pan.",
+    "Roast at 220 C for 20 to 25 min.",
+    "Squeeze over lime; serve in warm tortillas with yogurt."
+   ],
+   "kid": "Cut the chicken into thin strips and serve peppers soft and sliced. Tortillas torn into small pieces.",
+   "lite": "Use one tortilla or lettuce wraps and extra peppers.",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "gluten"
+   ],
+   "tags": [
+    "protein",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "teriyaki-beef",
+   "name": "Teriyaki beef and broccoli stir-fry (halal, no mirin)",
+   "cat": "main",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 20,
+   "total": 30,
+   "ing": [
+    {
+     "i": "Beef strips",
+     "q": 500.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Broccoli",
+     "q": 400.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Carrot",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Soy sauce (low salt)",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Honey",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cornflour",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "O"
+    },
+    {
+     "i": "Oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Mix soy, honey, cornflour and 80 ml water.",
+    "Stir-fry beef in hot oil 3 min, set aside.",
+    "Stir-fry garlic, ginger, carrot and broccoli 4 min.",
+    "Return the beef, add the sauce and cook 2 min.",
+    "Serve over rice."
+   ],
+   "kid": "Soy sauce is salty: take the toddler portion out before adding the sauce, then add a splash. Cut the broccoli small and cook it soft.",
+   "lite": "Use half rice and double broccoli; cruciferous vegetables are fine cooked.",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "soy",
+    "gluten"
+   ],
+   "tags": [
+    "protein",
+    "veg"
+   ],
+   "note": "Uses no mirin or sake so it stays halal.",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "salmon-cakes",
+   "name": "Baked salmon and potato fish cakes",
+   "cat": "main",
+   "app": [
+    "Food processor",
+    "Oven"
+   ],
+   "active": 25,
+   "total": 45,
+   "ing": [
+    {
+     "i": "Salmon fillet",
+     "q": 500.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Potato",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Egg",
+     "q": 1.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Spring onion",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Breadcrumbs",
+     "q": 60.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Dill or parsley",
+     "q": 1.0,
+     "u": "bunch",
+     "a": "P"
+    },
+    {
+     "i": "Salt",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Boil and mash the potatoes. Bake the salmon at 200 C for 12 min and flake it, checking for bones.",
+    "Mix salmon, potato, egg, spring onion, herbs, lemon zest and salt.",
+    "Shape 8 cakes, coat in crumbs.",
+    "Bake at 200 C with a drizzle of oil for 20 min, turning once."
+   ],
+   "kid": "Make small patties for the toddler. Flake and check for bones. Add no extra salt.",
+   "lite": "Bake rather than fry and serve with a big salad.",
+   "store": "Fridge 2 days, freezer 2 months (uncooked, shaped).",
+   "alg": [
+    "fish",
+    "egg",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "bhindi-masala",
+   "name": "Bhindi masala (okra) with roti",
+   "cat": "main",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 15,
+   "total": 30,
+   "ing": [
+    {
+     "i": "Okra (bhindi)",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Oil",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Roti",
+     "q": 8.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Wash and dry the okra thoroughly, then cut into rounds.",
+    "Fry in 2 tbsp oil on medium heat 8 min until no longer sticky, set aside.",
+    "Fry cumin, onion, garlic; add tomato and spices.",
+    "Return the okra, cook covered 5 min.",
+    "Serve with roti."
+   ],
+   "kid": "Cut the okra into small rounds, cooked soft. Torn roti makes easy finger food.",
+   "lite": "Light, high fibre; use less oil and one roti each.",
+   "store": "Best fresh. Fridge 1 day.",
+   "alg": [
+    "gluten"
+   ],
+   "tags": [
+    "fibre",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "aloo-gobi",
+   "name": "Aloo gobi and peas",
+   "cat": "main",
+   "app": [
+    "Stovetop",
+    "Pressure cooker"
+   ],
+   "active": 15,
+   "total": 35,
+   "ing": [
+    {
+     "i": "Potato",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Cauliflower",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Green peas, frozen",
+     "q": 150.0,
+     "u": "g",
+     "a": "F"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 3.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Fresh ginger",
+     "q": 20.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Oil",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Coriander powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Garam masala",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Roti",
+     "q": 8.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Fry cumin, onion, garlic and ginger, add tomato and spices.",
+    "Add diced potato, cauliflower florets and 100 ml water.",
+    "Pressure cook for 4 min, or simmer covered 20 min.",
+    "Stir in the peas and cook 3 min.",
+    "Serve with roti."
+   ],
+   "kid": "Cook until soft, mash a little. Tear roti into small pieces.",
+   "lite": "Cauliflower is a good low-carb swap: use more cauliflower than potato.",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "gluten"
+   ],
+   "tags": [
+    "veg",
+    "fibre"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "quesadilla",
+   "name": "Sheet pan sweet potato and black bean quesadillas",
+   "cat": "main",
+   "app": [
+    "Oven"
+   ],
+   "active": 15,
+   "total": 35,
+   "ing": [
+    {
+     "i": "Sweet potato",
+     "q": 500.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Black beans, canned",
+     "q": 240.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Wholemeal tortillas",
+     "q": 8.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Cheddar or mozzarella",
+     "q": 200.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Paprika, mild",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Lime",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 150.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Cube and roast sweet potato with cumin and oil at 220 C for 20 min.",
+    "Mash lightly with beans and paprika.",
+    "Fill tortillas with the mixture and cheese.",
+    "Bake on a tray at 200 C for 10 min, turning once.",
+    "Serve with lime yogurt."
+   ],
+   "kid": "Cut into small strips; the filling is soft and mild.",
+   "lite": "One quesadilla with salad and extra beans.",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "fibre",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "spinach-potato-pasta",
+   "name": "Creamy spinach and potato pasta",
+   "cat": "main",
+   "app": [
+    "Food processor",
+    "Stovetop"
+   ],
+   "active": 15,
+   "total": 25,
+   "ing": [
+    {
+     "i": "Wholemeal pasta (fusilli or penne)",
+     "q": 320.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Potato",
+     "q": 250.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Spinach",
+     "q": 200.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 2.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Cream cheese",
+     "q": 80.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Parmesan or hard cheese",
+     "q": 40.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Olive oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Salt",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Boil the potato until soft and cook the pasta.",
+    "Blend potato, spinach, garlic, cream cheese, a little pasta water and lemon in the food processor.",
+    "Toss with the pasta and warm for 2 min.",
+    "Top with cheese."
+   ],
+   "kid": "Choose fusilli or penne that toddlers can grip. Serve without extra salt.",
+   "lite": "Use a smaller pasta portion and add peas and extra spinach.",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "mac-cheese",
+   "name": "One-pot broccoli and cheddar mac and cheese",
+   "cat": "main",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 10,
+   "total": 25,
+   "ing": [
+    {
+     "i": "Macaroni",
+     "q": 300.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Broccoli",
+     "q": 300.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 600.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Cheddar",
+     "q": 200.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Butter",
+     "q": 20.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Mustard powder",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Simmer macaroni and finely chopped broccoli in milk and 200 ml water, stirring, for 12 min.",
+    "Stir in butter and cheese until creamy.",
+    "Add mustard and a small pinch of salt."
+   ],
+   "kid": "Chop the broccoli very small. Cheese gives calcium; no extra salt for the toddler portion.",
+   "lite": "Use less pasta and more broccoli; add a side salad.",
+   "store": "Fridge 1 day.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "dal-tadka",
+   "name": "Yellow moong and masoor dal tadka with rice",
+   "cat": "lunch",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 10,
+   "total": 35,
+   "ing": [
+    {
+     "i": "Yellow moong dal",
+     "q": 120.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Red lentils (masoor)",
+     "q": 120.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 4.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Ghee",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Basmati rice",
+     "q": 250.0,
+     "u": "g",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Rinse the dal; pressure cook with turmeric, tomato and 800 ml water for 8 min.",
+    "Whisk smooth.",
+    "Heat ghee, fry cumin and sliced garlic until golden, pour over the dal.",
+    "Add lemon juice, serve with rice."
+   ],
+   "kid": "Naturally soft. Add salt after taking the toddler portion.",
+   "lite": "Lentils and rice together are filling; have half the rice and a salad.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "fibre",
+    "protein",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "lentil-soup",
+   "name": "Turkish red lentil soup (mercimek)",
+   "cat": "lunch",
+   "app": [
+    "Pressure cooker",
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 30,
+   "ing": [
+    {
+     "i": "Red lentils",
+     "q": 200.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Potato",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Carrot",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Olive oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Paprika, mild",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Bread",
+     "q": 4.0,
+     "u": "slice",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Sauté onion in oil, add chopped potato, carrot, lentils, spices and 1 litre water.",
+    "Pressure cook for 8 min.",
+    "Blend smooth.",
+    "Add lemon juice, serve with toasted bread."
+   ],
+   "kid": "Smooth and easy to spoon. Take the toddler portion before adding salt.",
+   "lite": "Low calorie and filling; serve with one slice of bread and a boiled egg.",
+   "store": "Fridge 3 days, freezer 3 months.",
+   "alg": [
+    "gluten"
+   ],
+   "tags": [
+    "fibre",
+    "iron"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "egg-bhurji",
+   "name": "Anda bhurji (spiced scrambled eggs) with roti",
+   "cat": "lunch",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 10,
+   "total": 15,
+   "ing": [
+    {
+     "i": "Egg",
+     "q": 8.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Onion",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Tomato",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Spinach",
+     "q": 100.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Oil or ghee",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cumin seeds",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Turmeric",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Roti",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Fry cumin and onion 4 min, add tomato and spinach and cook 3 min.",
+    "Pour in beaten eggs with turmeric and stir gently until just set.",
+    "Serve with roti."
+   ],
+   "kid": "Cook the eggs fully. Serve soft and torn roti.",
+   "lite": "High protein; use one roti and extra vegetables.",
+   "store": "Eat fresh.",
+   "alg": [
+    "egg",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "hummus-plate",
+   "name": "Hummus plate with pita and vegetables",
+   "cat": "lunch",
+   "app": [
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 10,
+   "ing": [
+    {
+     "i": "Chickpeas, canned",
+     "q": 480.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Tahini",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Lemon",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Garlic",
+     "q": 1.0,
+     "u": "clove",
+     "a": "P"
+    },
+    {
+     "i": "Olive oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Wholemeal pita",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Cucumber",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Cherry tomatoes",
+     "q": 200.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Feta or cheese cubes",
+     "q": 150.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Salt",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Blend chickpeas, tahini, lemon, garlic, oil and a little water until smooth.",
+    "Cut pita into strips and vegetables into thin sticks (cherry tomatoes in quarters).",
+    "Arrange with cheese and hummus."
+   ],
+   "kid": "Cut cherry tomatoes in quarters, cucumber in thin sticks, and thin cheese slices. Tahini is a sesame allergen.",
+   "lite": "Fill the plate mostly with vegetables, one pita each.",
+   "store": "Hummus keeps 4 days in the fridge.",
+   "alg": [
+    "sesame",
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "fibre",
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "chicken-wrap",
+   "name": "Chicken salad wrap",
+   "cat": "lunch",
+   "app": [
+    "No cooking"
+   ],
+   "active": 10,
+   "total": 10,
+   "ing": [
+    {
+     "i": "Cooked chicken (leftover)",
+     "q": 300.0,
+     "u": "g",
+     "a": "M"
+    },
+    {
+     "i": "Wholemeal wraps",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Lettuce",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Cucumber",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 100.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Lemon",
+     "q": 0.5,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Salt",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Shred the chicken and mix with yogurt, lemon and salt.",
+    "Fill wraps with the chicken, lettuce and cucumber slices."
+   ],
+   "kid": "Cut into small strips; shred the chicken finely.",
+   "lite": "Use lettuce leaves in place of the wrap if you want it lighter.",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "baked-oats",
+   "name": "Cardamom and berry baked oats",
+   "cat": "breakfast",
+   "app": [
+    "Oven",
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Rolled oats",
+     "q": 160.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 400.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Egg",
+     "q": 1.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Carrot",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Berries",
+     "q": 150.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Cardamom, ground",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Cinnamon",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Baking powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Grate the carrot. Blend or stir oats, milk, egg, carrot, spices and baking powder.",
+    "Fold in half the berries, pour into a dish and top with the rest.",
+    "Bake at 180 C for 25 to 30 min."
+   ],
+   "kid": "Serve warm in soft squares. No honey or syrup needed.",
+   "lite": "Higher in fibre; skip any added sugar and top with extra berries.",
+   "store": "Fridge 3 days; reheat a portion in the microwave.",
+   "alg": [
+    "egg",
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "anda-shami-roll",
+   "name": "Anda shami paratha roll",
+   "cat": "breakfast",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 10,
+   "total": 15,
+   "ing": [
+    {
+     "i": "Shami kabab patties (leftover or freezer)",
+     "q": 4.0,
+     "u": "pc",
+     "a": "F"
+    },
+    {
+     "i": "Egg",
+     "q": 4.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Whole wheat paratha or roti",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Warm the shami patties in a pan.",
+    "Beat and scramble the eggs over the patties until set.",
+    "Wrap in warm paratha and slice."
+   ],
+   "kid": "Cut into 2 cm strips and keep the filling soft.",
+   "lite": "Use roti rather than paratha and add sliced cucumber.",
+   "store": "Patties from the freezer.",
+   "alg": [
+    "egg",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "omelet-bites",
+   "name": "Masala omelet bites and hash browns",
+   "cat": "breakfast",
+   "app": [
+    "Oven"
+   ],
+   "active": 10,
+   "total": 25,
+   "ing": [
+    {
+     "i": "Egg",
+     "q": 6.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Tomato",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Spinach",
+     "q": 60.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Potato",
+     "q": 300.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Salt",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Beat eggs with chopped tomato, spinach, cumin and salt; pour into a greased muffin tin.",
+    "Coarsely grate the potato, squeeze dry and shape into patties.",
+    "Bake the bites and hash browns at 200 C for 18 min."
+   ],
+   "kid": "Finger food: cut the bites into quarters.",
+   "lite": "Egg bites are high protein; have two bites and a small hash brown.",
+   "store": "Fridge 2 days; freeze bites for a month.",
+   "alg": [
+    "egg"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "chia-pudding",
+   "name": "Mango and coconut chia pudding",
+   "cat": "breakfast",
+   "app": [
+    "Prep ahead"
+   ],
+   "active": 5,
+   "total": 10,
+   "ing": [
+    {
+     "i": "Chia seeds",
+     "q": 60.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Coconut milk",
+     "q": 400.0,
+     "u": "ml",
+     "a": "O"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 200.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Mango, ripe or frozen",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Honey",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Whisk chia seeds into the coconut milk and milk.",
+    "Chill overnight in the fridge.",
+    "Top with chopped mango."
+   ],
+   "kid": "Stir well so there are no clumps; serve with a spoon. Honey is fine at this age.",
+   "lite": "Skip honey and let the mango sweeten it.",
+   "store": "Fridge 3 days.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": true
+  },
+  {
+   "id": "waffles",
+   "name": "Savory whole-wheat waffles",
+   "cat": "breakfast",
+   "app": [
+    "Food processor",
+    "Waffle iron"
+   ],
+   "active": 10,
+   "total": 25,
+   "ing": [
+    {
+     "i": "Whole wheat flour",
+     "q": 200.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Spinach",
+     "q": 60.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Egg",
+     "q": 2.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 300.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Baking powder",
+     "q": 2.0,
+     "u": "tsp",
+     "a": "O"
+    },
+    {
+     "i": "Oil",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Salt",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Blend spinach with milk and eggs.",
+    "Whisk into flour, baking powder and salt.",
+    "Cook in a hot waffle iron until golden."
+   ],
+   "kid": "Cut into fingers and serve with yogurt to dip.",
+   "lite": "One waffle with yogurt and berries.",
+   "store": "Freeze cooked waffles for 1 month; toast to reheat.",
+   "alg": [
+    "egg",
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "veg"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "oat-pancakes",
+   "name": "Mini oatmeal pancakes",
+   "cat": "breakfast",
+   "app": [
+    "Stovetop",
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 20,
+   "ing": [
+    {
+     "i": "Rolled oats",
+     "q": 120.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Banana",
+     "q": 2.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Egg",
+     "q": 2.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 100.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Cinnamon",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Blend oats, banana, eggs, milk and cinnamon.",
+    "Cook small spoonfuls in a lightly oiled pan 2 min a side."
+   ],
+   "kid": "Bite-sized and soft; no extra sugar.",
+   "lite": "Two small pancakes with Greek yogurt.",
+   "store": "Freeze cooked pancakes 1 month.",
+   "alg": [
+    "egg",
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "halwa-puri",
+   "name": "Weekend halwa puri (suji halwa with puri)",
+   "cat": "breakfast",
+   "app": [
+    "Stovetop"
+   ],
+   "active": 30,
+   "total": 45,
+   "ing": [
+    {
+     "i": "Semolina (suji)",
+     "q": 120.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Ghee",
+     "q": 60.0,
+     "u": "g",
+     "a": "O"
+    },
+    {
+     "i": "Sugar",
+     "q": 60.0,
+     "u": "g",
+     "a": "O"
+    },
+    {
+     "i": "Cardamom, ground",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Whole wheat flour",
+     "q": 250.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Oil for frying",
+     "q": 300.0,
+     "u": "ml",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Toast semolina in ghee until fragrant, add 400 ml hot water and sugar, stir until thick; flavour with cardamom.",
+    "Knead flour, a pinch of salt and water to a stiff dough, roll small rounds.",
+    "Deep-fry the puri a few at a time until puffed."
+   ],
+   "kid": "Offer a small piece of puri and a spoon of halwa; fried and sweet, so keep portions tiny.",
+   "lite": "A treat: one puri, a small spoon of halwa and the chana masala.",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "treat"
+   ],
+   "note": "",
+   "yield": 4,
+   "overnight": false
+  },
+  {
+   "id": "tots",
+   "name": "Potato and chickpea tots",
+   "cat": "snack",
+   "app": [
+    "Food processor",
+    "Oven"
+   ],
+   "active": 10,
+   "total": 30,
+   "ing": [
+    {
+     "i": "Potato",
+     "q": 300.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Chickpeas, canned",
+     "q": 240.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Ground cumin",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    },
+    {
+     "i": "Olive oil",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Boil the potato until soft.",
+    "Pulse with the chickpeas and cumin.",
+    "Shape small tots and bake at 200 C for 20 min."
+   ],
+   "kid": "Soft finger food; break open to check they are not too hot.",
+   "lite": "",
+   "store": "Fridge 3 days, freezer 2 months.",
+   "alg": [],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 10,
+   "overnight": false
+  },
+  {
+   "id": "hummus-pita-tomato",
+   "name": "Hummus with pita strips and cherry tomatoes",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 5,
+   "total": 5,
+   "ing": [
+    {
+     "i": "Hummus (homemade or bought)",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "D"
+    },
+    {
+     "i": "Wholemeal pita",
+     "q": 0.5,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Cherry tomatoes",
+     "q": 4.0,
+     "u": "pc",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Cut the pita into strips and cherry tomatoes into quarters.",
+    "Serve the hummus as a dip."
+   ],
+   "kid": "Quarter tomatoes lengthwise; check pita is soft.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "sesame",
+    "gluten"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 1,
+   "overnight": false
+  },
+  {
+   "id": "energy-balls",
+   "name": "Date and oat energy balls",
+   "cat": "snack",
+   "app": [
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 10,
+   "ing": [
+    {
+     "i": "Dates, pitted",
+     "q": 200.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Rolled oats",
+     "q": 60.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Coconut flakes",
+     "q": 20.0,
+     "u": "g",
+     "a": "L"
+    },
+    {
+     "i": "Cinnamon",
+     "q": 0.5,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Process dates, oats and cinnamon to a sticky dough.",
+    "Roll into small balls and coat in coconut."
+   ],
+   "kid": "Sticky and sweet: offer only one small ball with water, and brush teeth after.",
+   "lite": "",
+   "store": "Fridge 1 week.",
+   "alg": [],
+   "tags": [
+    "treat"
+   ],
+   "note": "",
+   "yield": 12,
+   "overnight": false
+  },
+  {
+   "id": "carrot-apple-yogurt",
+   "name": "Steamed carrot and apple wedges with yogurt dip",
+   "cat": "snack",
+   "app": [
+    "Pressure cooker"
+   ],
+   "active": 5,
+   "total": 10,
+   "ing": [
+    {
+     "i": "Carrot",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Apple",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 60.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Steam carrot sticks and thin apple wedges for 4 min until soft.",
+    "Cool and serve with yogurt."
+   ],
+   "kid": "Both softened, thin strips; never raw hard carrot or apple pieces.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 2,
+   "overnight": false
+  },
+  {
+   "id": "spinach-rollups",
+   "name": "Baked spinach and potato roll-ups",
+   "cat": "snack",
+   "app": [
+    "Oven"
+   ],
+   "active": 15,
+   "total": 25,
+   "ing": [
+    {
+     "i": "Potato",
+     "q": 300.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Spinach",
+     "q": 100.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Cheese, grated",
+     "q": 60.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Wholemeal wraps",
+     "q": 4.0,
+     "u": "pc",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Mash boiled potato with wilted spinach and cheese.",
+    "Spread on wraps, roll up tightly.",
+    "Bake at 200 C for 12 min and cut into pinwheels."
+   ],
+   "kid": "Cut pinwheels in half.",
+   "lite": "",
+   "store": "Fridge 2 days.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "veg"
+   ],
+   "note": "",
+   "yield": 8,
+   "overnight": false
+  },
+  {
+   "id": "banana-oat-muffins",
+   "name": "Whole-wheat banana oat muffins",
+   "cat": "snack",
+   "app": [
+    "Oven",
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 30,
+   "ing": [
+    {
+     "i": "Banana",
+     "q": 3.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Rolled oats",
+     "q": 100.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Whole wheat flour",
+     "q": 100.0,
+     "u": "g",
+     "a": "G"
+    },
+    {
+     "i": "Egg",
+     "q": 1.0,
+     "u": "pc",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 100.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Baking powder",
+     "q": 1.0,
+     "u": "tsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Mash bananas, mix with egg and milk.",
+    "Add oats, flour and baking powder.",
+    "Fill muffin cases and bake at 180 C for 20 min."
+   ],
+   "kid": "Soft, naturally sweet. Cut in half.",
+   "lite": "",
+   "store": "Freeze 1 month.",
+   "alg": [
+    "egg",
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "fibre"
+   ],
+   "note": "",
+   "yield": 12,
+   "overnight": false
+  },
+  {
+   "id": "melon-yogurt",
+   "name": "Ripe melon pieces with yogurt",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 5,
+   "total": 5,
+   "ing": [
+    {
+     "i": "Melon, ripe",
+     "q": 80.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 60.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Cut melon into small soft pieces.",
+    "Serve with yogurt."
+   ],
+   "kid": "Small soft pieces only.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [],
+   "note": "",
+   "yield": 1,
+   "overnight": false
+  },
+  {
+   "id": "cheese-crackers",
+   "name": "Unsalted whole-wheat crackers and cheese",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 2,
+   "total": 2,
+   "ing": [
+    {
+     "i": "Whole-wheat crackers, unsalted",
+     "q": 3.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Cheese",
+     "q": 20.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Shred or thinly slice the cheese.",
+    "Serve with crackers."
+   ],
+   "kid": "Shred or slice cheese thinly; crumble the crackers if needed.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 1,
+   "overnight": false
+  },
+  {
+   "id": "banana-yogurt-wrap",
+   "name": "Banana yogurt wrap",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 3,
+   "total": 3,
+   "ing": [
+    {
+     "i": "Banana",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    },
+    {
+     "i": "Wholemeal wrap",
+     "q": 1.0,
+     "u": "pc",
+     "a": "G"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 60.0,
+     "u": "g",
+     "a": "D"
+    }
+   ],
+   "steps": [
+    "Spread yogurt over the wrap, add banana and roll.",
+    "Slice into pinwheels."
+   ],
+   "kid": "Cut pinwheels in half.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [],
+   "note": "",
+   "yield": 2,
+   "overnight": false
+  },
+  {
+   "id": "cottage-pineapple",
+   "name": "Cottage cheese with pineapple",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 3,
+   "total": 3,
+   "ing": [
+    {
+     "i": "Cottage cheese or quark",
+     "q": 60.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Pineapple (fresh or tinned in juice)",
+     "q": 40.0,
+     "u": "g",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Chop the pineapple very small.",
+    "Spoon over the cottage cheese."
+   ],
+   "kid": "Chop pineapple fine; tinned in juice, not syrup.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 1,
+   "overnight": false
+  },
+  {
+   "id": "berry-parfait",
+   "name": "Berry and yogurt parfait",
+   "cat": "snack",
+   "app": [
+    "No cooking"
+   ],
+   "active": 3,
+   "total": 3,
+   "ing": [
+    {
+     "i": "Yogurt, plain",
+     "q": 80.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Berries",
+     "q": 40.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Rolled oats",
+     "q": 1.0,
+     "u": "tbsp",
+     "a": "G"
+    }
+   ],
+   "steps": [
+    "Layer yogurt, mashed berries and oats.",
+    "Serve with a spoon."
+   ],
+   "kid": "Halve blueberries and strawberries; mash raspberries.",
+   "lite": "",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy",
+    "gluten"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 1,
+   "overnight": false
+  },
+  {
+   "id": "mango-kulfi",
+   "name": "Mango kulfi gelato",
+   "cat": "treat",
+   "app": [
+    "Ice cream machine",
+    "Food processor"
+   ],
+   "active": 10,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Mango pulp or ripe mango",
+     "q": 400.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Greek yogurt",
+     "q": 250.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 200.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Honey",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Cardamom, ground",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Blend all ingredients until smooth.",
+    "Chill, then churn in the ice cream machine 25 min.",
+    "Freeze 1 hour to firm up."
+   ],
+   "kid": "A small scoop (two tablespoons). Sweetened lightly with honey rather than condensed milk.",
+   "lite": "Treat portion; one scoop.",
+   "store": "Freezer 1 week.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "treat"
+   ],
+   "note": "",
+   "yield": 6,
+   "overnight": false
+  },
+  {
+   "id": "strawberry-custard",
+   "name": "Strawberry yogurt and honey frozen custard",
+   "cat": "treat",
+   "app": [
+    "Ice cream machine"
+   ],
+   "active": 10,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Strawberries",
+     "q": 300.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Greek yogurt",
+     "q": 250.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 150.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Honey",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    }
+   ],
+   "steps": [
+    "Blend strawberries, yogurt, milk and honey.",
+    "Churn in the ice cream machine 20 min."
+   ],
+   "kid": "Small scoop; naturally sweetened.",
+   "lite": "One scoop.",
+   "store": "Freezer 1 week.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "treat"
+   ],
+   "note": "",
+   "yield": 6,
+   "overnight": false
+  },
+  {
+   "id": "cocoa-swirl",
+   "name": "Cocoa swirl gelato",
+   "cat": "treat",
+   "app": [
+    "Ice cream machine"
+   ],
+   "active": 10,
+   "total": 40,
+   "ing": [
+    {
+     "i": "Milk, whole",
+     "q": 400.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Greek yogurt",
+     "q": 150.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Cocoa powder",
+     "q": 2.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Honey",
+     "q": 3.0,
+     "u": "tbsp",
+     "a": "O"
+    },
+    {
+     "i": "Banana",
+     "q": 1.0,
+     "u": "pc",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Blend banana, milk, yogurt and honey.",
+    "Swirl in the cocoa and churn 25 min."
+   ],
+   "kid": "A small scoop; cocoa has a little caffeine, so keep to a tablespoon or two.",
+   "lite": "One scoop.",
+   "store": "Freezer 1 week.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "treat"
+   ],
+   "note": "",
+   "yield": 6,
+   "overnight": false
+  },
+  {
+   "id": "mango-lassi",
+   "name": "Mango lassi and berry spinach smoothie",
+   "cat": "drink",
+   "app": [
+    "Blender"
+   ],
+   "active": 5,
+   "total": 5,
+   "ing": [
+    {
+     "i": "Mango pulp or ripe mango",
+     "q": 200.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Yogurt, plain",
+     "q": 200.0,
+     "u": "g",
+     "a": "D"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 150.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Spinach",
+     "q": 30.0,
+     "u": "g",
+     "a": "P"
+    },
+    {
+     "i": "Berries",
+     "q": 60.0,
+     "u": "g",
+     "a": "P"
+    }
+   ],
+   "steps": [
+    "Blend everything until smooth.",
+    "Serve in an open cup or a straw cup."
+   ],
+   "kid": "Offer a small cup (about 100 ml) with a snack. Serve in an open cup or straw cup.",
+   "lite": "No honey needed; add ice only if you want it thicker.",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [
+    "protein"
+   ],
+   "note": "",
+   "yield": 2,
+   "overnight": false
+  },
+  {
+   "id": "latte-babyccino",
+   "name": "Espresso latte (adult) and babyccino (toddler)",
+   "cat": "drink",
+   "app": [
+    "Espresso machine"
+   ],
+   "active": 5,
+   "total": 5,
+   "ing": [
+    {
+     "i": "Espresso beans",
+     "q": 18.0,
+     "u": "g",
+     "a": "O"
+    },
+    {
+     "i": "Milk, whole",
+     "q": 400.0,
+     "u": "ml",
+     "a": "D"
+    },
+    {
+     "i": "Cinnamon",
+     "q": 0.25,
+     "u": "tsp",
+     "a": "S"
+    }
+   ],
+   "steps": [
+    "Pull the espresso shot(s) for the adults.",
+    "Steam the milk.",
+    "Pour foam and a splash of warm milk into a small cup for the toddler."
+   ],
+   "kid": "The babyccino is warm milk foam only, with no coffee. Check the temperature first.",
+   "lite": "Use less milk; skip syrups.",
+   "store": "Eat fresh.",
+   "alg": [
+    "dairy"
+   ],
+   "tags": [],
+   "note": "",
+   "yield": 3,
+   "overnight": false
+  }
+ ],
+ "plan": {
+  "doubles": [
+   "saag-chicken",
+   "rajma",
+   "korma",
+   "baked-fish-potatoes",
+   "shepherd-pie",
+   "yakhni-pulao",
+   "kadhi-pakora",
+   "nihari",
+   "fajitas",
+   "chana-masala",
+   "keema-peppers",
+   "salmon-cakes",
+   "shami-kabab-rice",
+   "teriyaki-beef",
+   "karela-keema"
+  ],
+  "easy": [
+   "quesadilla",
+   "aloo-gobi",
+   "spinach-potato-pasta",
+   "bhindi-masala",
+   "mac-cheese"
+  ],
+  "lunch": [
+   "dal-tadka",
+   "lentil-soup",
+   "egg-bhurji",
+   "hummus-plate",
+   "chicken-wrap"
+  ],
+  "breakfastWeekday": [
+   "baked-oats",
+   "omelet-bites",
+   "chia-pudding",
+   "anda-shami-roll",
+   "oat-pancakes"
+  ],
+  "breakfastWeekend": [
+   "waffles",
+   "anda-shami-roll",
+   "oat-pancakes",
+   "omelet-bites",
+   "waffles",
+   "halwa-puri",
+   "baked-oats",
+   "chia-pudding"
+  ],
+  "snack": [
+   "tots",
+   "hummus-pita-tomato",
+   "carrot-apple-yogurt",
+   "banana-oat-muffins",
+   "melon-yogurt",
+   "cheese-crackers",
+   "spinach-rollups",
+   "banana-yogurt-wrap",
+   "cottage-pineapple",
+   "berry-parfait",
+   "energy-balls"
+  ],
+  "frozen": [
+   "mango-kulfi",
+   "strawberry-custard",
+   "cocoa-swirl"
+  ],
+  "midweekDrink": [
+   "mango-lassi"
+  ],
+  "weekendDrink": [
+   "latte-babyccino"
+  ]
+ },
+ "guide": {
+  "portions": [
+   {
+    "title": "Meals and snacks",
+    "text": "Offer 3 meals (¾ to 1 cup of food per meal) and 2 snacks. Share family meals with your toddler. Start with small portions, such as 2 tablespoons of each food, and offer more if they are still hungry.",
+    "src": "Family Meal Planning and Toddler Nutrition Guide",
+    "general": false
+   },
+   {
+    "title": "Milk",
+    "text": "Whole cow's milk is the usual choice from 12 months, because fat supports brain development until 24 months. Use cups, not bottles, and limit milk to 16 to 24 oz (about 475 to 700 ml) a day so there is room for solid food.",
+    "src": "Family Meal Planning and Toddler Nutrition Guide",
+    "general": false
+   },
+   {
+    "title": "Added sugar",
+    "text": "Naturally occurring sugars in fruit and milk are not added sugars. Added sugars include brown sugar, corn syrup and honey. Check labels, limit juice, and choose cereals with minimal added sugar.",
+    "src": "Mayo Clinic: Nutrition for kids",
+    "general": false
+   }
+  ],
+  "safety": [
+   {
+    "title": "Choking prevention",
+    "text": "Chop or grind whole nuts, cut hard raw vegetables into thin strips or cook until soft, halve small round foods (blueberries) and quarter larger ones (grapes, cherry tomatoes), thinly slice hard fruit like apple, shred or thinly slice cheese, spread nut and seed butters thinly, and avoid popcorn and hard or sticky sweets.",
+    "src": "Family Meal Planning and Toddler Nutrition Guide",
+    "general": false
+   },
+   {
+    "title": "Salt in family cooking",
+    "text": "Set the toddler portion aside before adding salt, stock cubes, soy sauce or ready-made masala mixes, then season the rest for the adults.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Iron",
+    "text": "Pair iron-rich foods (meat, lentils, beans, chickpeas, spinach) with vitamin C (lemon, tomato, peppers) and avoid tea with meals.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Rice and leftovers",
+    "text": "Cool cooked rice within an hour, keep it in the fridge, eat within a day or two and reheat only once until steaming hot.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Beans",
+    "text": "Dried kidney beans must be boiled until fully soft. Pressure cooking does this; never use a slow cooker for raw kidney beans.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Fish",
+    "text": "Check fillets for bones. Avoid shark, swordfish and marlin for toddlers, and serve fish no more than a couple of times a week.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Allergens",
+    "text": "Egg, fish, sesame (tahini), dairy, wheat and nuts are all in this plan. Each recipe lists its allergens. If you avoid an ingredient, add it in Setup and the planner will skip any recipe that contains it.",
+    "src": "General guidance",
+    "general": true
+   },
+   {
+    "title": "Halal",
+    "text": "Meat is assumed halal. The teriyaki uses no mirin or sake, and no recipe uses alcohol-based flavouring.",
+    "src": "Recipe notes",
+    "general": false
+   }
+  ],
+  "rhythm": [
+   {
+    "title": "Cook three nights, eat well all week",
+    "text": "Sun, Tue and Thu are batch-cook nights: one big pot covers that night, the next night, and a packed lunch. Sat is a quick 30-minute meal. Mon, Wed and Fri are reheat nights, so you cook three times, not seven.",
+    "src": "Plan design",
+    "general": false
+   },
+   {
+    "title": "Toddler day",
+    "text": "On childcare days the toddler eats breakfast and an afternoon snack at home, and lunch at childcare. Dinner is the family meal at home.",
+    "src": "Plan design",
+    "general": false
+   },
+   {
+    "title": "Adult lunch",
+    "text": "Lunch after a batch-cook night is the leftover. Work-from-home days get a quick fresh lunch from a short rotation (dal, soup, bhurji, hummus plate, wrap).",
+    "src": "Plan design",
+    "general": false
+   },
+   {
+    "title": "Lighter plates",
+    "text": "For lighter eating, fill half the plate with vegetables or salad, use about half the usual rice or bread, keep a palm-sized portion of protein, and use less ghee or oil. Every recipe has a one-line lighter tip.",
+    "src": "General guidance",
+    "general": true
+   }
+  ]
+ },
+ "refs": {
+  "kinds": {
+   "org": "Health organisation or university",
+   "peer": "Peer-reviewed",
+   "blog": "Blog or commercial guide"
+  },
+  "items": [
+   {
+    "id": "fmp",
+    "author": "Family Meal Planning and Toddler Nutrition Guide",
+    "year": "",
+    "title": "Family Meal Planning and Toddler Nutrition Guide",
+    "kind": "blog",
+    "url": null,
+    "covers": "Toddler portions, milk guidance, choking prevention and batch cooking ideas for 12 to 24 months.",
+    "used": "Portion sizes, the 3 meals plus 2 snacks pattern, milk limits and the choking list in the Guide.",
+    "findings": "Offer 3 meals and 2 snacks, ¾ to 1 cup per meal; whole milk until 24 months; prepare foods safely to avoid choking.",
+    "note": "A website guide; the notebook did not give an author or direct link."
+   },
+   {
+    "id": "mayo",
+    "author": "Mayo Clinic Staff",
+    "year": "2025",
+    "title": "Nutrition for kids: Guidelines for a healthy diet",
+    "kind": "org",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/childrens-health/in-depth/nutrition-for-kids/art-20049335",
+    "covers": "Basic nutrition for children and what counts as added sugar.",
+    "used": "The added sugar guidance.",
+    "findings": "Naturally occurring sugars in fruit and milk are not added sugars; check labels and limit juice.",
+    "note": null
+   },
+   {
+    "id": "unlock",
+    "author": "Unlock Food (Dietitians of Canada)",
+    "year": "",
+    "title": "Sample Meal Plan for Feeding Your Toddler (Ages 1 to 3)",
+    "kind": "org",
+    "url": "https://www.unlockfood.ca/",
+    "covers": "A sample day of meals and snacks for toddlers.",
+    "used": "Snack ideas: melon with yogurt, crackers with cheese, hummus with pita and tomato, banana yogurt wrap.",
+    "findings": null,
+    "note": "Publisher site only; search the title there."
+   },
+   {
+    "id": "harvard",
+    "author": "Harvard T.H. Chan School of Public Health",
+    "year": "2026",
+    "title": "Meal Prep Guide (The Nutrition Source)",
+    "kind": "org",
+    "url": "https://nutritionsource.hsph.harvard.edu/meal-prep/",
+    "covers": "How planning and prepping meals supports diet quality and healthy weight.",
+    "used": "The plan's weekly prep rhythm.",
+    "findings": "Structured meal preparation supports overall dietary quality and healthy weight management.",
+    "note": "Aimed at adults."
+   },
+   {
+    "id": "thriving",
+    "author": "Polly and Rachel, Thriving Home",
+    "year": "2026",
+    "title": "20 Big Batch Meals for Families (Freezing Instructions Too)",
+    "kind": "blog",
+    "url": "https://thrivinghomeblog.com/20-big-batch-meals-for-families-freezing-instructions-too/",
+    "covers": "Batch cooking and freezer meals for families.",
+    "used": "The batch-cook night approach and freezing notes.",
+    "findings": "Batch cooking and freezer meals save time in family meal planning.",
+    "note": null
+   },
+   {
+    "id": "fitmacros",
+    "author": "FitMacros",
+    "year": "2026",
+    "title": "Build Meal Templates from Modules, Not Rigid Menus",
+    "kind": "blog",
+    "url": "https://fitmacros.app/methodology",
+    "covers": "Flexible meal modules instead of fixed menus.",
+    "used": "The swap-a-meal design: a protein, a base and a flavour module.",
+    "findings": "Start with a protein anchor, a carbohydrate or produce base, and an energy or flavour module.",
+    "note": null
+   },
+   {
+    "id": "kidstable",
+    "author": "Your Kids Table",
+    "year": "2025",
+    "title": "Your Kids Table",
+    "kind": "blog",
+    "url": "https://yourkidstable.com",
+    "covers": "Pediatric occupational therapy tips for picky eating and sensory challenges at mealtimes.",
+    "used": "Background for the toddler tips.",
+    "findings": null,
+    "note": null
+   },
+   {
+    "id": "southasian",
+    "author": "Achaya, Agrahar-Murugkar, Subbulakshmi et al.",
+    "year": "",
+    "title": "Nutritional and Health Aspects of Food in South Asian Countries",
+    "kind": "peer",
+    "url": "https://doi.org/10.1038/sj.ejcn.1602524",
+    "covers": "Traditional South Asian foods, including fermented grains and legumes, and their nutritional value.",
+    "used": "Background for the lentil, pulse and yogurt-based dishes.",
+    "findings": "Traditional fermented grains and legumes improve mineral bioavailability and digestibility.",
+    "note": "The publication details in the notebook look inconsistent. Check the DOI page for the correct citation."
+   },
+   {
+    "id": "stanford",
+    "author": "Janelle Weaver, Stanford Medicine",
+    "year": "2021",
+    "title": "Fermented-food diet increases microbiome diversity, decreases inflammatory proteins, study finds",
+    "kind": "org",
+    "url": "https://med.stanford.edu/news/all-news/2021/07/fermented-food-diet-increases-microbiome-diversity-lowers-inflammation.html",
+    "covers": "A study of fermented foods (including yogurt) and gut health in adults.",
+    "used": "Background for the yogurt-rich dishes (kadhi, lassi, raita).",
+    "findings": "A diet rich in fermented foods increased gut microbial diversity and lowered inflammation markers.",
+    "note": "Adult study; it is not evidence about toddlers."
+   }
+  ]
+ },
+ "aisles": {
+  "P": "Fruit and vegetables",
+  "M": "Meat and fish",
+  "D": "Dairy and eggs",
+  "G": "Bread and grains",
+  "L": "Pulses and dry goods",
+  "O": "Pantry and oils",
+  "F": "Frozen",
+  "S": "Spices (check the cupboard)"
+ }
+}
